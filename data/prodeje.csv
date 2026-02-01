@@ -1,16 +1,2001 @@
 Datum,Produkt,Kategorie,Pobocka,Cena,Mnozstvi
-2023-01-01,Notebook,Elektronika,Praha,25000,2
-2023-01-02,Myš,Elektronika,Brno,500,10
-2023-01-03,Kancelářská židle,Nábytek,Ostrava,3500,4
-2023-01-04,Psací stůl,Nábytek,Plzeň,5000,2
-2023-01-05,Sluchátka,Elektronika,Praha,1200,15
-2023-01-06,Monitor,Elektronika,Brno,4500,8
-2023-01-07,Pohovka,Nábytek,Ostrava,12000,1
-2023-01-08,Klávesnice,Elektronika,Plzeň,800,12
-2023-01-09,Jídelní stůl,Nábytek,Praha,6000,3
-2023-01-10,Mobilní telefon,Elektronika,Brno,15000,6
-2023-01-11,Lampa,Domácnost,Ostrava,900,20
-2023-01-12,Kávovar,Domácnost,Praha,8000,5
-2023-01-13,Notebook,Elektronika,Plzeň,25000,1
-2023-01-14,Myš,Elektronika,Ostrava,500,5
-2023-01-15,Kancelářská židle,Nábytek,Brno,3500,10
+2023-01-01,Lampa stolní,Nábytek,Praha,780,1
+2023-01-01,Robotický vysavač,Domácnost,Ostrava,9390,2
+2023-01-02,Klávesnice,Elektronika,Brno,810,1
+2023-01-02,Sluchátka,Elektronika,Praha,1510,1
+2023-01-02,"Monitor 24""",Elektronika,Brno,3470,1
+2023-01-02,Pohovka,Nábytek,Brno,14900,1
+2023-01-02,Vysavač tyčový,Domácnost,Praha,4800,1
+2023-01-02,Robotický vysavač,Domácnost,Plzeň,8730,2
+2023-01-03,Psací stůl,Nábytek,Plzeň,4150,2
+2023-01-03,Herní Notebook,Elektronika,Praha,35650,1
+2023-01-03,Rychlovarná konvice,Domácnost,Hradec Králové,800,1
+2023-01-03,"Monitor 24""",Elektronika,Ostrava,3520,1
+2023-01-03,Pohovka,Nábytek,Praha,15000,1
+2023-01-03,Sluchátka,Elektronika,Praha,1560,1
+2023-01-03,Rychlovarná konvice,Domácnost,Ostrava,820,1
+2023-01-04,Toustovač,Domácnost,Brno,620,5
+2023-01-04,Čistička vzduchu,Domácnost,Hradec Králové,4350,1
+2023-01-04,Lampa stojací,Nábytek,Ostrava,1490,1
+2023-01-04,Vysavač tyčový,Domácnost,Praha,4920,3
+2023-01-04,Monitor prohnutý,Elektronika,Brno,6220,1
+2023-01-04,Vysavač tyčový,Domácnost,Ostrava,4860,1
+2023-01-04,Toustovač,Domácnost,Praha,620,1
+2023-01-04,Regál,Nábytek,Liberec,1250,1
+2023-01-04,Ergo židle,Nábytek,Brno,11970,1
+2023-01-05,Čistička vzduchu,Domácnost,Praha,4350,1
+2023-01-05,Webkamera,Elektronika,Plzeň,1200,1
+2023-01-06,Notebook Air,Elektronika,Praha,21680,3
+2023-01-06,Polohovací stůl,Nábytek,Ostrava,12240,1
+2023-01-06,Webkamera,Elektronika,Brno,1250,1
+2023-01-06,Mixér,Domácnost,Praha,1230,1
+2023-01-06,Čistička vzduchu,Domácnost,Praha,4380,1
+2023-01-07,USB Hub,Elektronika,Praha,310,1
+2023-01-07,Notebook Air,Elektronika,Praha,21390,2
+2023-01-07,Mixér,Domácnost,Brno,1160,1
+2023-01-07,Robotický vysavač,Domácnost,Praha,8620,1
+2023-01-07,Kancelářská židle,Nábytek,Praha,3390,1
+2023-01-07,Herní Notebook,Elektronika,Ostrava,35510,1
+2023-01-08,Rychlovarná konvice,Domácnost,Ostrava,760,2
+2023-01-08,Rychlovarná konvice,Domácnost,Hradec Králové,770,2
+2023-01-08,Psací stůl,Nábytek,Brno,4050,1
+2023-01-08,Rychlovarná konvice,Domácnost,Liberec,830,3
+2023-01-09,Polohovací stůl,Nábytek,Praha,12040,1
+2023-01-09,Vysavač tyčový,Domácnost,Ostrava,4790,1
+2023-01-09,Rychlovarná konvice,Domácnost,Hradec Králové,800,1
+2023-01-09,Ergo židle,Nábytek,Liberec,11530,3
+2023-01-10,Mlýnek na kávu,Domácnost,Ostrava,1470,1
+2023-01-10,Čistička vzduchu,Domácnost,Olomouc,4410,1
+2023-01-10,Notebook Air,Elektronika,České Budějovice,22810,1
+2023-01-10,Webkamera,Elektronika,Praha,1180,1
+2023-01-10,Lampa stolní,Nábytek,Liberec,790,1
+2023-01-10,"Monitor 27"" 4K",Elektronika,Praha,7910,2
+2023-01-11,Rychlovarná konvice,Domácnost,Praha,610,1
+2023-01-11,Herní Notebook,Elektronika,Brno,35240,1
+2023-01-11,Kávovar automat,Domácnost,Praha,12510,1
+2023-01-11,Mlýnek na kávu,Domácnost,Brno,1480,1
+2023-01-11,Knihovna,Nábytek,Praha,2880,2
+2023-01-11,Kávovar automat,Domácnost,Ostrava,11840,1
+2023-01-12,Notebook Air,Elektronika,Praha,22450,1
+2023-01-12,Toustovač,Domácnost,Ostrava,460,4
+2023-01-12,Lampa stolní,Nábytek,Brno,610,1
+2023-01-12,Robotický vysavač,Domácnost,Brno,8680,1
+2023-01-12,Rychlovarná konvice,Domácnost,Praha,800,1
+2023-01-12,Polohovací stůl,Nábytek,Praha,12080,1
+2023-01-12,Webkamera,Elektronika,Hradec Králové,1170,1
+2023-01-13,Notebook Air,Elektronika,Brno,21670,1
+2023-01-13,Myš herní,Elektronika,Liberec,1240,1
+2023-01-13,Notebook Pro,Elektronika,Praha,25350,1
+2023-01-13,Pohovka,Nábytek,Ostrava,15010,1
+2023-01-13,Kancelářská židle,Nábytek,Praha,3460,1
+2023-01-13,Vysavač tyčový,Domácnost,Plzeň,4970,1
+2023-01-13,Kávovar pákový,Domácnost,Praha,4180,2
+2023-01-13,Mixér,Domácnost,Praha,1220,1
+2023-01-14,Klávesnice,Elektronika,Hradec Králové,770,3
+2023-01-14,Mixér,Domácnost,Praha,1150,5
+2023-01-14,Psací stůl,Nábytek,Ostrava,3860,2
+2023-01-14,Klávesnice,Elektronika,Praha,830,1
+2023-01-14,Notebook Air,Elektronika,Brno,17880,2
+2023-01-15,Sluchátka,Elektronika,Olomouc,1560,1
+2023-01-15,Vysavač tyčový,Domácnost,Ostrava,5040,1
+2023-01-15,Kontejner,Nábytek,Brno,2090,1
+2023-01-15,Notebook Pro,Elektronika,Ostrava,26080,1
+2023-01-15,Mlýnek na kávu,Domácnost,Olomouc,1500,1
+2023-01-15,USB Hub,Elektronika,Praha,420,1
+2023-01-15,Sluchátka,Elektronika,Ostrava,1440,1
+2023-01-16,Kontejner,Nábytek,České Budějovice,2450,1
+2023-01-16,Mlýnek na kávu,Domácnost,Ostrava,1520,1
+2023-01-16,Notebook Air,Elektronika,Ostrava,21340,1
+2023-01-16,Herní Notebook,Elektronika,Ostrava,33960,1
+2023-01-16,Čistička vzduchu,Domácnost,Praha,4430,1
+2023-01-17,Vysavač tyčový,Domácnost,Praha,5200,1
+2023-01-17,Ergo židle,Nábytek,Olomouc,11920,1
+2023-01-17,Webkamera,Elektronika,Praha,1250,1
+2023-01-17,Mlýnek na kávu,Domácnost,Ostrava,1490,1
+2023-01-17,Myš herní,Elektronika,Liberec,1240,1
+2023-01-18,Webkamera,Elektronika,Olomouc,1190,1
+2023-01-18,Notebook Pro,Elektronika,Olomouc,26040,1
+2023-01-18,Mlýnek na kávu,Domácnost,Hradec Králové,1450,1
+2023-01-18,Webkamera,Elektronika,Olomouc,1150,1
+2023-01-18,Kancelářská židle,Nábytek,Hradec Králové,3570,1
+2023-01-19,Kancelářská židle,Nábytek,Praha,3650,1
+2023-01-19,Herní křeslo,Nábytek,Brno,4780,1
+2023-01-19,Polohovací stůl,Nábytek,Brno,11710,1
+2023-01-19,Myš herní,Elektronika,České Budějovice,960,1
+2023-01-19,Pohovka,Nábytek,Praha,15560,1
+2023-01-19,Mlýnek na kávu,Domácnost,Brno,1430,1
+2023-01-19,Notebook Pro,Elektronika,Praha,25540,1
+2023-01-19,Psací stůl,Nábytek,Praha,3890,1
+2023-01-20,Klávesnice,Elektronika,Liberec,780,2
+2023-01-20,Kontejner,Nábytek,České Budějovice,2590,1
+2023-01-20,Notebook Air,Elektronika,Ostrava,21180,2
+2023-01-20,Kávovar pákový,Domácnost,Olomouc,4200,2
+2023-01-20,Lampa stolní,Nábytek,Praha,780,1
+2023-01-20,Webkamera,Elektronika,Brno,1240,1
+2023-01-20,Kávovar automat,Domácnost,Praha,12600,1
+2023-01-21,Lampa stolní,Nábytek,Praha,770,1
+2023-01-21,Mixér,Domácnost,Hradec Králové,1150,1
+2023-01-21,Notebook Pro,Elektronika,Olomouc,23960,1
+2023-01-21,Pohovka,Nábytek,Praha,14850,1
+2023-01-22,Myš bezdrátová,Elektronika,Brno,510,1
+2023-01-22,Myš bezdrátová,Elektronika,České Budějovice,520,5
+2023-01-22,Kancelářská židle,Nábytek,Ostrava,3580,1
+2023-01-22,Mlýnek na kávu,Domácnost,Brno,1560,1
+2023-01-23,"Monitor 24""",Elektronika,Hradec Králové,3420,2
+2023-01-23,Polohovací stůl,Nábytek,Liberec,11930,1
+2023-01-23,Mixér,Domácnost,České Budějovice,1200,1
+2023-01-23,Myš bezdrátová,Elektronika,Praha,480,1
+2023-01-23,"Monitor 27"" 4K",Elektronika,Praha,8400,1
+2023-01-23,Toustovač,Domácnost,Praha,590,1
+2023-01-23,Kontejner,Nábytek,Hradec Králové,2410,1
+2023-01-23,Monitor prohnutý,Elektronika,České Budějovice,6120,1
+2023-01-24,Mixér,Domácnost,České Budějovice,1250,1
+2023-01-24,Herní Notebook,Elektronika,Praha,36510,1
+2023-01-24,Kávovar automat,Domácnost,Praha,9370,1
+2023-01-24,Regál,Nábytek,Ostrava,1180,1
+2023-01-24,Ergo židle,Nábytek,Praha,12270,4
+2023-01-24,Robotický vysavač,Domácnost,Liberec,8740,1
+2023-01-25,Herní křeslo,Nábytek,Hradec Králové,4780,1
+2023-01-25,USB Hub,Elektronika,Brno,390,1
+2023-01-25,Kávovar automat,Domácnost,Hradec Králové,12390,1
+2023-01-25,Mlýnek na kávu,Domácnost,Plzeň,1470,1
+2023-01-26,Mlýnek na kávu,Domácnost,České Budějovice,1430,1
+2023-01-26,Vysavač tyčový,Domácnost,Brno,4960,1
+2023-01-26,Notebook Air,Elektronika,Hradec Králové,21840,1
+2023-01-27,Polohovací stůl,Nábytek,České Budějovice,11510,2
+2023-01-27,Ergo židle,Nábytek,Ostrava,11680,3
+2023-01-27,Knihovna,Nábytek,Ostrava,2870,1
+2023-01-27,Pohovka,Nábytek,Brno,15270,1
+2023-01-27,Regál,Nábytek,Praha,1220,2
+2023-01-27,Notebook Air,Elektronika,Ostrava,22330,1
+2023-01-28,Myš bezdrátová,Elektronika,Praha,480,2
+2023-01-28,Myš herní,Elektronika,Brno,950,2
+2023-01-28,Kávovar pákový,Domácnost,Praha,4170,1
+2023-01-28,Lampa stolní,Nábytek,Liberec,820,5
+2023-01-29,Pohovka,Nábytek,Praha,15280,2
+2023-01-29,Vysavač tyčový,Domácnost,Brno,5140,1
+2023-01-29,Mlýnek na kávu,Domácnost,Brno,1240,1
+2023-01-29,Toustovač,Domácnost,Liberec,610,1
+2023-01-29,Myš bezdrátová,Elektronika,Brno,500,1
+2023-01-29,Lampa stojací,Nábytek,Praha,1440,1
+2023-01-29,Monitor prohnutý,Elektronika,Brno,6020,1
+2023-01-30,USB Hub,Elektronika,Ostrava,400,2
+2023-01-30,Lampa stojací,Nábytek,Brno,1560,10
+2023-01-30,Lampa stolní,Nábytek,Praha,810,2
+2023-01-30,Robotický vysavač,Domácnost,Ostrava,9250,1
+2023-01-30,Notebook Air,Elektronika,Praha,22280,1
+2023-01-31,Čistička vzduchu,Domácnost,Hradec Králové,4380,1
+2023-01-31,Notebook Air,Elektronika,Praha,18140,1
+2023-02-01,Čistička vzduchu,Domácnost,Praha,4660,1
+2023-02-01,Psací stůl,Nábytek,Brno,3880,1
+2023-02-01,Pohovka,Nábytek,Plzeň,14250,1
+2023-02-02,Rychlovarná konvice,Domácnost,Olomouc,840,3
+2023-02-02,Kávovar pákový,Domácnost,Brno,3900,4
+2023-02-02,Regál,Nábytek,Praha,980,2
+2023-02-02,Kávovar automat,Domácnost,Praha,12160,1
+2023-02-02,Herní Notebook,Elektronika,Praha,35040,1
+2023-02-03,Klávesnice,Elektronika,Praha,780,5
+2023-02-03,Kávovar pákový,Domácnost,Praha,3970,10
+2023-02-03,Sluchátka,Elektronika,Plzeň,1560,1
+2023-02-03,Monitor prohnutý,Elektronika,Brno,4880,1
+2023-02-03,Myš bezdrátová,Elektronika,Liberec,520,4
+2023-02-03,Psací stůl,Nábytek,Ostrava,4060,1
+2023-02-03,Herní křeslo,Nábytek,Ostrava,4900,10
+2023-02-03,Kávovar automat,Domácnost,Ostrava,11600,1
+2023-02-03,Psací stůl,Nábytek,Plzeň,4040,1
+2023-02-03,Notebook Air,Elektronika,Brno,22260,1
+2023-02-03,"Monitor 27"" 4K",Elektronika,Olomouc,7960,1
+2023-02-04,Čistička vzduchu,Domácnost,Praha,4380,1
+2023-02-04,Kávovar automat,Domácnost,Praha,12550,1
+2023-02-04,"Monitor 24""",Elektronika,Praha,2810,2
+2023-02-04,Polohovací stůl,Nábytek,Praha,11610,1
+2023-02-04,Mixér,Domácnost,Ostrava,1180,1
+2023-02-04,Klávesnice,Elektronika,Praha,790,1
+2023-02-04,"Monitor 27"" 4K",Elektronika,Praha,8240,1
+2023-02-05,Mlýnek na kávu,Domácnost,Ostrava,1520,1
+2023-02-05,Herní křeslo,Nábytek,České Budějovice,5130,1
+2023-02-05,Pohovka,Nábytek,Liberec,14590,2
+2023-02-05,Mixér,Domácnost,Praha,1160,2
+2023-02-06,"Monitor 27"" 4K",Elektronika,Brno,6610,1
+2023-02-06,Myš herní,Elektronika,Plzeň,1170,2
+2023-02-06,Kávovar automat,Domácnost,Brno,9490,1
+2023-02-07,Mlýnek na kávu,Domácnost,Ostrava,1480,1
+2023-02-07,Kancelářská židle,Nábytek,Plzeň,3440,2
+2023-02-07,Vysavač tyčový,Domácnost,Plzeň,3810,1
+2023-02-07,Notebook Air,Elektronika,Ostrava,21430,4
+2023-02-07,Mlýnek na kávu,Domácnost,Praha,1460,1
+2023-02-07,Notebook Air,Elektronika,Ostrava,22580,1
+2023-02-07,Monitor prohnutý,Elektronika,Brno,5710,1
+2023-02-08,Myš bezdrátová,Elektronika,Olomouc,480,1
+2023-02-08,Kávovar automat,Domácnost,Brno,11750,1
+2023-02-08,Kontejner,Nábytek,Plzeň,2600,1
+2023-02-08,"Monitor 24""",Elektronika,Olomouc,3550,1
+2023-02-08,Ergo židle,Nábytek,Ostrava,11500,1
+2023-02-09,Webkamera,Elektronika,Plzeň,1230,2
+2023-02-09,Notebook Pro,Elektronika,Praha,24790,3
+2023-02-09,Herní křeslo,Nábytek,Ostrava,5020,1
+2023-02-09,Ergo židle,Nábytek,Praha,11460,1
+2023-02-09,Knihovna,Nábytek,Praha,2940,1
+2023-02-09,Mlýnek na kávu,Domácnost,Praha,1500,1
+2023-02-09,Lampa stolní,Nábytek,Praha,830,1
+2023-02-09,Mixér,Domácnost,Ostrava,1220,1
+2023-02-10,Polohovací stůl,Nábytek,Praha,12330,1
+2023-02-10,Kávovar pákový,Domácnost,Plzeň,4150,1
+2023-02-10,"Monitor 27"" 4K",Elektronika,Praha,7930,1
+2023-02-11,Robotický vysavač,Domácnost,Plzeň,9330,4
+2023-02-11,Rychlovarná konvice,Domácnost,Brno,790,1
+2023-02-11,Klávesnice,Elektronika,České Budějovice,810,1
+2023-02-11,Kontejner,Nábytek,Olomouc,2460,2
+2023-02-12,Myš bezdrátová,Elektronika,Brno,420,1
+2023-02-12,Polohovací stůl,Nábytek,Brno,12070,1
+2023-02-12,Mixér,Domácnost,Ostrava,1200,1
+2023-02-12,Vysavač tyčový,Domácnost,Ostrava,3900,1
+2023-02-12,Toustovač,Domácnost,Praha,620,2
+2023-02-12,Sluchátka,Elektronika,Praha,1140,2
+2023-02-13,Myš herní,Elektronika,Brno,1150,2
+2023-02-13,Rychlovarná konvice,Domácnost,Liberec,820,1
+2023-02-13,Myš bezdrátová,Elektronika,Brno,510,1
+2023-02-13,Herní křeslo,Nábytek,Praha,5190,1
+2023-02-13,"Monitor 27"" 4K",Elektronika,Olomouc,7650,1
+2023-02-13,Čistička vzduchu,Domácnost,Liberec,4690,2
+2023-02-14,Monitor prohnutý,Elektronika,Praha,6080,2
+2023-02-15,Lampa stojací,Nábytek,Hradec Králové,1530,1
+2023-02-15,Myš bezdrátová,Elektronika,Praha,500,2
+2023-02-15,Lampa stolní,Nábytek,Hradec Králové,820,1
+2023-02-15,Kontejner,Nábytek,Praha,2600,3
+2023-02-15,Pohovka,Nábytek,Plzeň,14470,1
+2023-02-15,Mlýnek na kávu,Domácnost,Ostrava,1540,1
+2023-02-16,Lampa stolní,Nábytek,Praha,800,1
+2023-02-16,Kávovar automat,Domácnost,Plzeň,12360,1
+2023-02-16,Robotický vysavač,Domácnost,Ostrava,9220,1
+2023-02-16,Rychlovarná konvice,Domácnost,Plzeň,800,2
+2023-02-17,Kávovar pákový,Domácnost,Liberec,4160,1
+2023-02-17,Sluchátka,Elektronika,Praha,1470,2
+2023-02-17,Monitor prohnutý,Elektronika,Brno,6110,1
+2023-02-17,Rychlovarná konvice,Domácnost,Praha,800,2
+2023-02-17,Kávovar automat,Domácnost,Brno,11980,3
+2023-02-17,Notebook Air,Elektronika,Brno,23020,1
+2023-02-18,Knihovna,Nábytek,Praha,2970,1
+2023-02-18,Kávovar pákový,Domácnost,Praha,3860,1
+2023-02-18,Webkamera,Elektronika,Praha,1260,1
+2023-02-18,Knihovna,Nábytek,Brno,3030,1
+2023-02-18,Vysavač tyčový,Domácnost,Praha,5160,1
+2023-02-19,"Monitor 27"" 4K",Elektronika,Brno,8130,1
+2023-02-19,Webkamera,Elektronika,Brno,1170,3
+2023-02-19,Herní křeslo,Nábytek,Brno,4970,1
+2023-02-19,Regál,Nábytek,Praha,1150,1
+2023-02-19,Mixér,Domácnost,Liberec,1220,1
+2023-02-19,Knihovna,Nábytek,Praha,2870,1
+2023-02-19,Kávovar pákový,Domácnost,Praha,4050,1
+2023-02-19,Kávovar automat,Domácnost,Brno,12080,1
+2023-02-19,Kancelářská židle,Nábytek,Ostrava,3400,1
+2023-02-19,Herní křeslo,Nábytek,Ostrava,4790,3
+2023-02-20,Rychlovarná konvice,Domácnost,České Budějovice,840,1
+2023-02-20,Kávovar pákový,Domácnost,Ostrava,4150,1
+2023-02-20,Robotický vysavač,Domácnost,Ostrava,8850,1
+2023-02-20,Ergo židle,Nábytek,Hradec Králové,11740,2
+2023-02-20,Kancelářská židle,Nábytek,Ostrava,3570,2
+2023-02-20,Kávovar automat,Domácnost,Brno,11650,1
+2023-02-21,Mlýnek na kávu,Domácnost,Brno,1510,1
+2023-02-21,Psací stůl,Nábytek,Praha,3830,2
+2023-02-21,Pohovka,Nábytek,Praha,14340,1
+2023-02-21,Notebook Pro,Elektronika,Ostrava,19860,1
+2023-02-21,Kancelářská židle,Nábytek,Praha,3530,1
+2023-02-21,Knihovna,Nábytek,Ostrava,2940,1
+2023-02-21,Herní Notebook,Elektronika,Ostrava,26890,5
+2023-02-22,Mlýnek na kávu,Domácnost,Brno,1490,1
+2023-02-22,Polohovací stůl,Nábytek,Praha,11500,1
+2023-02-22,Mixér,Domácnost,Liberec,1240,1
+2023-02-22,Myš bezdrátová,Elektronika,Brno,480,2
+2023-02-22,Lampa stolní,Nábytek,Brno,820,1
+2023-02-22,Klávesnice,Elektronika,Praha,830,1
+2023-02-23,Myš bezdrátová,Elektronika,Plzeň,490,2
+2023-02-23,Mixér,Domácnost,Praha,1240,1
+2023-02-23,Pohovka,Nábytek,Praha,15440,1
+2023-02-23,Herní Notebook,Elektronika,Plzeň,28720,2
+2023-02-23,Notebook Air,Elektronika,Praha,21260,1
+2023-02-23,Kontejner,Nábytek,Hradec Králové,2510,1
+2023-02-24,"Monitor 27"" 4K",Elektronika,Ostrava,8100,2
+2023-02-24,Lampa stolní,Nábytek,Ostrava,660,1
+2023-02-24,Klávesnice,Elektronika,Ostrava,790,2
+2023-02-24,Notebook Air,Elektronika,Praha,22500,1
+2023-02-24,Mixér,Domácnost,Plzeň,1190,2
+2023-02-25,Sluchátka,Elektronika,Praha,1490,1
+2023-02-25,Kancelářská židle,Nábytek,Liberec,2850,1
+2023-02-25,Vysavač tyčový,Domácnost,Brno,5080,1
+2023-02-25,Mixér,Domácnost,Ostrava,1250,1
+2023-02-25,Mlýnek na kávu,Domácnost,České Budějovice,1440,1
+2023-02-25,Mixér,Domácnost,České Budějovice,1140,1
+2023-02-26,Herní křeslo,Nábytek,Praha,5070,1
+2023-02-26,Myš bezdrátová,Elektronika,Praha,510,1
+2023-02-26,Myš herní,Elektronika,Praha,1210,1
+2023-02-26,Sluchátka,Elektronika,Brno,1440,1
+2023-02-27,Kávovar pákový,Domácnost,Praha,3880,1
+2023-02-27,Sluchátka,Elektronika,Plzeň,1430,1
+2023-02-27,Kávovar automat,Domácnost,Plzeň,11930,2
+2023-02-28,Klávesnice,Elektronika,Praha,790,1
+2023-02-28,Lampa stolní,Nábytek,Brno,810,1
+2023-02-28,Psací stůl,Nábytek,Brno,4140,3
+2023-02-28,"Monitor 24""",Elektronika,Plzeň,2700,1
+2023-02-28,Pohovka,Nábytek,Plzeň,14660,5
+2023-02-28,Pohovka,Nábytek,Plzeň,11600,1
+2023-02-28,Mlýnek na kávu,Domácnost,Praha,1430,1
+2023-02-28,"Monitor 27"" 4K",Elektronika,Brno,7870,2
+2023-02-28,Kontejner,Nábytek,Ostrava,2400,2
+2023-03-01,"Monitor 27"" 4K",Elektronika,Ostrava,7950,10
+2023-03-01,Sluchátka,Elektronika,Liberec,1550,1
+2023-03-01,Knihovna,Nábytek,Praha,2990,1
+2023-03-02,Toustovač,Domácnost,Ostrava,600,2
+2023-03-02,Polohovací stůl,Nábytek,Brno,11590,1
+2023-03-02,Rychlovarná konvice,Domácnost,Praha,830,1
+2023-03-02,Lampa stolní,Nábytek,Olomouc,770,1
+2023-03-02,Kontejner,Nábytek,Brno,2620,2
+2023-03-02,Regál,Nábytek,Plzeň,1240,2
+2023-03-02,Sluchátka,Elektronika,Praha,1460,1
+2023-03-03,Rychlovarná konvice,Domácnost,Brno,830,3
+2023-03-03,Rychlovarná konvice,Domácnost,Praha,800,1
+2023-03-03,Ergo židle,Nábytek,Praha,12460,1
+2023-03-03,Herní křeslo,Nábytek,Praha,5020,1
+2023-03-03,Knihovna,Nábytek,Olomouc,2330,1
+2023-03-03,Čistička vzduchu,Domácnost,Ostrava,4390,1
+2023-03-03,Lampa stojací,Nábytek,Praha,1470,1
+2023-03-04,Klávesnice,Elektronika,Brno,790,3
+2023-03-04,"Monitor 27"" 4K",Elektronika,Plzeň,6250,1
+2023-03-04,Sluchátka,Elektronika,Brno,1490,1
+2023-03-05,Klávesnice,Elektronika,Liberec,830,1
+2023-03-05,Regál,Nábytek,Brno,1240,1
+2023-03-05,Kancelářská židle,Nábytek,Praha,3380,1
+2023-03-05,Lampa stolní,Nábytek,Praha,780,3
+2023-03-06,"Monitor 24""",Elektronika,Brno,3520,1
+2023-03-06,Vysavač tyčový,Domácnost,Praha,4870,1
+2023-03-06,Mixér,Domácnost,České Budějovice,1250,1
+2023-03-06,Rychlovarná konvice,Domácnost,Brno,770,1
+2023-03-06,Herní křeslo,Nábytek,Liberec,4840,1
+2023-03-06,Psací stůl,Nábytek,Praha,4070,1
+2023-03-06,Pohovka,Nábytek,Plzeň,15510,1
+2023-03-06,Mixér,Domácnost,Praha,1240,1
+2023-03-07,Regál,Nábytek,Hradec Králové,1190,4
+2023-03-07,Notebook Pro,Elektronika,Brno,25970,2
+2023-03-07,Robotický vysavač,Domácnost,Praha,8620,1
+2023-03-07,Čistička vzduchu,Domácnost,Hradec Králové,4390,1
+2023-03-07,Ergo židle,Nábytek,Brno,12200,1
+2023-03-07,Herní Notebook,Elektronika,Praha,34580,1
+2023-03-08,Kancelářská židle,Nábytek,Liberec,3450,10
+2023-03-08,Mlýnek na kávu,Domácnost,Olomouc,1540,1
+2023-03-08,Lampa stolní,Nábytek,Hradec Králové,830,1
+2023-03-08,Ergo židle,Nábytek,Praha,11550,2
+2023-03-08,Toustovač,Domácnost,Praha,610,1
+2023-03-08,"Monitor 27"" 4K",Elektronika,České Budějovice,7690,2
+2023-03-09,Psací stůl,Nábytek,Brno,4120,1
+2023-03-09,Ergo židle,Nábytek,Hradec Králové,11440,1
+2023-03-09,Rychlovarná konvice,Domácnost,Ostrava,830,3
+2023-03-09,Rychlovarná konvice,Domácnost,Praha,790,4
+2023-03-09,Robotický vysavač,Domácnost,Praha,6960,2
+2023-03-09,Kávovar pákový,Domácnost,Praha,3920,1
+2023-03-09,Regál,Nábytek,Olomouc,1200,1
+2023-03-09,Kávovar automat,Domácnost,Plzeň,12260,1
+2023-03-09,Ergo židle,Nábytek,Praha,11460,1
+2023-03-09,Myš bezdrátová,Elektronika,Hradec Králové,520,1
+2023-03-09,Kávovar automat,Domácnost,Ostrava,11900,1
+2023-03-09,Lampa stojací,Nábytek,Plzeň,1430,1
+2023-03-09,Knihovna,Nábytek,Brno,3090,1
+2023-03-10,Polohovací stůl,Nábytek,Hradec Králové,9780,3
+2023-03-10,Notebook Pro,Elektronika,Praha,25650,1
+2023-03-10,Herní Notebook,Elektronika,Plzeň,35910,1
+2023-03-10,Pohovka,Nábytek,Brno,15020,1
+2023-03-11,Ergo židle,Nábytek,Praha,12180,2
+2023-03-11,Kávovar automat,Domácnost,Brno,12480,1
+2023-03-11,USB Hub,Elektronika,Hradec Králové,390,1
+2023-03-11,Robotický vysavač,Domácnost,Plzeň,9410,5
+2023-03-11,Ergo židle,Nábytek,Brno,12430,2
+2023-03-11,Webkamera,Elektronika,Ostrava,1140,1
+2023-03-12,Kontejner,Nábytek,Plzeň,1950,1
+2023-03-12,Myš herní,Elektronika,Brno,1220,1
+2023-03-12,Kávovar automat,Domácnost,Plzeň,11520,1
+2023-03-12,Rychlovarná konvice,Domácnost,Hradec Králové,810,1
+2023-03-12,Pohovka,Nábytek,Brno,14330,1
+2023-03-13,Vysavač tyčový,Domácnost,Plzeň,5160,1
+2023-03-13,Toustovač,Domácnost,Plzeň,580,1
+2023-03-13,Kontejner,Nábytek,Praha,2580,2
+2023-03-13,Myš bezdrátová,Elektronika,Praha,520,4
+2023-03-13,Toustovač,Domácnost,Praha,610,1
+2023-03-14,Robotický vysavač,Domácnost,Olomouc,8640,1
+2023-03-14,Klávesnice,Elektronika,Olomouc,790,1
+2023-03-14,Mixér,Domácnost,České Budějovice,980,1
+2023-03-15,Mlýnek na kávu,Domácnost,Praha,1540,1
+2023-03-15,USB Hub,Elektronika,Praha,420,2
+2023-03-15,Mixér,Domácnost,Ostrava,1150,1
+2023-03-15,Kancelářská židle,Nábytek,Ostrava,3360,1
+2023-03-15,Ergo židle,Nábytek,Plzeň,11740,4
+2023-03-15,Psací stůl,Nábytek,Brno,3940,1
+2023-03-15,Vysavač tyčový,Domácnost,Praha,4830,1
+2023-03-15,Pohovka,Nábytek,Ostrava,14380,1
+2023-03-16,Kávovar pákový,Domácnost,Brno,4100,1
+2023-03-16,Herní křeslo,Nábytek,Brno,5000,1
+2023-03-16,Lampa stolní,Nábytek,Hradec Králové,830,1
+2023-03-16,Polohovací stůl,Nábytek,Brno,11660,1
+2023-03-16,Kávovar automat,Domácnost,Praha,12460,1
+2023-03-16,Sluchátka,Elektronika,Brno,1510,1
+2023-03-16,Monitor prohnutý,Elektronika,Plzeň,5840,1
+2023-03-17,"Monitor 27"" 4K",Elektronika,Praha,8000,1
+2023-03-17,Lampa stojací,Nábytek,Liberec,1480,1
+2023-03-17,Sluchátka,Elektronika,Brno,1210,2
+2023-03-17,Polohovací stůl,Nábytek,Liberec,12570,1
+2023-03-17,Toustovač,Domácnost,Praha,600,1
+2023-03-17,Kontejner,Nábytek,České Budějovice,2460,1
+2023-03-18,Herní Notebook,Elektronika,Praha,34260,2
+2023-03-18,Ergo židle,Nábytek,Praha,11580,1
+2023-03-18,Myš herní,Elektronika,Praha,1230,1
+2023-03-18,Herní Notebook,Elektronika,Praha,34010,1
+2023-03-18,Myš herní,Elektronika,Brno,1140,1
+2023-03-18,Rychlovarná konvice,Domácnost,Brno,780,1
+2023-03-19,Polohovací stůl,Nábytek,Ostrava,11800,1
+2023-03-19,Lampa stojací,Nábytek,Brno,1510,1
+2023-03-19,Toustovač,Domácnost,Brno,620,1
+2023-03-19,Knihovna,Nábytek,Brno,3020,1
+2023-03-19,Kancelářská židle,Nábytek,Praha,3620,4
+2023-03-19,Webkamera,Elektronika,Olomouc,1160,3
+2023-03-20,"Monitor 27"" 4K",Elektronika,Praha,8160,1
+2023-03-20,Lampa stojací,Nábytek,Liberec,1460,3
+2023-03-20,Rychlovarná konvice,Domácnost,Brno,780,1
+2023-03-20,Toustovač,Domácnost,Brno,610,1
+2023-03-20,Herní křeslo,Nábytek,Liberec,4750,2
+2023-03-20,Webkamera,Elektronika,Brno,1220,2
+2023-03-20,"Monitor 27"" 4K",Elektronika,Praha,8000,1
+2023-03-20,Knihovna,Nábytek,Ostrava,2870,10
+2023-03-21,Knihovna,Nábytek,Plzeň,3010,3
+2023-03-21,Rychlovarná konvice,Domácnost,Ostrava,760,1
+2023-03-22,Herní křeslo,Nábytek,Liberec,5180,1
+2023-03-22,Myš bezdrátová,Elektronika,Praha,500,1
+2023-03-22,Čistička vzduchu,Domácnost,Brno,4340,1
+2023-03-22,Herní křeslo,Nábytek,Ostrava,5230,1
+2023-03-22,Toustovač,Domácnost,Plzeň,460,1
+2023-03-22,Ergo židle,Nábytek,Liberec,12490,1
+2023-03-22,Robotický vysavač,Domácnost,Brno,8620,1
+2023-03-23,Knihovna,Nábytek,Praha,3120,1
+2023-03-23,Notebook Pro,Elektronika,Ostrava,24920,10
+2023-03-23,Klávesnice,Elektronika,Brno,780,1
+2023-03-23,Kontejner,Nábytek,Brno,2400,1
+2023-03-24,Psací stůl,Nábytek,České Budějovice,3940,2
+2023-03-24,Kávovar automat,Domácnost,Liberec,12530,5
+2023-03-24,Sluchátka,Elektronika,Liberec,1170,1
+2023-03-24,Notebook Air,Elektronika,Praha,21710,1
+2023-03-24,Webkamera,Elektronika,Ostrava,1260,3
+2023-03-24,Polohovací stůl,Nábytek,Brno,12440,1
+2023-03-25,Myš herní,Elektronika,Praha,1180,1
+2023-03-25,Notebook Pro,Elektronika,Olomouc,25470,1
+2023-03-25,Ergo židle,Nábytek,Brno,12040,3
+2023-03-26,Herní Notebook,Elektronika,Brno,36020,1
+2023-03-26,Čistička vzduchu,Domácnost,Praha,4390,1
+2023-03-26,Knihovna,Nábytek,Ostrava,3130,2
+2023-03-26,Monitor prohnutý,Elektronika,Ostrava,6080,1
+2023-03-26,Kávovar automat,Domácnost,Plzeň,12240,2
+2023-03-26,Regál,Nábytek,Brno,1150,1
+2023-03-26,Regál,Nábytek,Brno,1250,1
+2023-03-26,Kancelářská židle,Nábytek,Praha,3470,1
+2023-03-26,Vysavač tyčový,Domácnost,Praha,4040,5
+2023-03-26,Rychlovarná konvice,Domácnost,Praha,820,3
+2023-03-27,Herní křeslo,Nábytek,Plzeň,4750,2
+2023-03-27,Mlýnek na kávu,Domácnost,Praha,1530,1
+2023-03-27,"Monitor 27"" 4K",Elektronika,Plzeň,8340,1
+2023-03-27,Kávovar automat,Domácnost,Praha,12510,1
+2023-03-27,Čistička vzduchu,Domácnost,České Budějovice,4620,1
+2023-03-28,"Monitor 27"" 4K",Elektronika,Brno,8200,1
+2023-03-28,Ergo židle,Nábytek,Ostrava,11770,2
+2023-03-28,Notebook Pro,Elektronika,Praha,24610,1
+2023-03-28,Polohovací stůl,Nábytek,Brno,11500,1
+2023-03-28,Polohovací stůl,Nábytek,Praha,12030,1
+2023-03-29,Regál,Nábytek,Praha,1240,1
+2023-03-29,Mixér,Domácnost,Brno,1160,3
+2023-03-30,Myš herní,Elektronika,Brno,1190,1
+2023-03-30,Kávovar pákový,Domácnost,Plzeň,3820,1
+2023-03-30,Čistička vzduchu,Domácnost,Ostrava,4570,1
+2023-03-30,Regál,Nábytek,Ostrava,1190,2
+2023-03-30,Webkamera,Elektronika,Plzeň,1240,1
+2023-03-31,Lampa stolní,Nábytek,Brno,770,1
+2023-03-31,Knihovna,Nábytek,Liberec,3000,1
+2023-03-31,Herní Notebook,Elektronika,Brno,36280,2
+2023-03-31,Polohovací stůl,Nábytek,Praha,11850,1
+2023-03-31,Notebook Pro,Elektronika,Brno,24820,2
+2023-03-31,Toustovač,Domácnost,Ostrava,600,1
+2023-04-01,Knihovna,Nábytek,Praha,2970,1
+2023-04-01,Lampa stojací,Nábytek,Praha,1560,2
+2023-04-01,"Monitor 27"" 4K",Elektronika,Praha,6520,2
+2023-04-01,Rychlovarná konvice,Domácnost,Brno,630,1
+2023-04-01,Klávesnice,Elektronika,Ostrava,780,1
+2023-04-01,Mixér,Domácnost,Olomouc,1250,3
+2023-04-01,Pohovka,Nábytek,Brno,15100,1
+2023-04-01,Notebook Air,Elektronika,Praha,22340,1
+2023-04-02,Toustovač,Domácnost,Praha,460,1
+2023-04-02,Čistička vzduchu,Domácnost,Brno,4540,1
+2023-04-02,Ergo židle,Nábytek,Plzeň,12250,1
+2023-04-02,Herní křeslo,Nábytek,Ostrava,5110,3
+2023-04-02,Kancelářská židle,Nábytek,Praha,3340,5
+2023-04-02,Herní křeslo,Nábytek,Brno,4780,1
+2023-04-02,Vysavač tyčový,Domácnost,Praha,5180,1
+2023-04-02,Herní křeslo,Nábytek,Ostrava,5060,1
+2023-04-02,Regál,Nábytek,Brno,1190,2
+2023-04-02,Kávovar pákový,Domácnost,Ostrava,4050,1
+2023-04-03,Robotický vysavač,Domácnost,Praha,9170,2
+2023-04-03,"Monitor 24""",Elektronika,Hradec Králové,3450,1
+2023-04-03,Myš bezdrátová,Elektronika,Praha,490,1
+2023-04-03,Robotický vysavač,Domácnost,Ostrava,8550,1
+2023-04-04,Toustovač,Domácnost,Ostrava,570,1
+2023-04-04,Kávovar pákový,Domácnost,Praha,3980,1
+2023-04-04,Rychlovarná konvice,Domácnost,Plzeň,810,1
+2023-04-04,Kontejner,Nábytek,Brno,2600,1
+2023-04-04,Myš bezdrátová,Elektronika,Praha,480,2
+2023-04-05,USB Hub,Elektronika,Praha,400,1
+2023-04-05,Mlýnek na kávu,Domácnost,Plzeň,1240,1
+2023-04-05,Herní křeslo,Nábytek,Praha,4790,3
+2023-04-05,Vysavač tyčový,Domácnost,Ostrava,5230,1
+2023-04-05,Polohovací stůl,Nábytek,Plzeň,11730,1
+2023-04-06,Notebook Air,Elektronika,Praha,21740,1
+2023-04-06,Mlýnek na kávu,Domácnost,Praha,1450,1
+2023-04-06,Mixér,Domácnost,Ostrava,1260,1
+2023-04-07,Mixér,Domácnost,Hradec Králové,1190,5
+2023-04-07,Toustovač,Domácnost,Praha,590,3
+2023-04-07,Notebook Pro,Elektronika,Olomouc,25920,2
+2023-04-07,Lampa stolní,Nábytek,Brno,780,1
+2023-04-08,Lampa stojací,Nábytek,Praha,1570,1
+2023-04-08,Knihovna,Nábytek,Ostrava,2910,1
+2023-04-08,Robotický vysavač,Domácnost,České Budějovice,9330,1
+2023-04-08,Rychlovarná konvice,Domácnost,Ostrava,830,1
+2023-04-08,Pohovka,Nábytek,Praha,15370,1
+2023-04-08,Rychlovarná konvice,Domácnost,Praha,770,1
+2023-04-09,Lampa stolní,Nábytek,Brno,800,2
+2023-04-10,Webkamera,Elektronika,Ostrava,1160,3
+2023-04-10,Vysavač tyčový,Domácnost,Brno,4880,1
+2023-04-10,Rychlovarná konvice,Domácnost,Ostrava,630,1
+2023-04-10,Klávesnice,Elektronika,Brno,820,2
+2023-04-10,Polohovací stůl,Nábytek,Plzeň,11610,1
+2023-04-10,Toustovač,Domácnost,Praha,600,1
+2023-04-10,Vysavač tyčový,Domácnost,Brno,5190,3
+2023-04-11,Kávovar pákový,Domácnost,Praha,4070,1
+2023-04-11,Sluchátka,Elektronika,Brno,1500,1
+2023-04-11,Rychlovarná konvice,Domácnost,Brno,830,1
+2023-04-11,Vysavač tyčový,Domácnost,Ostrava,5030,1
+2023-04-11,Herní křeslo,Nábytek,Brno,4940,1
+2023-04-11,Notebook Pro,Elektronika,Ostrava,19220,1
+2023-04-11,Lampa stolní,Nábytek,Brno,820,1
+2023-04-11,"Monitor 27"" 4K",Elektronika,Plzeň,6480,1
+2023-04-11,Myš bezdrátová,Elektronika,Brno,480,1
+2023-04-11,Kontejner,Nábytek,Plzeň,2590,2
+2023-04-12,Herní křeslo,Nábytek,Ostrava,4920,1
+2023-04-12,Robotický vysavač,Domácnost,Praha,9400,1
+2023-04-12,Ergo židle,Nábytek,Ostrava,11530,1
+2023-04-12,Toustovač,Domácnost,Plzeň,620,1
+2023-04-12,Kancelářská židle,Nábytek,Praha,3530,1
+2023-04-13,Vysavač tyčový,Domácnost,Plzeň,5040,3
+2023-04-13,Ergo židle,Nábytek,Praha,9300,1
+2023-04-13,Kávovar pákový,Domácnost,Liberec,4110,1
+2023-04-13,Kávovar automat,Domácnost,Brno,11660,1
+2023-04-13,Psací stůl,Nábytek,Praha,4090,1
+2023-04-13,Mixér,Domácnost,Brno,1200,1
+2023-04-13,Vysavač tyčový,Domácnost,Brno,4790,5
+2023-04-13,Čistička vzduchu,Domácnost,Plzeň,4320,1
+2023-04-13,Rychlovarná konvice,Domácnost,Brno,840,4
+2023-04-14,Kávovar automat,Domácnost,Ostrava,11430,1
+2023-04-14,Notebook Pro,Elektronika,Liberec,25330,1
+2023-04-14,Myš bezdrátová,Elektronika,Praha,490,1
+2023-04-14,Notebook Pro,Elektronika,České Budějovice,25070,1
+2023-04-14,Mlýnek na kávu,Domácnost,České Budějovice,1510,1
+2023-04-14,Monitor prohnutý,Elektronika,Plzeň,6140,2
+2023-04-15,Klávesnice,Elektronika,Plzeň,800,1
+2023-04-15,Webkamera,Elektronika,Liberec,1220,1
+2023-04-15,Mlýnek na kávu,Domácnost,Brno,1520,1
+2023-04-15,Mlýnek na kávu,Domácnost,Ostrava,1530,1
+2023-04-15,Kancelářská židle,Nábytek,Praha,3370,1
+2023-04-16,Kávovar automat,Domácnost,Olomouc,12140,1
+2023-04-16,Kávovar pákový,Domácnost,Brno,3840,1
+2023-04-16,Psací stůl,Nábytek,Hradec Králové,4000,1
+2023-04-16,Knihovna,Nábytek,Praha,2990,1
+2023-04-16,Ergo židle,Nábytek,Praha,12160,3
+2023-04-17,Kancelářská židle,Nábytek,Brno,3340,1
+2023-04-17,Psací stůl,Nábytek,Hradec Králové,4150,1
+2023-04-17,Polohovací stůl,Nábytek,Praha,11890,1
+2023-04-17,Notebook Air,Elektronika,Praha,21790,1
+2023-04-17,Kancelářská židle,Nábytek,Plzeň,3500,1
+2023-04-18,Webkamera,Elektronika,Brno,1230,1
+2023-04-18,Mlýnek na kávu,Domácnost,Ostrava,1500,1
+2023-04-19,Kontejner,Nábytek,Ostrava,2500,1
+2023-04-19,Mixér,Domácnost,Ostrava,1180,1
+2023-04-19,Psací stůl,Nábytek,Ostrava,4180,2
+2023-04-19,Myš bezdrátová,Elektronika,Brno,520,5
+2023-04-20,Herní křeslo,Nábytek,Brno,5150,1
+2023-04-20,Notebook Air,Elektronika,Hradec Králové,22840,5
+2023-04-20,Herní křeslo,Nábytek,Olomouc,5160,1
+2023-04-20,Kávovar pákový,Domácnost,Brno,4010,3
+2023-04-20,Lampa stojací,Nábytek,Hradec Králové,1430,1
+2023-04-20,Lampa stojací,Nábytek,Ostrava,1460,1
+2023-04-21,Toustovač,Domácnost,Brno,570,2
+2023-04-21,Pohovka,Nábytek,Brno,15450,1
+2023-04-21,Vysavač tyčový,Domácnost,Olomouc,4990,1
+2023-04-21,Kancelářská židle,Nábytek,Ostrava,3580,4
+2023-04-21,Kancelářská židle,Nábytek,Brno,3560,1
+2023-04-22,Sluchátka,Elektronika,České Budějovice,1490,1
+2023-04-22,"Monitor 24""",Elektronika,Brno,3420,3
+2023-04-22,Lampa stojací,Nábytek,Brno,1520,1
+2023-04-22,Toustovač,Domácnost,Plzeň,590,2
+2023-04-22,Webkamera,Elektronika,Praha,1200,1
+2023-04-23,Kávovar pákový,Domácnost,Ostrava,4080,1
+2023-04-23,Kávovar pákový,Domácnost,Praha,4200,1
+2023-04-23,Kávovar automat,Domácnost,Brno,11590,1
+2023-04-23,Lampa stojací,Nábytek,Praha,1540,1
+2023-04-24,Notebook Air,Elektronika,Ostrava,20940,2
+2023-04-24,Kávovar automat,Domácnost,Praha,11510,2
+2023-04-24,"Monitor 24""",Elektronika,Brno,3490,2
+2023-04-24,Lampa stolní,Nábytek,Praha,760,2
+2023-04-25,Lampa stolní,Nábytek,Ostrava,810,1
+2023-04-25,Myš herní,Elektronika,Plzeň,1210,1
+2023-04-25,Notebook Air,Elektronika,Brno,17960,1
+2023-04-25,Mlýnek na kávu,Domácnost,Plzeň,1430,1
+2023-04-25,Kontejner,Nábytek,Ostrava,2550,1
+2023-04-25,Robotický vysavač,Domácnost,Ostrava,8730,1
+2023-04-26,Herní Notebook,Elektronika,Praha,33830,1
+2023-04-26,Ergo židle,Nábytek,Brno,11430,1
+2023-04-27,Polohovací stůl,Nábytek,Praha,12360,1
+2023-04-27,Notebook Air,Elektronika,Praha,22290,1
+2023-04-27,Mlýnek na kávu,Domácnost,Praha,1500,1
+2023-04-27,Rychlovarná konvice,Domácnost,Hradec Králové,810,1
+2023-04-27,Toustovač,Domácnost,Ostrava,590,1
+2023-04-28,Pohovka,Nábytek,Liberec,11860,1
+2023-04-28,Mlýnek na kávu,Domácnost,Praha,1480,1
+2023-04-28,Čistička vzduchu,Domácnost,Praha,4630,1
+2023-04-28,Mlýnek na kávu,Domácnost,Ostrava,1460,5
+2023-04-28,Klávesnice,Elektronika,Praha,800,1
+2023-04-28,Rychlovarná konvice,Domácnost,Liberec,830,1
+2023-04-29,Monitor prohnutý,Elektronika,Brno,6200,1
+2023-04-29,Čistička vzduchu,Domácnost,Praha,4700,1
+2023-04-29,Myš herní,Elektronika,Liberec,1000,1
+2023-04-29,Toustovač,Domácnost,Ostrava,600,1
+2023-04-29,Webkamera,Elektronika,Olomouc,1190,3
+2023-04-29,Kancelářská židle,Nábytek,Hradec Králové,3410,1
+2023-04-30,Kávovar pákový,Domácnost,Praha,3860,1
+2023-04-30,"Monitor 27"" 4K",Elektronika,Ostrava,8080,1
+2023-04-30,Webkamera,Elektronika,Praha,1210,1
+2023-04-30,Webkamera,Elektronika,Liberec,1180,2
+2023-05-01,Mlýnek na kávu,Domácnost,Praha,1430,1
+2023-05-01,Monitor prohnutý,Elektronika,Praha,6270,1
+2023-05-01,Vysavač tyčový,Domácnost,Hradec Králové,4920,4
+2023-05-01,Mlýnek na kávu,Domácnost,Brno,1490,2
+2023-05-01,"Monitor 24""",Elektronika,Brno,3530,1
+2023-05-01,Mixér,Domácnost,Praha,1160,1
+2023-05-01,Kávovar automat,Domácnost,Ostrava,12190,1
+2023-05-01,Toustovač,Domácnost,Brno,580,1
+2023-05-02,"Monitor 24""",Elektronika,Praha,3580,1
+2023-05-02,Vysavač tyčový,Domácnost,Ostrava,4900,1
+2023-05-02,Mlýnek na kávu,Domácnost,Praha,1440,2
+2023-05-02,Robotický vysavač,Domácnost,Brno,9070,1
+2023-05-02,"Monitor 24""",Elektronika,Plzeň,3400,1
+2023-05-02,Lampa stojací,Nábytek,Praha,1560,1
+2023-05-02,Vysavač tyčový,Domácnost,Praha,5030,2
+2023-05-03,Webkamera,Elektronika,Plzeň,1140,1
+2023-05-03,Kávovar pákový,Domácnost,Plzeň,4050,1
+2023-05-03,Psací stůl,Nábytek,Ostrava,4020,1
+2023-05-03,Regál,Nábytek,Olomouc,1240,1
+2023-05-03,Rychlovarná konvice,Domácnost,Plzeň,790,1
+2023-05-03,Čistička vzduchu,Domácnost,Praha,4560,1
+2023-05-04,Psací stůl,Nábytek,Plzeň,4150,1
+2023-05-04,Pohovka,Nábytek,Hradec Králové,14680,1
+2023-05-04,Knihovna,Nábytek,Praha,2910,1
+2023-05-04,Lampa stojací,Nábytek,Praha,1540,2
+2023-05-04,Polohovací stůl,Nábytek,Brno,12480,2
+2023-05-04,Lampa stojací,Nábytek,Praha,1570,1
+2023-05-04,Monitor prohnutý,Elektronika,Ostrava,6040,2
+2023-05-04,Notebook Pro,Elektronika,Brno,26020,4
+2023-05-05,Sluchátka,Elektronika,Brno,1450,1
+2023-05-05,Toustovač,Domácnost,Brno,460,1
+2023-05-05,Vysavač tyčový,Domácnost,Brno,4780,1
+2023-05-05,Robotický vysavač,Domácnost,Ostrava,9100,1
+2023-05-05,Toustovač,Domácnost,Plzeň,580,2
+2023-05-05,Myš bezdrátová,Elektronika,Praha,520,4
+2023-05-05,Čistička vzduchu,Domácnost,Brno,4640,5
+2023-05-05,Čistička vzduchu,Domácnost,Praha,4680,1
+2023-05-06,Myš bezdrátová,Elektronika,Plzeň,510,2
+2023-05-06,Toustovač,Domácnost,Praha,620,1
+2023-05-06,Notebook Air,Elektronika,Liberec,17340,2
+2023-05-06,Knihovna,Nábytek,Brno,2860,1
+2023-05-06,Rychlovarná konvice,Domácnost,Plzeň,810,2
+2023-05-06,Monitor prohnutý,Elektronika,Brno,6100,5
+2023-05-07,Herní Notebook,Elektronika,Hradec Králové,35940,2
+2023-05-07,Myš herní,Elektronika,Olomouc,1200,1
+2023-05-07,Notebook Pro,Elektronika,Brno,19140,1
+2023-05-07,"Monitor 27"" 4K",Elektronika,Praha,8140,1
+2023-05-07,Psací stůl,Nábytek,Plzeň,4100,5
+2023-05-07,Sluchátka,Elektronika,Ostrava,1550,1
+2023-05-07,Psací stůl,Nábytek,Hradec Králové,3810,1
+2023-05-07,Kávovar pákový,Domácnost,Brno,4190,1
+2023-05-08,Ergo židle,Nábytek,Brno,11760,4
+2023-05-08,Kontejner,Nábytek,Liberec,2410,1
+2023-05-08,Notebook Air,Elektronika,Praha,22280,1
+2023-05-08,Mlýnek na kávu,Domácnost,Brno,1220,2
+2023-05-08,Myš bezdrátová,Elektronika,Praha,390,3
+2023-05-08,Herní Notebook,Elektronika,Plzeň,29330,1
+2023-05-09,Herní křeslo,Nábytek,Ostrava,4830,1
+2023-05-10,Lampa stolní,Nábytek,Plzeň,790,2
+2023-05-10,Kávovar pákový,Domácnost,Praha,4080,1
+2023-05-10,Regál,Nábytek,Ostrava,1250,5
+2023-05-10,Polohovací stůl,Nábytek,Olomouc,11730,1
+2023-05-10,Sluchátka,Elektronika,Brno,1510,1
+2023-05-10,Čistička vzduchu,Domácnost,Ostrava,4440,1
+2023-05-10,Toustovač,Domácnost,Liberec,630,1
+2023-05-11,"Monitor 27"" 4K",Elektronika,Praha,7680,1
+2023-05-11,Lampa stojací,Nábytek,Olomouc,1480,1
+2023-05-11,Ergo židle,Nábytek,Praha,11710,1
+2023-05-11,Notebook Air,Elektronika,Praha,22120,1
+2023-05-12,Čistička vzduchu,Domácnost,Praha,4460,1
+2023-05-12,Robotický vysavač,Domácnost,Liberec,9360,1
+2023-05-12,Toustovač,Domácnost,České Budějovice,600,1
+2023-05-12,Myš bezdrátová,Elektronika,Brno,520,1
+2023-05-12,Robotický vysavač,Domácnost,Praha,8980,1
+2023-05-12,Knihovna,Nábytek,Praha,3100,3
+2023-05-12,Webkamera,Elektronika,Brno,1200,1
+2023-05-12,Kontejner,Nábytek,Liberec,2510,1
+2023-05-13,Lampa stojací,Nábytek,Brno,1480,1
+2023-05-13,Toustovač,Domácnost,Praha,600,1
+2023-05-13,Knihovna,Nábytek,Plzeň,2850,1
+2023-05-13,Ergo židle,Nábytek,Praha,11580,1
+2023-05-13,Webkamera,Elektronika,Praha,1150,3
+2023-05-14,Regál,Nábytek,Plzeň,1160,1
+2023-05-14,Klávesnice,Elektronika,Plzeň,790,5
+2023-05-14,Vysavač tyčový,Domácnost,Praha,5090,2
+2023-05-14,Vysavač tyčový,Domácnost,Praha,3840,1
+2023-05-14,Mlýnek na kávu,Domácnost,Olomouc,1460,1
+2023-05-14,Mlýnek na kávu,Domácnost,Ostrava,1490,2
+2023-05-14,Ergo židle,Nábytek,Brno,11560,1
+2023-05-14,Mixér,Domácnost,Hradec Králové,1200,2
+2023-05-14,Robotický vysavač,Domácnost,Brno,9420,1
+2023-05-14,Čistička vzduchu,Domácnost,Plzeň,4480,3
+2023-05-14,Herní Notebook,Elektronika,České Budějovice,34300,1
+2023-05-14,Notebook Pro,Elektronika,České Budějovice,25230,1
+2023-05-15,Notebook Air,Elektronika,Brno,21040,1
+2023-05-15,Webkamera,Elektronika,Praha,1170,1
+2023-05-15,Kávovar pákový,Domácnost,Brno,4100,2
+2023-05-15,Herní křeslo,Nábytek,Olomouc,5220,1
+2023-05-15,Kávovar automat,Domácnost,České Budějovice,11710,1
+2023-05-15,Kávovar pákový,Domácnost,Praha,4050,3
+2023-05-15,Toustovač,Domácnost,Praha,630,1
+2023-05-16,Lampa stojací,Nábytek,Brno,1430,1
+2023-05-16,Polohovací stůl,Nábytek,Ostrava,11650,1
+2023-05-16,Kontejner,Nábytek,Brno,2450,1
+2023-05-16,Rychlovarná konvice,Domácnost,Praha,770,2
+2023-05-16,Myš bezdrátová,Elektronika,Praha,500,1
+2023-05-16,Lampa stolní,Nábytek,Olomouc,770,1
+2023-05-16,Vysavač tyčový,Domácnost,Praha,4040,2
+2023-05-16,Regál,Nábytek,Plzeň,990,1
+2023-05-16,Rychlovarná konvice,Domácnost,Praha,760,1
+2023-05-17,Mlýnek na kávu,Domácnost,Liberec,1570,1
+2023-05-17,Myš herní,Elektronika,Praha,1180,1
+2023-05-17,Myš herní,Elektronika,Ostrava,1160,2
+2023-05-17,Pohovka,Nábytek,Brno,15470,1
+2023-05-18,Rychlovarná konvice,Domácnost,Praha,760,10
+2023-05-18,Notebook Pro,Elektronika,Praha,24540,2
+2023-05-18,Myš bezdrátová,Elektronika,Ostrava,510,1
+2023-05-18,Psací stůl,Nábytek,Ostrava,3890,1
+2023-05-19,Knihovna,Nábytek,Ostrava,2360,2
+2023-05-19,Polohovací stůl,Nábytek,Ostrava,11820,1
+2023-05-19,Psací stůl,Nábytek,Praha,3910,1
+2023-05-20,Notebook Air,Elektronika,České Budějovice,21730,1
+2023-05-20,Klávesnice,Elektronika,Hradec Králové,830,2
+2023-05-20,Robotický vysavač,Domácnost,Ostrava,9090,1
+2023-05-20,Lampa stojací,Nábytek,Praha,1500,1
+2023-05-20,Kávovar automat,Domácnost,Ostrava,12160,1
+2023-05-20,Kávovar pákový,Domácnost,Ostrava,4010,1
+2023-05-20,Robotický vysavač,Domácnost,Brno,8600,1
+2023-05-20,Myš herní,Elektronika,Praha,1210,1
+2023-05-21,Herní křeslo,Nábytek,Brno,5160,1
+2023-05-21,Polohovací stůl,Nábytek,Brno,11550,1
+2023-05-21,Kontejner,Nábytek,Ostrava,2470,2
+2023-05-21,Klávesnice,Elektronika,Liberec,790,1
+2023-05-21,Myš bezdrátová,Elektronika,Liberec,520,1
+2023-05-22,Polohovací stůl,Nábytek,Ostrava,12000,1
+2023-05-22,Herní Notebook,Elektronika,Ostrava,34150,1
+2023-05-22,Polohovací stůl,Nábytek,České Budějovice,12140,1
+2023-05-22,Lampa stolní,Nábytek,Plzeň,800,1
+2023-05-22,Klávesnice,Elektronika,České Budějovice,770,1
+2023-05-22,Polohovací stůl,Nábytek,Praha,11650,1
+2023-05-22,Kávovar automat,Domácnost,Praha,12400,2
+2023-05-22,Robotický vysavač,Domácnost,Brno,8690,2
+2023-05-23,Kancelářská židle,Nábytek,Ostrava,3620,1
+2023-05-23,Mixér,Domácnost,Plzeň,910,1
+2023-05-23,Herní křeslo,Nábytek,Brno,3870,10
+2023-05-23,Herní křeslo,Nábytek,Liberec,4050,1
+2023-05-23,Toustovač,Domácnost,Liberec,600,2
+2023-05-23,Mlýnek na kávu,Domácnost,Hradec Králové,1460,3
+2023-05-24,Myš bezdrátová,Elektronika,České Budějovice,520,1
+2023-05-24,Notebook Air,Elektronika,Ostrava,23100,1
+2023-05-24,USB Hub,Elektronika,Olomouc,410,1
+2023-05-25,"Monitor 24""",Elektronika,Praha,3610,1
+2023-05-25,Toustovač,Domácnost,Brno,620,1
+2023-05-25,Čistička vzduchu,Domácnost,Plzeň,4660,1
+2023-05-25,Mlýnek na kávu,Domácnost,Brno,1520,3
+2023-05-25,Kávovar automat,Domácnost,Praha,12590,4
+2023-05-25,USB Hub,Elektronika,Hradec Králové,400,2
+2023-05-26,Polohovací stůl,Nábytek,České Budějovice,9280,1
+2023-05-26,Rychlovarná konvice,Domácnost,Hradec Králové,780,1
+2023-05-26,Polohovací stůl,Nábytek,Plzeň,11490,5
+2023-05-26,Regál,Nábytek,Praha,1180,1
+2023-05-27,Herní křeslo,Nábytek,Olomouc,5020,1
+2023-05-27,Čistička vzduchu,Domácnost,České Budějovice,4570,3
+2023-05-27,Kávovar pákový,Domácnost,Praha,3200,1
+2023-05-27,Vysavač tyčový,Domácnost,Praha,4870,1
+2023-05-27,Myš herní,Elektronika,Brno,1140,1
+2023-05-28,Rychlovarná konvice,Domácnost,Brno,760,1
+2023-05-28,Pohovka,Nábytek,Ostrava,14300,1
+2023-05-28,Rychlovarná konvice,Domácnost,Praha,770,1
+2023-05-29,Pohovka,Nábytek,Praha,14600,1
+2023-05-29,Kávovar pákový,Domácnost,Plzeň,4200,1
+2023-05-29,Myš bezdrátová,Elektronika,Plzeň,500,1
+2023-05-29,Kávovar pákový,Domácnost,Praha,4190,1
+2023-05-29,Ergo židle,Nábytek,Praha,11790,2
+2023-05-29,Webkamera,Elektronika,Hradec Králové,1260,4
+2023-05-29,Robotický vysavač,Domácnost,České Budějovice,9100,2
+2023-05-29,Toustovač,Domácnost,Hradec Králové,610,1
+2023-05-29,Herní Notebook,Elektronika,Ostrava,36420,1
+2023-05-29,Psací stůl,Nábytek,Praha,4030,1
+2023-05-30,Kontejner,Nábytek,Liberec,2580,1
+2023-05-30,Čistička vzduchu,Domácnost,Praha,4700,1
+2023-05-30,Herní křeslo,Nábytek,Liberec,4800,1
+2023-05-30,Sluchátka,Elektronika,Brno,1500,1
+2023-05-31,Myš bezdrátová,Elektronika,Praha,520,10
+2023-05-31,Kancelářská židle,Nábytek,Brno,3420,1
+2023-05-31,Kávovar automat,Domácnost,Praha,12470,3
+2023-05-31,Notebook Air,Elektronika,České Budějovice,22500,1
+2023-05-31,Čistička vzduchu,Domácnost,Ostrava,4490,1
+2023-05-31,"Monitor 24""",Elektronika,Praha,2700,2
+2023-05-31,Notebook Pro,Elektronika,Praha,26210,1
+2023-05-31,Regál,Nábytek,České Budějovice,1180,1
+2023-05-31,Webkamera,Elektronika,Liberec,1230,1
+2023-05-31,Klávesnice,Elektronika,Praha,660,2
+2023-05-31,Myš herní,Elektronika,Brno,1190,1
+2023-06-01,Mixér,Domácnost,Brno,1140,1
+2023-06-01,Kávovar pákový,Domácnost,Praha,3200,4
+2023-06-01,Vysavač tyčový,Domácnost,Olomouc,5210,1
+2023-06-02,Pohovka,Nábytek,Brno,15660,2
+2023-06-02,Robotický vysavač,Domácnost,Praha,9030,1
+2023-06-02,Mixér,Domácnost,Brno,1250,1
+2023-06-02,Herní křeslo,Nábytek,Brno,5230,1
+2023-06-03,Čistička vzduchu,Domácnost,Praha,4640,3
+2023-06-03,Herní Notebook,Elektronika,Praha,34990,1
+2023-06-04,"Monitor 24""",Elektronika,Hradec Králové,3490,1
+2023-06-04,Čistička vzduchu,Domácnost,Liberec,4700,1
+2023-06-04,"Monitor 24""",Elektronika,Ostrava,3630,1
+2023-06-04,Myš herní,Elektronika,Brno,1210,2
+2023-06-04,Myš herní,Elektronika,Ostrava,1200,1
+2023-06-05,Kontejner,Nábytek,Praha,2410,1
+2023-06-05,Toustovač,Domácnost,Brno,620,2
+2023-06-06,"Monitor 27"" 4K",Elektronika,Praha,8300,1
+2023-06-06,Sluchátka,Elektronika,Brno,1480,10
+2023-06-06,Monitor prohnutý,Elektronika,Olomouc,5740,1
+2023-06-06,Notebook Air,Elektronika,Olomouc,18240,1
+2023-06-07,USB Hub,Elektronika,Praha,420,1
+2023-06-07,Čistička vzduchu,Domácnost,Olomouc,4400,1
+2023-06-07,Webkamera,Elektronika,Ostrava,1150,1
+2023-06-07,Kávovar automat,Domácnost,Plzeň,12400,3
+2023-06-07,Herní Notebook,Elektronika,Ostrava,35520,1
+2023-06-07,Čistička vzduchu,Domácnost,Brno,4690,1
+2023-06-07,Klávesnice,Elektronika,Brno,670,2
+2023-06-08,Toustovač,Domácnost,Plzeň,630,1
+2023-06-08,Psací stůl,Nábytek,Praha,3930,3
+2023-06-08,Notebook Air,Elektronika,Hradec Králové,22070,1
+2023-06-08,Notebook Air,Elektronika,Plzeň,17420,1
+2023-06-08,Knihovna,Nábytek,Hradec Králové,3050,4
+2023-06-08,Webkamera,Elektronika,Praha,1210,1
+2023-06-09,Myš bezdrátová,Elektronika,Brno,520,1
+2023-06-09,Kávovar pákový,Domácnost,Brno,4190,1
+2023-06-10,Rychlovarná konvice,Domácnost,Brno,620,2
+2023-06-10,Lampa stojací,Nábytek,Praha,1240,1
+2023-06-10,Čistička vzduchu,Domácnost,Praha,4620,2
+2023-06-11,Notebook Air,Elektronika,Praha,22300,1
+2023-06-11,Knihovna,Nábytek,České Budějovice,3020,1
+2023-06-11,Klávesnice,Elektronika,Praha,820,1
+2023-06-11,"Monitor 24""",Elektronika,Olomouc,3590,1
+2023-06-11,Čistička vzduchu,Domácnost,České Budějovice,4640,1
+2023-06-12,Vysavač tyčový,Domácnost,Brno,5180,1
+2023-06-12,Mixér,Domácnost,Ostrava,1170,1
+2023-06-12,Lampa stojací,Nábytek,Ostrava,1470,1
+2023-06-12,Polohovací stůl,Nábytek,Olomouc,11920,1
+2023-06-12,Sluchátka,Elektronika,Plzeň,1180,1
+2023-06-12,Regál,Nábytek,Brno,1220,2
+2023-06-12,Mixér,Domácnost,Plzeň,1180,2
+2023-06-13,Toustovač,Domácnost,Praha,580,1
+2023-06-13,Mlýnek na kávu,Domácnost,Plzeň,1470,1
+2023-06-13,Robotický vysavač,Domácnost,Brno,7230,4
+2023-06-13,"Monitor 24""",Elektronika,Brno,3450,3
+2023-06-13,Lampa stolní,Nábytek,Hradec Králové,810,1
+2023-06-14,Herní Notebook,Elektronika,Praha,36710,1
+2023-06-14,Mlýnek na kávu,Domácnost,Olomouc,1490,1
+2023-06-14,"Monitor 24""",Elektronika,Hradec Králové,3560,1
+2023-06-14,Ergo židle,Nábytek,Praha,11880,1
+2023-06-15,Kávovar pákový,Domácnost,České Budějovice,3810,1
+2023-06-15,Knihovna,Nábytek,Ostrava,2950,3
+2023-06-15,Ergo židle,Nábytek,Praha,12420,1
+2023-06-15,Mixér,Domácnost,Praha,940,5
+2023-06-16,Lampa stojací,Nábytek,Praha,1460,1
+2023-06-16,Robotický vysavač,Domácnost,České Budějovice,9000,2
+2023-06-16,Regál,Nábytek,Plzeň,1240,3
+2023-06-16,Toustovač,Domácnost,Plzeň,610,1
+2023-06-16,Mlýnek na kávu,Domácnost,Hradec Králové,1530,1
+2023-06-16,Lampa stojací,Nábytek,Brno,1460,2
+2023-06-17,Ergo židle,Nábytek,Hradec Králové,12480,1
+2023-06-17,"Monitor 27"" 4K",Elektronika,Liberec,7700,1
+2023-06-17,Vysavač tyčový,Domácnost,České Budějovice,5010,2
+2023-06-17,Kancelářská židle,Nábytek,Brno,3460,1
+2023-06-17,Monitor prohnutý,Elektronika,Praha,4850,1
+2023-06-18,Kontejner,Nábytek,Praha,2600,1
+2023-06-18,Regál,Nábytek,Ostrava,1170,1
+2023-06-18,Psací stůl,Nábytek,Liberec,3120,1
+2023-06-18,"Monitor 27"" 4K",Elektronika,Praha,8370,1
+2023-06-18,Mixér,Domácnost,Plzeň,1230,1
+2023-06-19,Robotický vysavač,Domácnost,Brno,8640,2
+2023-06-19,Vysavač tyčový,Domácnost,Ostrava,5200,3
+2023-06-19,Mlýnek na kávu,Domácnost,Hradec Králové,1570,1
+2023-06-19,Sluchátka,Elektronika,Praha,1430,1
+2023-06-19,Notebook Air,Elektronika,Praha,21640,1
+2023-06-19,Mixér,Domácnost,Brno,1210,2
+2023-06-19,Psací stůl,Nábytek,Olomouc,3840,2
+2023-06-20,Regál,Nábytek,Brno,1170,1
+2023-06-20,Čistička vzduchu,Domácnost,Liberec,4620,1
+2023-06-20,Polohovací stůl,Nábytek,Praha,12000,1
+2023-06-20,Myš herní,Elektronika,Plzeň,1140,1
+2023-06-20,USB Hub,Elektronika,Ostrava,390,2
+2023-06-20,Monitor prohnutý,Elektronika,Praha,6160,5
+2023-06-20,Mlýnek na kávu,Domácnost,Brno,1480,2
+2023-06-20,Kávovar automat,Domácnost,České Budějovice,11590,1
+2023-06-20,Pohovka,Nábytek,Plzeň,14590,1
+2023-06-21,Regál,Nábytek,Praha,1160,1
+2023-06-21,Klávesnice,Elektronika,Brno,640,1
+2023-06-21,Rychlovarná konvice,Domácnost,Brno,830,10
+2023-06-21,Mixér,Domácnost,Brno,1200,1
+2023-06-21,Sluchátka,Elektronika,Brno,1440,2
+2023-06-21,Knihovna,Nábytek,Praha,2990,1
+2023-06-21,Myš herní,Elektronika,Praha,1250,1
+2023-06-21,Vysavač tyčový,Domácnost,Olomouc,4880,1
+2023-06-21,Knihovna,Nábytek,Brno,2970,3
+2023-06-22,Lampa stolní,Nábytek,Praha,820,1
+2023-06-22,Toustovač,Domácnost,Liberec,600,10
+2023-06-22,USB Hub,Elektronika,Brno,400,4
+2023-06-23,Toustovač,Domácnost,Brno,620,1
+2023-06-23,Kontejner,Nábytek,Olomouc,2590,1
+2023-06-23,Ergo židle,Nábytek,Praha,11830,1
+2023-06-23,Psací stůl,Nábytek,Olomouc,3810,1
+2023-06-23,Mlýnek na kávu,Domácnost,Praha,1500,1
+2023-06-23,Kontejner,Nábytek,Praha,2530,1
+2023-06-23,Herní Notebook,Elektronika,Praha,34290,1
+2023-06-23,Ergo židle,Nábytek,Brno,9880,1
+2023-06-24,Lampa stolní,Nábytek,Brno,790,1
+2023-06-24,Klávesnice,Elektronika,Plzeň,760,1
+2023-06-24,Kontejner,Nábytek,Liberec,2580,1
+2023-06-24,Ergo židle,Nábytek,Ostrava,11470,1
+2023-06-25,"Monitor 24""",Elektronika,Brno,3400,2
+2023-06-25,Polohovací stůl,Nábytek,Liberec,11870,2
+2023-06-25,Toustovač,Domácnost,Praha,570,1
+2023-06-25,Herní Notebook,Elektronika,Ostrava,33300,1
+2023-06-25,Sluchátka,Elektronika,Hradec Králové,1520,1
+2023-06-25,Lampa stojací,Nábytek,Olomouc,1470,2
+2023-06-25,Herní křeslo,Nábytek,Plzeň,5060,4
+2023-06-25,Webkamera,Elektronika,Ostrava,1210,1
+2023-06-25,Polohovací stůl,Nábytek,České Budějovice,11620,1
+2023-06-26,Lampa stojací,Nábytek,Liberec,1540,2
+2023-06-26,USB Hub,Elektronika,Ostrava,400,1
+2023-06-26,Rychlovarná konvice,Domácnost,Praha,770,1
+2023-06-26,Knihovna,Nábytek,Brno,3040,3
+2023-06-26,Lampa stojací,Nábytek,Praha,1450,1
+2023-06-26,Mlýnek na kávu,Domácnost,Olomouc,1510,1
+2023-06-26,Herní Notebook,Elektronika,Brno,34740,1
+2023-06-27,Robotický vysavač,Domácnost,Praha,9050,1
+2023-06-27,Psací stůl,Nábytek,Hradec Králové,3840,1
+2023-06-27,Čistička vzduchu,Domácnost,Liberec,4440,1
+2023-06-27,Kancelářská židle,Nábytek,Plzeň,2890,1
+2023-06-27,"Monitor 24""",Elektronika,Plzeň,3470,4
+2023-06-28,Psací stůl,Nábytek,Olomouc,4010,1
+2023-06-28,"Monitor 27"" 4K",Elektronika,Praha,7940,2
+2023-06-28,Webkamera,Elektronika,Brno,1210,1
+2023-06-28,Mixér,Domácnost,České Budějovice,1190,1
+2023-06-28,"Monitor 27"" 4K",Elektronika,Hradec Králové,7740,1
+2023-06-28,USB Hub,Elektronika,Plzeň,410,1
+2023-06-28,Ergo židle,Nábytek,Ostrava,12190,1
+2023-06-28,Lampa stolní,Nábytek,Liberec,760,1
+2023-06-28,Mixér,Domácnost,Liberec,1140,1
+2023-06-29,Toustovač,Domácnost,Brno,600,1
+2023-06-29,Herní křeslo,Nábytek,Praha,4910,1
+2023-06-29,Monitor prohnutý,Elektronika,Praha,5950,1
+2023-06-29,Robotický vysavač,Domácnost,Praha,9080,1
+2023-06-29,Herní křeslo,Nábytek,Praha,5130,1
+2023-06-30,Robotický vysavač,Domácnost,Ostrava,9390,1
+2023-06-30,"Monitor 27"" 4K",Elektronika,Praha,8260,2
+2023-06-30,Kontejner,Nábytek,Brno,2440,1
+2023-06-30,Kontejner,Nábytek,Ostrava,2400,3
+2023-06-30,Mlýnek na kávu,Domácnost,České Budějovice,1440,1
+2023-07-01,Rychlovarná konvice,Domácnost,Ostrava,820,1
+2023-07-01,Sluchátka,Elektronika,Brno,1420,1
+2023-07-01,Notebook Air,Elektronika,Olomouc,17070,1
+2023-07-01,Lampa stojací,Nábytek,Plzeň,1530,2
+2023-07-01,Knihovna,Nábytek,Praha,3120,1
+2023-07-01,Klávesnice,Elektronika,Ostrava,760,3
+2023-07-01,Čistička vzduchu,Domácnost,Praha,4310,1
+2023-07-01,Ergo židle,Nábytek,Praha,12180,1
+2023-07-01,Rychlovarná konvice,Domácnost,Ostrava,780,2
+2023-07-02,Sluchátka,Elektronika,Ostrava,1440,1
+2023-07-02,Robotický vysavač,Domácnost,Praha,9240,4
+2023-07-02,Kávovar automat,Domácnost,Brno,11510,4
+2023-07-02,Čistička vzduchu,Domácnost,Praha,4540,1
+2023-07-02,Myš bezdrátová,Elektronika,Praha,520,1
+2023-07-03,Klávesnice,Elektronika,Liberec,840,1
+2023-07-03,Mixér,Domácnost,Brno,1250,2
+2023-07-03,Monitor prohnutý,Elektronika,Praha,6040,4
+2023-07-03,Kancelářská židle,Nábytek,Praha,3420,1
+2023-07-04,Webkamera,Elektronika,Ostrava,1200,1
+2023-07-04,Notebook Air,Elektronika,Plzeň,21360,1
+2023-07-04,Regál,Nábytek,Praha,1220,1
+2023-07-04,Kávovar automat,Domácnost,Plzeň,12490,1
+2023-07-04,Myš herní,Elektronika,Liberec,1240,2
+2023-07-04,Vysavač tyčový,Domácnost,Olomouc,4870,2
+2023-07-05,Mlýnek na kávu,Domácnost,Brno,1480,1
+2023-07-05,Kávovar pákový,Domácnost,Praha,4040,1
+2023-07-05,USB Hub,Elektronika,Brno,420,3
+2023-07-06,Robotický vysavač,Domácnost,Plzeň,9450,1
+2023-07-06,Mixér,Domácnost,Brno,1170,1
+2023-07-06,Myš herní,Elektronika,Brno,910,2
+2023-07-07,"Monitor 24""",Elektronika,Liberec,3520,1
+2023-07-07,Kancelářská židle,Nábytek,Ostrava,3580,1
+2023-07-07,Ergo židle,Nábytek,Praha,11960,3
+2023-07-07,Vysavač tyčový,Domácnost,Plzeň,5050,2
+2023-07-07,Regál,Nábytek,Brno,1180,2
+2023-07-08,USB Hub,Elektronika,Praha,390,1
+2023-07-08,Toustovač,Domácnost,Brno,620,1
+2023-07-08,Mixér,Domácnost,Plzeň,1200,1
+2023-07-08,Robotický vysavač,Domácnost,Praha,8650,2
+2023-07-08,Klávesnice,Elektronika,Praha,840,1
+2023-07-08,Ergo židle,Nábytek,Brno,12160,1
+2023-07-08,Toustovač,Domácnost,Praha,610,1
+2023-07-09,Notebook Air,Elektronika,Ostrava,21610,1
+2023-07-09,Notebook Air,Elektronika,Brno,21320,2
+2023-07-09,Notebook Air,Elektronika,Olomouc,21250,1
+2023-07-09,Notebook Pro,Elektronika,Brno,26010,1
+2023-07-10,Čistička vzduchu,Domácnost,Plzeň,4510,3
+2023-07-10,Klávesnice,Elektronika,Praha,780,4
+2023-07-10,Toustovač,Domácnost,Hradec Králové,600,1
+2023-07-10,Lampa stojací,Nábytek,Ostrava,1200,1
+2023-07-10,Monitor prohnutý,Elektronika,Praha,6060,2
+2023-07-10,Mlýnek na kávu,Domácnost,Brno,1480,2
+2023-07-10,Herní křeslo,Nábytek,Ostrava,5030,3
+2023-07-11,Mlýnek na kávu,Domácnost,Ostrava,1480,3
+2023-07-11,Regál,Nábytek,Brno,1180,1
+2023-07-11,Notebook Air,Elektronika,Ostrava,21340,1
+2023-07-12,Čistička vzduchu,Domácnost,Praha,4380,1
+2023-07-12,Psací stůl,Nábytek,Plzeň,4000,1
+2023-07-12,Mlýnek na kávu,Domácnost,Ostrava,1500,1
+2023-07-12,"Monitor 24""",Elektronika,Plzeň,3600,1
+2023-07-12,Klávesnice,Elektronika,Praha,630,1
+2023-07-12,Toustovač,Domácnost,Ostrava,580,1
+2023-07-12,Kontejner,Nábytek,Liberec,2410,1
+2023-07-12,Monitor prohnutý,Elektronika,Ostrava,6050,1
+2023-07-12,Kávovar automat,Domácnost,Praha,12260,1
+2023-07-12,Kontejner,Nábytek,Praha,2060,1
+2023-07-13,"Monitor 24""",Elektronika,České Budějovice,3490,4
+2023-07-13,Mixér,Domácnost,Praha,1200,1
+2023-07-13,Rychlovarná konvice,Domácnost,Ostrava,780,2
+2023-07-14,"Monitor 27"" 4K",Elektronika,Olomouc,8260,1
+2023-07-14,Notebook Pro,Elektronika,České Budějovice,24110,1
+2023-07-14,Mlýnek na kávu,Domácnost,Praha,1500,1
+2023-07-15,Kávovar automat,Domácnost,Brno,12580,3
+2023-07-15,Vysavač tyčový,Domácnost,Praha,4850,1
+2023-07-15,Rychlovarná konvice,Domácnost,Praha,810,1
+2023-07-15,Vysavač tyčový,Domácnost,Hradec Králové,5090,1
+2023-07-15,Klávesnice,Elektronika,Ostrava,760,2
+2023-07-15,Robotický vysavač,Domácnost,Brno,8820,1
+2023-07-15,Mixér,Domácnost,Praha,1240,1
+2023-07-15,Knihovna,Nábytek,Praha,3050,2
+2023-07-15,Psací stůl,Nábytek,Praha,3810,3
+2023-07-15,Polohovací stůl,Nábytek,Olomouc,11500,1
+2023-07-15,Lampa stolní,Nábytek,Brno,830,1
+2023-07-16,Regál,Nábytek,Brno,1220,1
+2023-07-17,Monitor prohnutý,Elektronika,Liberec,6170,1
+2023-07-17,Kontejner,Nábytek,Hradec Králové,2420,1
+2023-07-17,Ergo židle,Nábytek,Liberec,9770,2
+2023-07-17,Toustovač,Domácnost,Hradec Králové,600,4
+2023-07-17,Myš bezdrátová,Elektronika,Brno,520,1
+2023-07-17,Rychlovarná konvice,Domácnost,České Budějovice,790,3
+2023-07-17,Mixér,Domácnost,Praha,1230,1
+2023-07-17,Rychlovarná konvice,Domácnost,Praha,810,3
+2023-07-17,Polohovací stůl,Nábytek,Praha,11800,1
+2023-07-18,Toustovač,Domácnost,Praha,600,1
+2023-07-18,"Monitor 24""",Elektronika,Praha,3570,1
+2023-07-18,Pohovka,Nábytek,České Budějovice,15160,2
+2023-07-19,Kontejner,Nábytek,Praha,2010,1
+2023-07-19,Herní křeslo,Nábytek,Liberec,5060,3
+2023-07-19,Herní křeslo,Nábytek,Praha,5080,1
+2023-07-19,Sluchátka,Elektronika,Praha,1550,1
+2023-07-19,Lampa stojací,Nábytek,Brno,1460,3
+2023-07-19,Ergo židle,Nábytek,Ostrava,11750,1
+2023-07-19,Kávovar automat,Domácnost,Plzeň,11440,1
+2023-07-20,Myš bezdrátová,Elektronika,Praha,490,1
+2023-07-20,Toustovač,Domácnost,Praha,480,1
+2023-07-20,Regál,Nábytek,Brno,1200,1
+2023-07-20,Kávovar pákový,Domácnost,Brno,4150,1
+2023-07-21,Regál,Nábytek,Ostrava,1140,1
+2023-07-21,Čistička vzduchu,Domácnost,Praha,3710,1
+2023-07-21,Vysavač tyčový,Domácnost,Olomouc,4920,2
+2023-07-21,Knihovna,Nábytek,Brno,3060,1
+2023-07-21,Notebook Pro,Elektronika,Plzeň,26160,1
+2023-07-21,Mlýnek na kávu,Domácnost,Praha,1160,1
+2023-07-22,Monitor prohnutý,Elektronika,Brno,5800,5
+2023-07-22,Polohovací stůl,Nábytek,Brno,11520,1
+2023-07-22,Rychlovarná konvice,Domácnost,Praha,840,1
+2023-07-22,"Monitor 27"" 4K",Elektronika,České Budějovice,7940,1
+2023-07-22,Toustovač,Domácnost,Olomouc,590,4
+2023-07-22,Vysavač tyčový,Domácnost,Praha,5070,1
+2023-07-23,"Monitor 27"" 4K",Elektronika,Brno,8040,1
+2023-07-23,Myš bezdrátová,Elektronika,Plzeň,490,1
+2023-07-23,Kávovar automat,Domácnost,Olomouc,12490,2
+2023-07-24,Sluchátka,Elektronika,Praha,1530,1
+2023-07-24,Herní křeslo,Nábytek,Brno,4070,1
+2023-07-24,Lampa stolní,Nábytek,Praha,830,2
+2023-07-24,Myš herní,Elektronika,Plzeň,1210,1
+2023-07-24,Notebook Pro,Elektronika,Praha,24780,2
+2023-07-25,Regál,Nábytek,Praha,1220,1
+2023-07-25,Ergo židle,Nábytek,Praha,12430,2
+2023-07-25,Knihovna,Nábytek,Hradec Králové,2280,1
+2023-07-25,Sluchátka,Elektronika,České Budějovice,1520,1
+2023-07-26,Regál,Nábytek,Ostrava,1210,1
+2023-07-26,Lampa stojací,Nábytek,Praha,1430,2
+2023-07-26,Psací stůl,Nábytek,Plzeň,3880,3
+2023-07-26,Webkamera,Elektronika,Hradec Králové,1160,1
+2023-07-26,Kancelářská židle,Nábytek,Praha,3530,2
+2023-07-27,Pohovka,Nábytek,Praha,14820,1
+2023-07-27,Mlýnek na kávu,Domácnost,Liberec,1430,2
+2023-07-27,Kancelářská židle,Nábytek,Plzeň,3570,2
+2023-07-27,Toustovač,Domácnost,Plzeň,580,1
+2023-07-27,Regál,Nábytek,Praha,1150,1
+2023-07-27,Ergo židle,Nábytek,Liberec,11560,1
+2023-07-27,Notebook Air,Elektronika,Praha,22120,4
+2023-07-28,Herní Notebook,Elektronika,Praha,35270,1
+2023-07-28,Toustovač,Domácnost,Brno,570,1
+2023-07-28,Čistička vzduchu,Domácnost,Olomouc,4310,1
+2023-07-28,Myš herní,Elektronika,Plzeň,1250,2
+2023-07-29,Kancelářská židle,Nábytek,Praha,3630,1
+2023-07-29,Ergo židle,Nábytek,Plzeň,12230,2
+2023-07-29,"Monitor 27"" 4K",Elektronika,Liberec,7840,2
+2023-07-29,Kávovar automat,Domácnost,Brno,12140,1
+2023-07-29,Toustovač,Domácnost,Plzeň,460,1
+2023-07-29,Herní křeslo,Nábytek,Olomouc,4980,1
+2023-07-29,Kancelářská židle,Nábytek,Hradec Králové,3390,2
+2023-07-30,Vysavač tyčový,Domácnost,České Budějovice,4000,1
+2023-07-30,Monitor prohnutý,Elektronika,Liberec,6130,10
+2023-07-30,Herní křeslo,Nábytek,Olomouc,4760,1
+2023-07-31,Čistička vzduchu,Domácnost,Hradec Králové,4430,3
+2023-07-31,Herní Notebook,Elektronika,Praha,33640,1
+2023-07-31,Sluchátka,Elektronika,Brno,1440,1
+2023-07-31,"Monitor 24""",Elektronika,Olomouc,3440,1
+2023-07-31,Notebook Air,Elektronika,Liberec,22110,2
+2023-08-01,Kávovar pákový,Domácnost,Ostrava,3900,1
+2023-08-01,Robotický vysavač,Domácnost,Liberec,8560,2
+2023-08-01,Rychlovarná konvice,Domácnost,Ostrava,780,2
+2023-08-01,Robotický vysavač,Domácnost,Praha,8870,1
+2023-08-01,Pohovka,Nábytek,Praha,15440,2
+2023-08-03,Toustovač,Domácnost,Praha,590,1
+2023-08-03,Psací stůl,Nábytek,Ostrava,4030,3
+2023-08-03,Kávovar pákový,Domácnost,Plzeň,4190,1
+2023-08-03,Monitor prohnutý,Elektronika,Brno,5850,1
+2023-08-03,Robotický vysavač,Domácnost,Ostrava,9020,1
+2023-08-03,Myš bezdrátová,Elektronika,Brno,480,1
+2023-08-03,Myš herní,Elektronika,Brno,1220,1
+2023-08-04,Vysavač tyčový,Domácnost,Liberec,4860,1
+2023-08-04,Lampa stolní,Nábytek,Brno,670,2
+2023-08-04,Lampa stolní,Nábytek,Praha,810,2
+2023-08-04,USB Hub,Elektronika,Praha,300,2
+2023-08-05,Čistička vzduchu,Domácnost,Praha,4530,1
+2023-08-05,Kontejner,Nábytek,Brno,2510,2
+2023-08-05,Ergo židle,Nábytek,Brno,12310,1
+2023-08-05,Mlýnek na kávu,Domácnost,Praha,1250,1
+2023-08-05,Robotický vysavač,Domácnost,Praha,9410,1
+2023-08-05,Vysavač tyčový,Domácnost,Brno,5160,2
+2023-08-06,Sluchátka,Elektronika,Praha,1530,1
+2023-08-06,Robotický vysavač,Domácnost,Plzeň,6930,1
+2023-08-06,Robotický vysavač,Domácnost,Praha,8960,3
+2023-08-06,Lampa stolní,Nábytek,Praha,790,1
+2023-08-06,Vysavač tyčový,Domácnost,Brno,5240,1
+2023-08-06,Psací stůl,Nábytek,Ostrava,3960,1
+2023-08-06,USB Hub,Elektronika,Praha,390,2
+2023-08-06,Sluchátka,Elektronika,Praha,1180,1
+2023-08-07,Lampa stolní,Nábytek,Brno,780,1
+2023-08-07,Mlýnek na kávu,Domácnost,Plzeň,1210,3
+2023-08-07,"Monitor 27"" 4K",Elektronika,Praha,7820,1
+2023-08-07,USB Hub,Elektronika,Brno,390,5
+2023-08-07,Rychlovarná konvice,Domácnost,České Budějovice,760,1
+2023-08-07,Notebook Pro,Elektronika,Olomouc,24150,1
+2023-08-08,Kávovar automat,Domácnost,Ostrava,12090,2
+2023-08-08,Webkamera,Elektronika,Brno,1170,1
+2023-08-08,Herní křeslo,Nábytek,Plzeň,4770,1
+2023-08-08,Mixér,Domácnost,Praha,1230,1
+2023-08-08,Toustovač,Domácnost,Ostrava,460,5
+2023-08-08,Vysavač tyčový,Domácnost,Ostrava,4910,1
+2023-08-08,Myš herní,Elektronika,Praha,1170,2
+2023-08-08,Pohovka,Nábytek,Praha,15370,4
+2023-08-09,Kancelářská židle,Nábytek,Brno,3460,1
+2023-08-09,Myš bezdrátová,Elektronika,Ostrava,520,1
+2023-08-09,Notebook Air,Elektronika,Brno,22190,1
+2023-08-09,Notebook Air,Elektronika,Hradec Králové,17020,1
+2023-08-09,Lampa stolní,Nábytek,Plzeň,780,5
+2023-08-09,Myš herní,Elektronika,Liberec,1160,1
+2023-08-09,Toustovač,Domácnost,Brno,570,2
+2023-08-09,Knihovna,Nábytek,Brno,3110,3
+2023-08-09,Robotický vysavač,Domácnost,Brno,8820,1
+2023-08-10,Webkamera,Elektronika,Praha,1200,1
+2023-08-10,Regál,Nábytek,České Budějovice,1160,1
+2023-08-10,Monitor prohnutý,Elektronika,Brno,5760,1
+2023-08-10,Lampa stolní,Nábytek,Ostrava,800,1
+2023-08-10,Notebook Air,Elektronika,České Budějovice,21990,2
+2023-08-10,Kávovar pákový,Domácnost,Ostrava,3050,5
+2023-08-11,Psací stůl,Nábytek,Liberec,3990,1
+2023-08-11,Kávovar pákový,Domácnost,Brno,3850,4
+2023-08-11,Klávesnice,Elektronika,Ostrava,810,1
+2023-08-11,Sluchátka,Elektronika,Hradec Králové,1510,2
+2023-08-12,Lampa stojací,Nábytek,Liberec,1520,1
+2023-08-12,Monitor prohnutý,Elektronika,Hradec Králové,6080,1
+2023-08-13,"Monitor 24""",Elektronika,Brno,3510,1
+2023-08-13,Myš herní,Elektronika,Praha,1170,1
+2023-08-13,Monitor prohnutý,Elektronika,Ostrava,5900,1
+2023-08-13,Notebook Pro,Elektronika,Hradec Králové,26020,1
+2023-08-13,Toustovač,Domácnost,Praha,610,1
+2023-08-13,Sluchátka,Elektronika,Praha,1450,1
+2023-08-13,Čistička vzduchu,Domácnost,Ostrava,4640,2
+2023-08-13,Toustovač,Domácnost,Praha,480,1
+2023-08-14,Notebook Air,Elektronika,České Budějovice,21310,2
+2023-08-14,Toustovač,Domácnost,Plzeň,590,5
+2023-08-14,Toustovač,Domácnost,Praha,500,2
+2023-08-15,Čistička vzduchu,Domácnost,Ostrava,4500,1
+2023-08-15,Myš bezdrátová,Elektronika,Brno,500,1
+2023-08-15,"Monitor 24""",Elektronika,Plzeň,3490,5
+2023-08-15,Knihovna,Nábytek,Ostrava,3060,1
+2023-08-15,Pohovka,Nábytek,Ostrava,15680,1
+2023-08-15,Ergo židle,Nábytek,Brno,11890,1
+2023-08-15,USB Hub,Elektronika,Praha,400,1
+2023-08-16,Notebook Pro,Elektronika,Ostrava,25170,3
+2023-08-16,Monitor prohnutý,Elektronika,České Budějovice,6120,3
+2023-08-16,Herní Notebook,Elektronika,Hradec Králové,35400,1
+2023-08-17,Myš bezdrátová,Elektronika,Praha,490,1
+2023-08-17,Mlýnek na kávu,Domácnost,Brno,1470,1
+2023-08-17,Robotický vysavač,Domácnost,Brno,8840,1
+2023-08-17,Sluchátka,Elektronika,Praha,1480,1
+2023-08-18,Čistička vzduchu,Domácnost,Praha,4610,1
+2023-08-18,Kontejner,Nábytek,Brno,2420,3
+2023-08-19,Monitor prohnutý,Elektronika,Olomouc,5850,2
+2023-08-19,Knihovna,Nábytek,Liberec,3000,2
+2023-08-19,Vysavač tyčový,Domácnost,Hradec Králové,5240,1
+2023-08-19,Mixér,Domácnost,Praha,1170,1
+2023-08-20,USB Hub,Elektronika,Hradec Králové,380,3
+2023-08-20,Rychlovarná konvice,Domácnost,Praha,840,1
+2023-08-20,Klávesnice,Elektronika,Brno,790,2
+2023-08-20,"Monitor 24""",Elektronika,Praha,3370,2
+2023-08-20,Kávovar pákový,Domácnost,Brno,4010,2
+2023-08-20,Herní křeslo,Nábytek,Brno,5070,1
+2023-08-21,Herní Notebook,Elektronika,Brno,36050,1
+2023-08-21,Lampa stojací,Nábytek,Praha,1540,2
+2023-08-21,USB Hub,Elektronika,Plzeň,400,1
+2023-08-21,Kancelářská židle,Nábytek,Hradec Králové,3370,2
+2023-08-22,Notebook Pro,Elektronika,Brno,25110,1
+2023-08-22,Toustovač,Domácnost,Plzeň,590,4
+2023-08-22,Psací stůl,Nábytek,Brno,4130,1
+2023-08-22,Kávovar automat,Domácnost,Praha,11670,1
+2023-08-22,"Monitor 24""",Elektronika,Brno,2930,1
+2023-08-22,Webkamera,Elektronika,Brno,1150,2
+2023-08-23,Kontejner,Nábytek,Brno,2460,4
+2023-08-23,Monitor prohnutý,Elektronika,Praha,5760,1
+2023-08-23,Psací stůl,Nábytek,Brno,4010,1
+2023-08-23,Ergo židle,Nábytek,Praha,11530,1
+2023-08-24,Mlýnek na kávu,Domácnost,Liberec,1450,1
+2023-08-24,Knihovna,Nábytek,Ostrava,3020,1
+2023-08-24,"Monitor 24""",Elektronika,Praha,3510,10
+2023-08-24,Notebook Air,Elektronika,Hradec Králové,22420,10
+2023-08-25,Kávovar automat,Domácnost,Brno,12450,1
+2023-08-25,"Monitor 27"" 4K",Elektronika,Brno,8230,2
+2023-08-25,Lampa stojací,Nábytek,Brno,1560,1
+2023-08-25,"Monitor 27"" 4K",Elektronika,Brno,7680,1
+2023-08-25,Webkamera,Elektronika,Praha,1190,2
+2023-08-26,Webkamera,Elektronika,Liberec,1140,1
+2023-08-26,Herní křeslo,Nábytek,Praha,4840,1
+2023-08-26,Robotický vysavač,Domácnost,Praha,8990,1
+2023-08-26,Kancelářská židle,Nábytek,Praha,3390,1
+2023-08-26,Sluchátka,Elektronika,Olomouc,1500,5
+2023-08-26,Sluchátka,Elektronika,Hradec Králové,1480,1
+2023-08-26,Herní Notebook,Elektronika,Praha,33920,2
+2023-08-27,Lampa stolní,Nábytek,České Budějovice,790,1
+2023-08-27,"Monitor 27"" 4K",Elektronika,Ostrava,8240,1
+2023-08-27,"Monitor 27"" 4K",Elektronika,Brno,8260,2
+2023-08-27,Rychlovarná konvice,Domácnost,Praha,820,1
+2023-08-27,Polohovací stůl,Nábytek,České Budějovice,12060,5
+2023-08-28,Herní křeslo,Nábytek,Praha,5070,4
+2023-08-28,Regál,Nábytek,Praha,1140,3
+2023-08-28,Klávesnice,Elektronika,Praha,770,2
+2023-08-28,Kávovar pákový,Domácnost,Praha,4150,1
+2023-08-28,Kancelářská židle,Nábytek,Brno,3400,1
+2023-08-29,Pohovka,Nábytek,Olomouc,14560,1
+2023-08-29,Lampa stolní,Nábytek,Brno,820,4
+2023-08-29,Lampa stolní,Nábytek,Brno,790,2
+2023-08-29,Klávesnice,Elektronika,Brno,670,1
+2023-08-29,Monitor prohnutý,Elektronika,Praha,5910,1
+2023-08-29,Pohovka,Nábytek,Brno,14720,1
+2023-08-30,Mlýnek na kávu,Domácnost,Ostrava,1430,1
+2023-08-30,Sluchátka,Elektronika,Ostrava,1440,1
+2023-08-30,Herní Notebook,Elektronika,České Budějovice,36360,3
+2023-08-30,Rychlovarná konvice,Domácnost,Praha,820,1
+2023-08-31,Toustovač,Domácnost,Olomouc,480,1
+2023-08-31,Regál,Nábytek,Ostrava,1140,1
+2023-08-31,Kontejner,Nábytek,Hradec Králové,2380,3
+2023-08-31,Vysavač tyčový,Domácnost,Praha,4900,1
+2023-08-31,Rychlovarná konvice,Domácnost,Ostrava,780,3
+2023-08-31,Klávesnice,Elektronika,Ostrava,790,2
+2023-08-31,Notebook Air,Elektronika,Praha,21420,1
+2023-08-31,Lampa stolní,Nábytek,České Budějovice,840,2
+2023-09-01,"Monitor 27"" 4K",Elektronika,Ostrava,8290,1
+2023-09-01,Kávovar pákový,Domácnost,Olomouc,4140,1
+2023-09-01,Herní Notebook,Elektronika,České Budějovice,35030,5
+2023-09-01,Toustovač,Domácnost,Olomouc,580,1
+2023-09-02,USB Hub,Elektronika,Brno,410,1
+2023-09-02,Toustovač,Domácnost,Praha,620,1
+2023-09-02,Monitor prohnutý,Elektronika,Ostrava,5800,1
+2023-09-02,Notebook Air,Elektronika,Brno,23090,2
+2023-09-02,Vysavač tyčový,Domácnost,Praha,4840,1
+2023-09-03,Notebook Air,Elektronika,Plzeň,21030,2
+2023-09-03,Pohovka,Nábytek,Olomouc,15580,4
+2023-09-03,Herní Notebook,Elektronika,Plzeň,34480,2
+2023-09-03,Lampa stojací,Nábytek,Hradec Králové,1520,2
+2023-09-04,Mixér,Domácnost,Praha,1240,2
+2023-09-04,Čistička vzduchu,Domácnost,Ostrava,4410,3
+2023-09-04,Lampa stojací,Nábytek,Ostrava,1480,2
+2023-09-04,Psací stůl,Nábytek,Liberec,4050,1
+2023-09-04,Rychlovarná konvice,Domácnost,Ostrava,810,1
+2023-09-05,Lampa stolní,Nábytek,Praha,780,1
+2023-09-05,Notebook Pro,Elektronika,Praha,25820,1
+2023-09-05,Lampa stojací,Nábytek,Plzeň,1220,3
+2023-09-06,Notebook Air,Elektronika,Ostrava,21400,1
+2023-09-06,Monitor prohnutý,Elektronika,Praha,6160,1
+2023-09-06,"Monitor 27"" 4K",Elektronika,Brno,7680,1
+2023-09-06,Toustovač,Domácnost,Praha,590,1
+2023-09-06,Polohovací stůl,Nábytek,Praha,11900,1
+2023-09-06,Psací stůl,Nábytek,Brno,3830,3
+2023-09-07,Kontejner,Nábytek,Praha,2380,1
+2023-09-07,Kancelářská židle,Nábytek,Liberec,3460,1
+2023-09-07,Toustovač,Domácnost,Liberec,580,1
+2023-09-07,Sluchátka,Elektronika,Praha,1540,2
+2023-09-07,Toustovač,Domácnost,Praha,590,4
+2023-09-08,Kávovar pákový,Domácnost,Praha,4110,1
+2023-09-08,USB Hub,Elektronika,Plzeň,410,2
+2023-09-08,Čistička vzduchu,Domácnost,Brno,3730,1
+2023-09-09,Kávovar automat,Domácnost,Olomouc,12050,2
+2023-09-09,Rychlovarná konvice,Domácnost,Praha,830,1
+2023-09-09,Vysavač tyčový,Domácnost,Ostrava,5090,1
+2023-09-09,Čistička vzduchu,Domácnost,Plzeň,4720,1
+2023-09-10,Sluchátka,Elektronika,České Budějovice,1430,1
+2023-09-10,Notebook Pro,Elektronika,Olomouc,26100,1
+2023-09-11,Klávesnice,Elektronika,Olomouc,790,2
+2023-09-11,Ergo židle,Nábytek,Brno,11560,1
+2023-09-11,Pohovka,Nábytek,Brno,15420,1
+2023-09-11,Rychlovarná konvice,Domácnost,Liberec,800,1
+2023-09-11,Čistička vzduchu,Domácnost,České Budějovice,4330,1
+2023-09-11,"Monitor 27"" 4K",Elektronika,Olomouc,8020,1
+2023-09-11,Ergo židle,Nábytek,Ostrava,11910,2
+2023-09-12,Ergo židle,Nábytek,Plzeň,11890,3
+2023-09-12,"Monitor 24""",Elektronika,Brno,3460,1
+2023-09-12,Kancelářská židle,Nábytek,Ostrava,3540,1
+2023-09-12,Pohovka,Nábytek,Praha,15360,2
+2023-09-12,Polohovací stůl,Nábytek,Brno,11680,1
+2023-09-12,Robotický vysavač,Domácnost,Brno,8910,1
+2023-09-12,Čistička vzduchu,Domácnost,Praha,4470,1
+2023-09-12,Mlýnek na kávu,Domácnost,Praha,1450,4
+2023-09-12,Lampa stojací,Nábytek,Brno,1550,1
+2023-09-12,Kávovar pákový,Domácnost,Liberec,3850,4
+2023-09-13,Mixér,Domácnost,Praha,1180,1
+2023-09-13,Vysavač tyčový,Domácnost,Praha,5010,1
+2023-09-14,Myš herní,Elektronika,Plzeň,940,1
+2023-09-14,Mixér,Domácnost,Liberec,1230,2
+2023-09-14,Robotický vysavač,Domácnost,Praha,9300,1
+2023-09-14,Polohovací stůl,Nábytek,Plzeň,11800,1
+2023-09-14,Čistička vzduchu,Domácnost,Brno,3580,1
+2023-09-15,Mlýnek na kávu,Domácnost,Ostrava,1470,1
+2023-09-15,Kávovar automat,Domácnost,Brno,9680,2
+2023-09-15,Mlýnek na kávu,Domácnost,Praha,1520,1
+2023-09-15,Regál,Nábytek,Ostrava,1200,1
+2023-09-16,Vysavač tyčový,Domácnost,Liberec,5170,1
+2023-09-16,USB Hub,Elektronika,Brno,340,1
+2023-09-16,Sluchátka,Elektronika,Plzeň,1450,1
+2023-09-16,Polohovací stůl,Nábytek,Praha,12520,1
+2023-09-16,USB Hub,Elektronika,Praha,390,1
+2023-09-16,Ergo židle,Nábytek,Praha,11490,1
+2023-09-17,Sluchátka,Elektronika,České Budějovice,1490,10
+2023-09-17,Herní křeslo,Nábytek,Brno,4980,1
+2023-09-17,Kávovar pákový,Domácnost,Hradec Králové,4040,1
+2023-09-17,Pohovka,Nábytek,Plzeň,15580,1
+2023-09-17,Mixér,Domácnost,Praha,940,2
+2023-09-18,Vysavač tyčový,Domácnost,Olomouc,5040,1
+2023-09-18,Polohovací stůl,Nábytek,Ostrava,12250,1
+2023-09-18,Ergo židle,Nábytek,Praha,11710,1
+2023-09-18,Regál,Nábytek,Brno,1170,1
+2023-09-18,Pohovka,Nábytek,Brno,15530,1
+2023-09-18,Mixér,Domácnost,Brno,980,1
+2023-09-18,Kávovar pákový,Domácnost,Plzeň,3830,1
+2023-09-19,Lampa stojací,Nábytek,České Budějovice,1480,1
+2023-09-19,"Monitor 27"" 4K",Elektronika,Olomouc,8060,1
+2023-09-19,Toustovač,Domácnost,Praha,600,2
+2023-09-19,Mlýnek na kávu,Domácnost,Praha,1490,1
+2023-09-19,Klávesnice,Elektronika,Ostrava,820,1
+2023-09-19,Polohovací stůl,Nábytek,Praha,11890,2
+2023-09-19,Kontejner,Nábytek,Praha,2610,5
+2023-09-19,Myš herní,Elektronika,Hradec Králové,1220,1
+2023-09-20,Rychlovarná konvice,Domácnost,Brno,800,1
+2023-09-20,Webkamera,Elektronika,Liberec,1260,1
+2023-09-20,Rychlovarná konvice,Domácnost,Brno,770,1
+2023-09-20,Rychlovarná konvice,Domácnost,Hradec Králové,820,2
+2023-09-20,Mlýnek na kávu,Domácnost,Praha,1470,1
+2023-09-20,Mixér,Domácnost,Praha,990,1
+2023-09-22,Toustovač,Domácnost,Brno,610,2
+2023-09-22,Kancelářská židle,Nábytek,Liberec,3450,1
+2023-09-22,Monitor prohnutý,Elektronika,Ostrava,6180,1
+2023-09-22,Rychlovarná konvice,Domácnost,Hradec Králové,800,1
+2023-09-22,Knihovna,Nábytek,Hradec Králové,3080,4
+2023-09-23,Lampa stojací,Nábytek,Liberec,1510,1
+2023-09-23,"Monitor 27"" 4K",Elektronika,Plzeň,7700,1
+2023-09-23,Mlýnek na kávu,Domácnost,Praha,1460,1
+2023-09-23,Lampa stolní,Nábytek,Praha,820,1
+2023-09-24,Webkamera,Elektronika,Hradec Králové,1220,1
+2023-09-24,Vysavač tyčový,Domácnost,Plzeň,4960,2
+2023-09-24,Kontejner,Nábytek,Brno,2530,1
+2023-09-25,Sluchátka,Elektronika,Plzeň,1170,1
+2023-09-25,Ergo židle,Nábytek,Brno,12410,1
+2023-09-25,Klávesnice,Elektronika,Plzeň,810,1
+2023-09-25,Knihovna,Nábytek,Brno,2860,1
+2023-09-25,Lampa stolní,Nábytek,Praha,780,1
+2023-09-25,Polohovací stůl,Nábytek,Brno,11610,1
+2023-09-25,Monitor prohnutý,Elektronika,Liberec,5980,1
+2023-09-25,Kancelářská židle,Nábytek,Brno,3630,1
+2023-09-26,Notebook Air,Elektronika,Praha,21520,1
+2023-09-26,Notebook Air,Elektronika,Ostrava,21570,1
+2023-09-27,Ergo židle,Nábytek,Liberec,12470,1
+2023-09-27,Čistička vzduchu,Domácnost,Ostrava,4540,3
+2023-09-27,Kancelářská židle,Nábytek,Praha,3630,2
+2023-09-27,Lampa stolní,Nábytek,Praha,780,1
+2023-09-27,Psací stůl,Nábytek,Brno,4160,1
+2023-09-27,"Monitor 24""",Elektronika,Praha,3450,1
+2023-09-28,Psací stůl,Nábytek,Brno,3850,2
+2023-09-28,Herní křeslo,Nábytek,Plzeň,4980,3
+2023-09-28,Kávovar automat,Domácnost,Brno,11870,1
+2023-09-28,USB Hub,Elektronika,Ostrava,390,1
+2023-09-29,Mlýnek na kávu,Domácnost,Ostrava,1450,1
+2023-09-29,Lampa stolní,Nábytek,Plzeň,810,2
+2023-09-29,Čistička vzduchu,Domácnost,Liberec,4430,1
+2023-09-29,Klávesnice,Elektronika,Praha,810,4
+2023-09-29,Notebook Pro,Elektronika,Brno,25830,1
+2023-09-29,Monitor prohnutý,Elektronika,Olomouc,6280,1
+2023-09-30,Vysavač tyčový,Domácnost,Liberec,4940,2
+2023-09-30,Regál,Nábytek,Liberec,960,1
+2023-09-30,Monitor prohnutý,Elektronika,Brno,6080,5
+2023-09-30,Regál,Nábytek,Plzeň,1170,1
+2023-09-30,"Monitor 24""",Elektronika,Ostrava,3520,1
+2023-09-30,Ergo židle,Nábytek,Plzeň,12510,2
+2023-09-30,Ergo židle,Nábytek,Praha,12320,1
+2023-09-30,Rychlovarná konvice,Domácnost,Ostrava,820,1
+2023-10-01,Polohovací stůl,Nábytek,Olomouc,11930,1
+2023-10-01,Kontejner,Nábytek,Olomouc,2540,1
+2023-10-01,Myš bezdrátová,Elektronika,Praha,520,1
+2023-10-01,Regál,Nábytek,Praha,1160,1
+2023-10-02,Mixér,Domácnost,Brno,1190,1
+2023-10-02,Toustovač,Domácnost,Praha,630,4
+2023-10-02,Myš bezdrátová,Elektronika,Praha,490,2
+2023-10-02,Kancelářská židle,Nábytek,Ostrava,3590,3
+2023-10-02,Pohovka,Nábytek,Brno,14420,1
+2023-10-02,Vysavač tyčový,Domácnost,Praha,4820,1
+2023-10-02,Herní křeslo,Nábytek,Praha,5240,1
+2023-10-02,"Monitor 27"" 4K",Elektronika,Praha,6220,1
+2023-10-03,Kávovar automat,Domácnost,Praha,12160,1
+2023-10-03,Mixér,Domácnost,Ostrava,1170,1
+2023-10-03,Monitor prohnutý,Elektronika,Praha,4660,1
+2023-10-03,Vysavač tyčový,Domácnost,Praha,5180,1
+2023-10-03,Ergo židle,Nábytek,Brno,12570,5
+2023-10-03,Sluchátka,Elektronika,Brno,1570,1
+2023-10-04,Mixér,Domácnost,Praha,1250,1
+2023-10-04,Mlýnek na kávu,Domácnost,Praha,1490,1
+2023-10-04,Kancelářská židle,Nábytek,Praha,3360,1
+2023-10-04,Kávovar automat,Domácnost,Liberec,11540,1
+2023-10-04,USB Hub,Elektronika,Praha,400,1
+2023-10-04,Notebook Pro,Elektronika,Ostrava,24380,1
+2023-10-05,Toustovač,Domácnost,Brno,630,1
+2023-10-05,Mixér,Domácnost,Praha,1160,2
+2023-10-05,Knihovna,Nábytek,Brno,2850,1
+2023-10-05,Polohovací stůl,Nábytek,Hradec Králové,12170,3
+2023-10-05,Kontejner,Nábytek,České Budějovice,2490,2
+2023-10-06,Lampa stolní,Nábytek,Liberec,640,1
+2023-10-06,Kontejner,Nábytek,Praha,2440,2
+2023-10-06,Sluchátka,Elektronika,Praha,1440,1
+2023-10-07,Knihovna,Nábytek,České Budějovice,2480,1
+2023-10-07,Webkamera,Elektronika,Ostrava,1170,1
+2023-10-07,"Monitor 27"" 4K",Elektronika,Praha,7620,2
+2023-10-07,Mixér,Domácnost,Hradec Králové,1190,1
+2023-10-08,Sluchátka,Elektronika,Olomouc,1550,1
+2023-10-08,Myš bezdrátová,Elektronika,Brno,390,1
+2023-10-08,Kontejner,Nábytek,Hradec Králové,2500,2
+2023-10-09,Sluchátka,Elektronika,Praha,1440,1
+2023-10-09,Monitor prohnutý,Elektronika,České Budějovice,5900,1
+2023-10-09,Regál,Nábytek,České Budějovice,1210,1
+2023-10-09,Kancelářská židle,Nábytek,Brno,3440,3
+2023-10-09,Mlýnek na kávu,Domácnost,Ostrava,1540,1
+2023-10-09,Mixér,Domácnost,Ostrava,1210,1
+2023-10-09,Regál,Nábytek,Plzeň,1200,1
+2023-10-10,Polohovací stůl,Nábytek,Brno,12530,1
+2023-10-10,Kávovar pákový,Domácnost,Brno,4120,1
+2023-10-10,Robotický vysavač,Domácnost,Hradec Králové,9110,1
+2023-10-10,Mixér,Domácnost,Hradec Králové,1200,3
+2023-10-10,Vysavač tyčový,Domácnost,České Budějovice,4790,1
+2023-10-10,Kontejner,Nábytek,Praha,2420,2
+2023-10-11,Notebook Air,Elektronika,Hradec Králové,22100,1
+2023-10-11,Polohovací stůl,Nábytek,Praha,11560,2
+2023-10-11,Klávesnice,Elektronika,Brno,610,2
+2023-10-11,Myš herní,Elektronika,Praha,1150,1
+2023-10-11,Pohovka,Nábytek,Praha,15250,1
+2023-10-11,Kávovar automat,Domácnost,Olomouc,12280,2
+2023-10-11,Kontejner,Nábytek,České Budějovice,2560,1
+2023-10-11,USB Hub,Elektronika,Praha,400,1
+2023-10-12,Sluchátka,Elektronika,Brno,1480,1
+2023-10-12,Webkamera,Elektronika,Praha,1150,1
+2023-10-12,Herní Notebook,Elektronika,Praha,34180,1
+2023-10-12,Čistička vzduchu,Domácnost,Liberec,4660,1
+2023-10-12,Rychlovarná konvice,Domácnost,Praha,800,1
+2023-10-13,Kávovar automat,Domácnost,Ostrava,11640,1
+2023-10-13,Kontejner,Nábytek,Ostrava,2400,1
+2023-10-13,Myš herní,Elektronika,České Budějovice,1170,10
+2023-10-13,Čistička vzduchu,Domácnost,Ostrava,4430,1
+2023-10-13,Klávesnice,Elektronika,Praha,780,1
+2023-10-13,Kancelářská židle,Nábytek,Brno,3650,1
+2023-10-13,Notebook Air,Elektronika,Olomouc,21880,1
+2023-10-13,Regál,Nábytek,Praha,1210,1
+2023-10-13,Polohovací stůl,Nábytek,Brno,11960,1
+2023-10-14,Knihovna,Nábytek,Praha,2870,1
+2023-10-14,Klávesnice,Elektronika,Hradec Králové,830,1
+2023-10-14,Webkamera,Elektronika,Praha,1260,1
+2023-10-14,Vysavač tyčový,Domácnost,Hradec Králové,5210,1
+2023-10-14,Myš herní,Elektronika,Ostrava,1170,1
+2023-10-14,Lampa stojací,Nábytek,Brno,1520,1
+2023-10-14,Kancelářská židle,Nábytek,Praha,3400,1
+2023-10-14,Notebook Air,Elektronika,Brno,22290,2
+2023-10-14,Polohovací stůl,Nábytek,Brno,11610,1
+2023-10-14,"Monitor 24""",Elektronika,Brno,3480,1
+2023-10-15,Kávovar pákový,Domácnost,Ostrava,3970,1
+2023-10-15,Robotický vysavač,Domácnost,Liberec,9260,1
+2023-10-15,"Monitor 27"" 4K",Elektronika,Liberec,7730,1
+2023-10-15,Sluchátka,Elektronika,Brno,1460,1
+2023-10-15,Pohovka,Nábytek,Brno,15680,1
+2023-10-15,Ergo židle,Nábytek,Praha,12450,1
+2023-10-16,"Monitor 24""",Elektronika,Ostrava,3630,1
+2023-10-16,Notebook Air,Elektronika,Brno,22340,1
+2023-10-16,USB Hub,Elektronika,Ostrava,410,1
+2023-10-16,Kávovar automat,Domácnost,Plzeň,11770,2
+2023-10-16,Rychlovarná konvice,Domácnost,Praha,800,1
+2023-10-16,Pohovka,Nábytek,Brno,15520,1
+2023-10-16,Čistička vzduchu,Domácnost,Praha,4300,1
+2023-10-16,Vysavač tyčový,Domácnost,Praha,5180,1
+2023-10-17,Pohovka,Nábytek,Brno,14280,1
+2023-10-17,Herní křeslo,Nábytek,Olomouc,4860,1
+2023-10-18,"Monitor 27"" 4K",Elektronika,Praha,6480,1
+2023-10-18,Psací stůl,Nábytek,Ostrava,3210,1
+2023-10-18,Kávovar pákový,Domácnost,Ostrava,4110,1
+2023-10-18,Sluchátka,Elektronika,Plzeň,1480,4
+2023-10-18,Klávesnice,Elektronika,Hradec Králové,800,1
+2023-10-18,Robotický vysavač,Domácnost,Ostrava,8670,1
+2023-10-18,Rychlovarná konvice,Domácnost,Plzeň,790,1
+2023-10-18,Kávovar pákový,Domácnost,Olomouc,3990,1
+2023-10-19,"Monitor 24""",Elektronika,Brno,3580,1
+2023-10-19,Myš herní,Elektronika,Ostrava,1210,1
+2023-10-19,Mlýnek na kávu,Domácnost,Plzeň,1440,1
+2023-10-19,Mixér,Domácnost,Ostrava,1190,1
+2023-10-19,Kávovar automat,Domácnost,Hradec Králové,11460,1
+2023-10-19,USB Hub,Elektronika,České Budějovice,380,2
+2023-10-20,Knihovna,Nábytek,Praha,2440,1
+2023-10-20,Sluchátka,Elektronika,Praha,1540,1
+2023-10-21,Robotický vysavač,Domácnost,Brno,9050,1
+2023-10-21,Mlýnek na kávu,Domácnost,Praha,1430,1
+2023-10-22,Kontejner,Nábytek,České Budějovice,1940,4
+2023-10-22,Sluchátka,Elektronika,Praha,1460,1
+2023-10-22,Vysavač tyčový,Domácnost,Brno,5120,2
+2023-10-22,Regál,Nábytek,Liberec,1260,1
+2023-10-23,Knihovna,Nábytek,Plzeň,2990,1
+2023-10-24,Kávovar pákový,Domácnost,Ostrava,3810,1
+2023-10-24,Kontejner,Nábytek,Praha,1920,1
+2023-10-24,Klávesnice,Elektronika,Praha,620,1
+2023-10-25,Kontejner,Nábytek,Ostrava,2580,2
+2023-10-25,Myš bezdrátová,Elektronika,Plzeň,480,1
+2023-10-25,Lampa stojací,Nábytek,Praha,1510,1
+2023-10-25,Toustovač,Domácnost,Brno,570,1
+2023-10-25,Vysavač tyčový,Domácnost,Praha,3920,1
+2023-10-25,Mlýnek na kávu,Domácnost,Plzeň,1540,2
+2023-10-25,Kávovar pákový,Domácnost,Brno,3980,1
+2023-10-25,Psací stůl,Nábytek,Ostrava,3890,1
+2023-10-25,Kávovar automat,Domácnost,Brno,12310,1
+2023-10-26,USB Hub,Elektronika,Brno,410,1
+2023-10-26,Herní křeslo,Nábytek,Plzeň,5110,1
+2023-10-26,Kávovar automat,Domácnost,Hradec Králové,12350,1
+2023-10-26,Kancelářská židle,Nábytek,Praha,3460,1
+2023-10-26,"Monitor 27"" 4K",Elektronika,Brno,8190,2
+2023-10-26,Kontejner,Nábytek,Brno,2510,2
+2023-10-26,"Monitor 24""",Elektronika,Praha,3550,1
+2023-10-26,Kávovar pákový,Domácnost,Brno,3950,1
+2023-10-27,Pohovka,Nábytek,Brno,15640,1
+2023-10-27,Vysavač tyčový,Domácnost,Brno,4980,1
+2023-10-27,"Monitor 24""",Elektronika,Ostrava,3420,1
+2023-10-27,Kávovar automat,Domácnost,Praha,11510,2
+2023-10-27,Rychlovarná konvice,Domácnost,Brno,760,1
+2023-10-27,Vysavač tyčový,Domácnost,Brno,5170,1
+2023-10-28,USB Hub,Elektronika,Liberec,380,1
+2023-10-28,Sluchátka,Elektronika,Hradec Králové,1460,1
+2023-10-28,Polohovací stůl,Nábytek,Praha,11940,1
+2023-10-29,Robotický vysavač,Domácnost,Brno,8550,1
+2023-10-29,Webkamera,Elektronika,Hradec Králové,1150,1
+2023-10-30,Toustovač,Domácnost,Brno,590,1
+2023-10-30,Regál,Nábytek,Praha,1200,1
+2023-10-30,Pohovka,Nábytek,Plzeň,12010,1
+2023-10-30,Kancelářská židle,Nábytek,Ostrava,3380,3
+2023-10-30,Myš herní,Elektronika,Ostrava,1210,3
+2023-10-31,Kávovar automat,Domácnost,České Budějovice,11900,1
+2023-10-31,Lampa stolní,Nábytek,Plzeň,760,5
+2023-10-31,Herní Notebook,Elektronika,Praha,36710,1
+2023-11-01,Myš herní,Elektronika,Praha,1260,1
+2023-11-01,Klávesnice,Elektronika,Praha,780,1
+2023-11-01,Kávovar pákový,Domácnost,Ostrava,4190,1
+2023-11-01,Kancelářská židle,Nábytek,České Budějovice,3500,2
+2023-11-01,Herní Notebook,Elektronika,Olomouc,35290,1
+2023-11-01,Vysavač tyčový,Domácnost,Brno,4810,3
+2023-11-01,Rychlovarná konvice,Domácnost,Praha,810,1
+2023-11-01,Notebook Pro,Elektronika,Brno,19230,2
+2023-11-01,Kávovar pákový,Domácnost,Praha,3910,1
+2023-11-01,Ergo židle,Nábytek,Liberec,11470,2
+2023-11-01,Pohovka,Nábytek,Praha,15140,1
+2023-11-01,Ergo židle,Nábytek,Praha,11830,1
+2023-11-02,Notebook Pro,Elektronika,Ostrava,25990,2
+2023-11-02,"Monitor 27"" 4K",Elektronika,Brno,6690,1
+2023-11-02,Čistička vzduchu,Domácnost,Brno,4680,2
+2023-11-02,USB Hub,Elektronika,Praha,400,1
+2023-11-02,Pohovka,Nábytek,České Budějovice,15480,4
+2023-11-03,Čistička vzduchu,Domácnost,Liberec,4460,1
+2023-11-03,Herní křeslo,Nábytek,Brno,5010,3
+2023-11-03,Polohovací stůl,Nábytek,Praha,9810,1
+2023-11-04,Klávesnice,Elektronika,Brno,770,1
+2023-11-04,Čistička vzduchu,Domácnost,Liberec,4620,1
+2023-11-04,Herní Notebook,Elektronika,Brno,35000,1
+2023-11-04,Lampa stolní,Nábytek,Brno,820,1
+2023-11-04,Monitor prohnutý,Elektronika,Olomouc,6160,1
+2023-11-05,Čistička vzduchu,Domácnost,Praha,4590,2
+2023-11-05,Sluchátka,Elektronika,Ostrava,1530,1
+2023-11-05,Kancelářská židle,Nábytek,Brno,3510,1
+2023-11-05,USB Hub,Elektronika,České Budějovice,340,1
+2023-11-05,Polohovací stůl,Nábytek,Ostrava,12170,1
+2023-11-05,Kávovar pákový,Domácnost,Liberec,3140,1
+2023-11-05,Kávovar automat,Domácnost,Praha,11870,1
+2023-11-05,Knihovna,Nábytek,Ostrava,2970,1
+2023-11-05,Ergo židle,Nábytek,Brno,11860,1
+2023-11-05,Notebook Pro,Elektronika,Praha,24730,1
+2023-11-06,Kancelářská židle,Nábytek,Praha,3520,1
+2023-11-06,"Monitor 24""",Elektronika,Praha,3440,1
+2023-11-06,Kontejner,Nábytek,Plzeň,2500,1
+2023-11-06,Webkamera,Elektronika,Hradec Králové,1190,2
+2023-11-06,Rychlovarná konvice,Domácnost,České Budějovice,820,1
+2023-11-07,Herní křeslo,Nábytek,Plzeň,5060,1
+2023-11-07,USB Hub,Elektronika,Praha,390,2
+2023-11-07,Herní křeslo,Nábytek,Praha,5030,1
+2023-11-07,Lampa stolní,Nábytek,Olomouc,840,5
+2023-11-07,Ergo židle,Nábytek,Praha,12530,1
+2023-11-07,Mlýnek na kávu,Domácnost,Brno,1490,1
+2023-11-07,Myš herní,Elektronika,Praha,1210,2
+2023-11-08,Klávesnice,Elektronika,České Budějovice,760,1
+2023-11-08,Toustovač,Domácnost,Praha,570,2
+2023-11-08,Klávesnice,Elektronika,České Budějovice,800,1
+2023-11-08,Robotický vysavač,Domácnost,Praha,9000,1
+2023-11-08,Kávovar automat,Domácnost,Brno,11560,2
+2023-11-08,Polohovací stůl,Nábytek,České Budějovice,11590,1
+2023-11-08,Kontejner,Nábytek,Praha,2590,1
+2023-11-08,Lampa stojací,Nábytek,Brno,1540,1
+2023-11-08,Kontejner,Nábytek,Hradec Králové,2560,2
+2023-11-09,Regál,Nábytek,Brno,1240,2
+2023-11-09,Knihovna,Nábytek,Brno,2980,1
+2023-11-09,Regál,Nábytek,České Budějovice,1180,3
+2023-11-09,Lampa stolní,Nábytek,Praha,820,4
+2023-11-09,Mlýnek na kávu,Domácnost,Ostrava,1440,1
+2023-11-09,Mixér,Domácnost,Praha,1240,2
+2023-11-10,Monitor prohnutý,Elektronika,Brno,4970,1
+2023-11-10,"Monitor 24""",Elektronika,Praha,3500,1
+2023-11-10,Vysavač tyčový,Domácnost,Praha,5120,4
+2023-11-10,Vysavač tyčový,Domácnost,Praha,4800,1
+2023-11-10,Knihovna,Nábytek,Brno,3110,1
+2023-11-10,Sluchátka,Elektronika,Ostrava,1490,1
+2023-11-10,Pohovka,Nábytek,Praha,14610,3
+2023-11-11,"Monitor 27"" 4K",Elektronika,České Budějovice,8070,1
+2023-11-11,Monitor prohnutý,Elektronika,Praha,6050,5
+2023-11-11,Mixér,Domácnost,Ostrava,1160,1
+2023-11-11,Pohovka,Nábytek,Plzeň,14330,5
+2023-11-11,"Monitor 24""",Elektronika,Brno,3510,1
+2023-11-12,Pohovka,Nábytek,České Budějovice,15210,2
+2023-11-12,Mlýnek na kávu,Domácnost,Praha,1480,1
+2023-11-12,Notebook Air,Elektronika,Ostrava,21910,4
+2023-11-12,Ergo židle,Nábytek,Brno,12190,1
+2023-11-12,Rychlovarná konvice,Domácnost,Plzeň,770,1
+2023-11-12,Pohovka,Nábytek,Praha,15640,1
+2023-11-13,Kancelářská židle,Nábytek,České Budějovice,3350,1
+2023-11-13,Kancelářská židle,Nábytek,Praha,2740,2
+2023-11-13,"Monitor 24""",Elektronika,Praha,3670,3
+2023-11-13,Klávesnice,Elektronika,České Budějovice,800,1
+2023-11-13,Vysavač tyčový,Domácnost,Praha,5160,1
+2023-11-13,Mixér,Domácnost,Brno,950,1
+2023-11-14,Herní křeslo,Nábytek,Praha,4840,1
+2023-11-14,Mlýnek na kávu,Domácnost,Ostrava,1510,4
+2023-11-14,Čistička vzduchu,Domácnost,Brno,4600,1
+2023-11-15,Čistička vzduchu,Domácnost,Praha,4440,4
+2023-11-15,Vysavač tyčový,Domácnost,Praha,5240,2
+2023-11-15,Toustovač,Domácnost,Praha,580,1
+2023-11-15,Notebook Air,Elektronika,Plzeň,21910,2
+2023-11-15,Kontejner,Nábytek,Brno,2000,1
+2023-11-15,Toustovač,Domácnost,Ostrava,590,1
+2023-11-16,Rychlovarná konvice,Domácnost,Ostrava,830,1
+2023-11-16,Notebook Pro,Elektronika,Praha,24920,1
+2023-11-16,Mixér,Domácnost,Brno,950,1
+2023-11-16,Kávovar pákový,Domácnost,Liberec,4170,1
+2023-11-16,Kontejner,Nábytek,Brno,2590,1
+2023-11-16,Herní Notebook,Elektronika,Praha,34160,1
+2023-11-16,Herní Notebook,Elektronika,Plzeň,36020,1
+2023-11-16,Robotický vysavač,Domácnost,Brno,8680,1
+2023-11-17,Kávovar pákový,Domácnost,Ostrava,4120,3
+2023-11-17,Notebook Air,Elektronika,Brno,22060,2
+2023-11-17,"Monitor 24""",Elektronika,Plzeň,3450,1
+2023-11-17,"Monitor 27"" 4K",Elektronika,Brno,7800,2
+2023-11-17,Čistička vzduchu,Domácnost,Ostrava,4710,1
+2023-11-17,Kancelářská židle,Nábytek,Brno,3590,1
+2023-11-17,Kancelářská židle,Nábytek,Ostrava,2870,1
+2023-11-17,Lampa stojací,Nábytek,Praha,1520,1
+2023-11-18,Notebook Pro,Elektronika,Praha,19780,2
+2023-11-18,Mlýnek na kávu,Domácnost,Praha,1470,1
+2023-11-18,Rychlovarná konvice,Domácnost,České Budějovice,790,1
+2023-11-18,Notebook Air,Elektronika,Plzeň,21160,3
+2023-11-18,Kancelářská židle,Nábytek,Brno,3530,2
+2023-11-18,Kancelářská židle,Nábytek,Liberec,3350,1
+2023-11-18,Notebook Air,Elektronika,Ostrava,21230,1
+2023-11-18,Kancelářská židle,Nábytek,Ostrava,3330,2
+2023-11-19,Kávovar pákový,Domácnost,Hradec Králové,4060,2
+2023-11-19,Kávovar pákový,Domácnost,Liberec,4060,1
+2023-11-19,Vysavač tyčový,Domácnost,Ostrava,4860,1
+2023-11-19,Myš herní,Elektronika,Praha,1150,1
+2023-11-19,Monitor prohnutý,Elektronika,Ostrava,6200,1
+2023-11-19,Ergo židle,Nábytek,Praha,12120,1
+2023-11-19,Mixér,Domácnost,Praha,1230,1
+2023-11-19,Kávovar automat,Domácnost,Praha,12020,1
+2023-11-20,Lampa stolní,Nábytek,Ostrava,810,1
+2023-11-20,Čistička vzduchu,Domácnost,Liberec,4470,5
+2023-11-20,Knihovna,Nábytek,Hradec Králové,3000,1
+2023-11-20,USB Hub,Elektronika,Brno,390,1
+2023-11-20,Vysavač tyčový,Domácnost,Praha,4880,1
+2023-11-20,Sluchátka,Elektronika,Ostrava,1160,1
+2023-11-21,Regál,Nábytek,Plzeň,1160,1
+2023-11-21,Notebook Pro,Elektronika,Praha,25930,1
+2023-11-21,Lampa stojací,Nábytek,Brno,1560,1
+2023-11-21,Vysavač tyčový,Domácnost,Praha,4990,1
+2023-11-22,Kávovar automat,Domácnost,Olomouc,12360,1
+2023-11-22,Vysavač tyčový,Domácnost,Brno,4870,2
+2023-11-22,Mixér,Domácnost,Plzeň,910,2
+2023-11-22,Notebook Pro,Elektronika,Liberec,25060,1
+2023-11-22,Toustovač,Domácnost,Ostrava,600,1
+2023-11-22,Herní křeslo,Nábytek,Brno,5120,2
+2023-11-22,Notebook Air,Elektronika,Ostrava,21550,1
+2023-11-22,Toustovač,Domácnost,Praha,610,1
+2023-11-22,Kontejner,Nábytek,Hradec Králové,1910,1
+2023-11-22,Pohovka,Nábytek,Praha,14720,1
+2023-11-22,Kávovar pákový,Domácnost,Ostrava,3970,1
+2023-11-22,Čistička vzduchu,Domácnost,Brno,4530,1
+2023-11-23,"Monitor 24""",Elektronika,České Budějovice,3530,2
+2023-11-23,Psací stůl,Nábytek,Brno,4090,1
+2023-11-23,Mixér,Domácnost,České Budějovice,1210,1
+2023-11-24,Čistička vzduchu,Domácnost,Brno,4600,1
+2023-11-24,Webkamera,Elektronika,Praha,1190,2
+2023-11-24,Rychlovarná konvice,Domácnost,Brno,770,1
+2023-11-24,Notebook Air,Elektronika,České Budějovice,21240,3
+2023-11-24,Kávovar pákový,Domácnost,Brno,3990,1
+2023-11-25,Mixér,Domácnost,Ostrava,1210,1
+2023-11-25,Klávesnice,Elektronika,Brno,810,1
+2023-11-25,Regál,Nábytek,České Budějovice,1190,4
+2023-11-26,Sluchátka,Elektronika,Praha,1540,4
+2023-11-26,Herní křeslo,Nábytek,Praha,4880,1
+2023-11-26,Ergo židle,Nábytek,Praha,12430,1
+2023-11-26,Kávovar pákový,Domácnost,Praha,3200,2
+2023-11-26,Vysavač tyčový,Domácnost,České Budějovice,5220,1
+2023-11-26,Rychlovarná konvice,Domácnost,Brno,640,1
+2023-11-26,Klávesnice,Elektronika,Praha,820,1
+2023-11-26,Kávovar pákový,Domácnost,Brno,4100,2
+2023-11-27,Čistička vzduchu,Domácnost,Praha,4300,1
+2023-11-27,"Monitor 24""",Elektronika,Praha,3640,1
+2023-11-27,Rychlovarná konvice,Domácnost,Olomouc,790,1
+2023-11-27,Myš bezdrátová,Elektronika,Praha,480,1
+2023-11-27,USB Hub,Elektronika,Ostrava,390,1
+2023-11-27,Toustovač,Domácnost,Praha,620,3
+2023-11-28,Sluchátka,Elektronika,Ostrava,1490,3
+2023-11-28,Pohovka,Nábytek,Ostrava,15140,1
+2023-11-28,Kávovar automat,Domácnost,Praha,11510,1
+2023-11-28,Lampa stojací,Nábytek,Ostrava,1220,1
+2023-11-28,Regál,Nábytek,Praha,1220,1
+2023-11-28,USB Hub,Elektronika,Praha,400,10
+2023-11-29,Sluchátka,Elektronika,Brno,1490,2
+2023-11-29,Pohovka,Nábytek,Praha,15410,2
+2023-11-29,Klávesnice,Elektronika,Brno,760,1
+2023-11-29,Kontejner,Nábytek,Brno,2490,2
+2023-11-29,Sluchátka,Elektronika,Olomouc,1570,2
+2023-11-30,Myš herní,Elektronika,Plzeň,1230,1
+2023-11-30,Ergo židle,Nábytek,Liberec,12560,3
+2023-11-30,Robotický vysavač,Domácnost,Praha,9260,1
+2023-12-01,Lampa stojací,Nábytek,Ostrava,1450,1
+2023-12-01,Kávovar pákový,Domácnost,Brno,3900,1
+2023-12-01,Kontejner,Nábytek,Praha,2400,1
+2023-12-01,Robotický vysavač,Domácnost,Plzeň,8580,1
+2023-12-01,Notebook Pro,Elektronika,České Budějovice,25900,1
+2023-12-01,Kávovar pákový,Domácnost,Brno,4140,2
+2023-12-01,Notebook Pro,Elektronika,Praha,25830,1
+2023-12-02,Mixér,Domácnost,Praha,1160,1
+2023-12-02,USB Hub,Elektronika,České Budějovice,420,2
+2023-12-02,Regál,Nábytek,Liberec,1190,1
+2023-12-03,Vysavač tyčový,Domácnost,Hradec Králové,4780,1
+2023-12-03,Vysavač tyčový,Domácnost,Plzeň,4860,4
+2023-12-03,Regál,Nábytek,Praha,1220,1
+2023-12-03,Kancelářská židle,Nábytek,Praha,3400,2
+2023-12-03,Robotický vysavač,Domácnost,Ostrava,9100,1
+2023-12-03,Toustovač,Domácnost,Brno,590,1
+2023-12-04,Monitor prohnutý,Elektronika,Praha,5950,1
+2023-12-04,Knihovna,Nábytek,Olomouc,3040,1
+2023-12-04,Kancelářská židle,Nábytek,Liberec,3340,2
+2023-12-04,Lampa stojací,Nábytek,Ostrava,1540,1
+2023-12-05,Robotický vysavač,Domácnost,Praha,9220,1
+2023-12-05,Notebook Air,Elektronika,Hradec Králové,22110,1
+2023-12-05,Myš herní,Elektronika,Praha,1230,2
+2023-12-06,Notebook Air,Elektronika,Praha,22580,1
+2023-12-06,Lampa stolní,Nábytek,Ostrava,780,1
+2023-12-06,Vysavač tyčový,Domácnost,Hradec Králové,5180,1
+2023-12-06,Lampa stolní,Nábytek,Plzeň,800,1
+2023-12-06,Knihovna,Nábytek,České Budějovice,2870,2
+2023-12-06,Toustovač,Domácnost,Brno,460,3
+2023-12-07,Polohovací stůl,Nábytek,Ostrava,10060,2
+2023-12-07,Regál,Nábytek,Olomouc,1240,1
+2023-12-07,Herní křeslo,Nábytek,Hradec Králové,4790,1
+2023-12-07,Mixér,Domácnost,Praha,1200,2
+2023-12-07,Klávesnice,Elektronika,České Budějovice,820,10
+2023-12-07,Čistička vzduchu,Domácnost,Ostrava,4610,1
+2023-12-07,Toustovač,Domácnost,Brno,460,1
+2023-12-07,Herní křeslo,Nábytek,Praha,4970,1
+2023-12-08,Psací stůl,Nábytek,Plzeň,4080,1
+2023-12-08,USB Hub,Elektronika,Brno,420,2
+2023-12-08,Webkamera,Elektronika,Hradec Králové,940,1
+2023-12-08,Kávovar pákový,Domácnost,Brno,4030,1
+2023-12-08,USB Hub,Elektronika,Praha,400,1
+2023-12-08,Kávovar pákový,Domácnost,Praha,3320,4
+2023-12-08,Rychlovarná konvice,Domácnost,Praha,810,1
+2023-12-08,Herní křeslo,Nábytek,Brno,4880,1
+2023-12-08,"Monitor 24""",Elektronika,Praha,3670,2
+2023-12-09,Vysavač tyčový,Domácnost,Praha,5030,1
+2023-12-09,Notebook Pro,Elektronika,České Budějovice,25790,1
+2023-12-09,Klávesnice,Elektronika,Praha,800,1
+2023-12-09,Knihovna,Nábytek,Plzeň,2340,2
+2023-12-10,Mlýnek na kávu,Domácnost,Ostrava,1500,1
+2023-12-10,Regál,Nábytek,Brno,1150,1
+2023-12-10,Vysavač tyčový,Domácnost,Praha,5040,1
+2023-12-10,Monitor prohnutý,Elektronika,Praha,6260,1
+2023-12-10,Notebook Air,Elektronika,Olomouc,17210,2
+2023-12-10,Klávesnice,Elektronika,Praha,800,1
+2023-12-10,Myš herní,Elektronika,Hradec Králové,1260,1
+2023-12-10,Čistička vzduchu,Domácnost,Olomouc,4360,1
+2023-12-11,Notebook Pro,Elektronika,Praha,24800,1
+2023-12-12,Čistička vzduchu,Domácnost,Praha,4340,1
+2023-12-12,USB Hub,Elektronika,Brno,380,1
+2023-12-12,Notebook Pro,Elektronika,Olomouc,24030,2
+2023-12-12,Herní křeslo,Nábytek,Ostrava,5140,1
+2023-12-12,Kancelářská židle,Nábytek,Plzeň,3390,1
+2023-12-13,Mixér,Domácnost,Praha,1200,5
+2023-12-13,Čistička vzduchu,Domácnost,České Budějovice,4640,2
+2023-12-13,Lampa stojací,Nábytek,Ostrava,1530,1
+2023-12-13,Pohovka,Nábytek,Praha,15100,1
+2023-12-13,Kancelářská židle,Nábytek,Plzeň,3420,1
+2023-12-13,Webkamera,Elektronika,Brno,1140,1
+2023-12-14,"Monitor 24""",Elektronika,Brno,3540,1
+2023-12-14,Pohovka,Nábytek,Ostrava,14420,1
+2023-12-14,Sluchátka,Elektronika,Praha,1150,1
+2023-12-14,Monitor prohnutý,Elektronika,Plzeň,5820,1
+2023-12-15,Čistička vzduchu,Domácnost,Olomouc,4500,2
+2023-12-15,Mlýnek na kávu,Domácnost,Praha,1490,1
+2023-12-15,"Monitor 24""",Elektronika,Praha,3500,1
+2023-12-15,Polohovací stůl,Nábytek,Brno,11560,3
+2023-12-15,Robotický vysavač,Domácnost,Ostrava,8600,2
+2023-12-15,USB Hub,Elektronika,Praha,380,2
+2023-12-16,USB Hub,Elektronika,Hradec Králové,420,2
+2023-12-16,Čistička vzduchu,Domácnost,Praha,4340,3
+2023-12-16,Kontejner,Nábytek,Hradec Králové,2590,2
+2023-12-16,Knihovna,Nábytek,Ostrava,2910,3
+2023-12-17,Čistička vzduchu,Domácnost,Praha,4650,4
+2023-12-17,Robotický vysavač,Domácnost,Olomouc,8790,1
+2023-12-17,Kancelářská židle,Nábytek,Ostrava,3640,1
+2023-12-17,Toustovač,Domácnost,Plzeň,470,1
+2023-12-17,Čistička vzduchu,Domácnost,Hradec Králové,4650,1
+2023-12-17,Toustovač,Domácnost,Liberec,570,1
+2023-12-17,Čistička vzduchu,Domácnost,Brno,4320,1
+2023-12-17,Herní Notebook,Elektronika,Praha,36390,3
+2023-12-17,Toustovač,Domácnost,Ostrava,580,1
+2023-12-18,Polohovací stůl,Nábytek,Praha,11510,1
+2023-12-18,Kávovar automat,Domácnost,Olomouc,11800,2
+2023-12-18,"Monitor 24""",Elektronika,Plzeň,3540,1
+2023-12-18,Notebook Pro,Elektronika,Plzeň,26200,1
+2023-12-18,Notebook Air,Elektronika,Praha,21440,1
+2023-12-18,Lampa stolní,Nábytek,Hradec Králové,670,2
+2023-12-18,Kávovar pákový,Domácnost,Liberec,3870,5
+2023-12-18,Rychlovarná konvice,Domácnost,České Budějovice,800,1
+2023-12-19,Robotický vysavač,Domácnost,Ostrava,8900,1
+2023-12-19,Notebook Pro,Elektronika,Brno,24080,10
+2023-12-19,Rychlovarná konvice,Domácnost,Hradec Králové,800,1
+2023-12-19,Polohovací stůl,Nábytek,Brno,12220,2
+2023-12-19,Herní Notebook,Elektronika,České Budějovice,28180,1
+2023-12-19,Mlýnek na kávu,Domácnost,Praha,1520,1
+2023-12-20,Herní křeslo,Nábytek,Brno,4000,4
+2023-12-20,Webkamera,Elektronika,Ostrava,1240,4
+2023-12-21,Robotický vysavač,Domácnost,Plzeň,9090,1
+2023-12-21,Mlýnek na kávu,Domácnost,Brno,1470,3
+2023-12-21,Notebook Pro,Elektronika,Praha,23820,2
+2023-12-21,Toustovač,Domácnost,Plzeň,590,1
+2023-12-21,Lampa stojací,Nábytek,Ostrava,1540,1
+2023-12-21,"Monitor 27"" 4K",Elektronika,Plzeň,8010,1
+2023-12-22,Rychlovarná konvice,Domácnost,Brno,840,1
+2023-12-22,Lampa stojací,Nábytek,Brno,1560,1
+2023-12-22,Lampa stolní,Nábytek,Brno,780,2
+2023-12-22,Toustovač,Domácnost,Ostrava,630,1
+2023-12-22,Sluchátka,Elektronika,Ostrava,1480,4
+2023-12-22,Robotický vysavač,Domácnost,Ostrava,7040,3
+2023-12-22,Mixér,Domácnost,Praha,1170,1
+2023-12-22,Mlýnek na kávu,Domácnost,Olomouc,1520,1
+2023-12-22,Psací stůl,Nábytek,Praha,3900,2
+2023-12-22,Psací stůl,Nábytek,Ostrava,3940,1
+2023-12-23,Herní křeslo,Nábytek,Ostrava,4810,2
+2023-12-23,Webkamera,Elektronika,Olomouc,1230,1
+2023-12-23,Sluchátka,Elektronika,Brno,1500,1
+2023-12-23,Mixér,Domácnost,Praha,1260,1
+2023-12-23,Polohovací stůl,Nábytek,Praha,12070,1
+2023-12-24,Klávesnice,Elektronika,Praha,800,1
+2023-12-24,Lampa stojací,Nábytek,Ostrava,1450,1
+2023-12-25,Polohovací stůl,Nábytek,Praha,12190,1
+2023-12-25,Robotický vysavač,Domácnost,Plzeň,9320,2
+2023-12-25,Klávesnice,Elektronika,Hradec Králové,820,1
+2023-12-25,Kontejner,Nábytek,Ostrava,2620,1
+2023-12-25,Ergo židle,Nábytek,Praha,12100,3
+2023-12-25,Herní křeslo,Nábytek,Brno,5100,2
+2023-12-25,Knihovna,Nábytek,Olomouc,3130,2
+2023-12-25,Myš herní,Elektronika,Praha,1190,5
+2023-12-25,Myš bezdrátová,Elektronika,České Budějovice,400,1
+2023-12-26,Klávesnice,Elektronika,České Budějovice,770,1
+2023-12-26,Mlýnek na kávu,Domácnost,Ostrava,1450,2
+2023-12-26,Polohovací stůl,Nábytek,Praha,11830,1
+2023-12-26,Notebook Air,Elektronika,Liberec,21990,3
+2023-12-26,Klávesnice,Elektronika,Ostrava,780,1
+2023-12-26,Knihovna,Nábytek,Plzeň,3090,1
+2023-12-26,Klávesnice,Elektronika,Plzeň,840,1
+2023-12-26,Regál,Nábytek,Hradec Králové,1210,1
+2023-12-26,Robotický vysavač,Domácnost,České Budějovice,8790,1
+2023-12-27,Kávovar automat,Domácnost,Praha,9190,1
+2023-12-27,Lampa stojací,Nábytek,Ostrava,1500,1
+2023-12-27,Ergo židle,Nábytek,Ostrava,12420,1
+2023-12-27,Vysavač tyčový,Domácnost,Praha,4000,4
+2023-12-28,Regál,Nábytek,Hradec Králové,1150,1
+2023-12-28,Lampa stolní,Nábytek,Brno,780,2
+2023-12-29,Klávesnice,Elektronika,České Budějovice,770,3
+2023-12-29,Robotický vysavač,Domácnost,Ostrava,8830,1
+2023-12-29,Kávovar automat,Domácnost,Praha,11470,1
+2023-12-29,Čistička vzduchu,Domácnost,Plzeň,4320,1
+2023-12-29,Psací stůl,Nábytek,Praha,4020,2
+2023-12-29,Herní Notebook,Elektronika,Brno,34380,1
+2023-12-29,Kancelářská židle,Nábytek,Praha,3470,1
+2023-12-30,Rychlovarná konvice,Domácnost,České Budějovice,770,2
+2023-12-31,Knihovna,Nábytek,Hradec Králové,2990,1
+2023-12-31,"Monitor 24""",Elektronika,Praha,3480,2
+2023-12-31,Herní křeslo,Nábytek,Brno,5210,2
+2023-12-31,Lampa stojací,Nábytek,Ostrava,1480,1
+2023-12-31,Kávovar automat,Domácnost,Praha,12200,1
+2023-12-31,Klávesnice,Elektronika,Plzeň,670,1
+2023-12-31,Kávovar automat,Domácnost,Hradec Králové,11840,1
+2023-12-31,Toustovač,Domácnost,Plzeň,580,3

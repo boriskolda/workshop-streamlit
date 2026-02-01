@@ -25,19 +25,19 @@ st.divider()
 st.header("2. Náš cvičný dataset")
 st.markdown("""
 Pokud nemáte vlastní data, připravili jsme pro vás fiktivní dataset **Prodeje e-shopu**.
-Obsahuje vše, co budeme potřebovat (datum, kategorie, čísla).
+Obsahuje cca 2000 řádků (elektronika, nábytek, domácnost) s reálnou strukturou.
 """)
 
 # Načtení dat pro download button
 @st.cache_data
 def load_csv():
-    with open("data/prodeje.csv", "rb") as f:
-        return f.read()
+    df = pd.read_csv("data/prodeje.csv")
+    return df.to_csv(index=False).encode('utf-8-sig')
 
 try:
     csv_data = load_csv()
     st.download_button(
-        label="📥 Stáhnout prodeje.csv",
+        label="📥 Stáhnout prodeje.csv (Excel-friendly)",
         data=csv_data,
         file_name="prodeje.csv",
         mime="text/csv",
