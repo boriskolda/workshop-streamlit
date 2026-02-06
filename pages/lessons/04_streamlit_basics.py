@@ -18,7 +18,7 @@ tab_intro, tab_principle, tab_text, tab_layout, tab_data, tab_challenge = st.tab
     "2. Texty a Prvky", 
     "3. Layout (Rozložení)", 
     "4. Data a Grafy", 
-    "🚀 STAVBA APLIKACE"
+    "🚀 STAVBA DASHBOARDU"
 ])
 
 # ==========================================
@@ -492,8 +492,8 @@ st.error("Chyba!")
 
     st.divider()
     
-    st.subheader("📊 Metriky (KPI)")
-    st.markdown("Skvělé pro dashboardy.")
+    st.subheader("📊 Klíčové ukazatele (Metriky)")
+    st.markdown("`st.metric` je ideální pro zobrazení nejdůležitějších čísel (KPI) na první pohled. Manažeři to milují!")
     
     c1, c2, c3 = st.columns(3)
     with c1:
@@ -581,8 +581,8 @@ with tab_data:
     
     # Data pro ukázku
     df_demo = pd.DataFrame({
-        'Kategorie': ['A', 'B', 'C'],
-        'Hodnota': [10, 20, 30]
+        'Palivo': ['Natural 95', 'Nafta', 'LPG'],
+        'Cena': [38.5, 37.2, 17.5]
     })
 
     col1, col2 = st.columns(2)
@@ -604,47 +604,87 @@ chart = alt.Chart(df).mark_bar().encode(...)
 st.altair_chart(chart, use_container_width=True)
         """, language="python")
         
-        c = alt.Chart(df_demo).mark_bar().encode(x='Kategorie', y='Hodnota')
+        c = alt.Chart(df_demo).mark_bar().encode(x='Palivo', y='Cena')
         st.altair_chart(c, use_container_width=True)
 
 # ==========================================
-# TAB 5: CHALLENGE
+# TAB 5: STAVBA DASHBOARDU
 # ==========================================
 with tab_challenge:
-    st.header("🚀 Stavba kostry aplikace")
-    st.markdown("""
-    Teď začneme stavět váš dashboard! Otevřete si soubor `src/dashboard.py` a vytvořte základní layout.
-    """)
+    st.header("🚀 Kuchařka pro váš Dashboard")
+    st.markdown("Otevřete si svůj soubor a skládejte si aplikaci z těchto bloků.")
 
-    st.subheader("Krok 1: Konfigurace a Nadpis")
-    st.info("Nastavte aplikaci na 'wide' mode a dejte jí nadpis.")
-    with st.expander("Zobrazit kód"):
-        st.code("""
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.subheader("Stavební bloky")
+        
+        show_imports = st.checkbox("1. Importy", value=True, key="pd_imp_final")
+        show_config = st.checkbox("2. Konfigurace stránky", value=True, key="pd_load_final")
+        show_title = st.checkbox("3. Nadpis", value=True)
+        show_data = st.checkbox("4. Načtení dat")
+        show_kpi = st.checkbox("5. Klíčové ukazatele (Metriky)")
+        show_layout = st.checkbox("6. Layout (Sloupce, Záložky)")
+        show_chart = st.checkbox("7. Graf")
+        show_table = st.checkbox("8. Tabulka")
+
+    with col2:
+        st.subheader("Výsledný kód")
+        
+        code_parts = []
+        
+        if show_imports:
+            code_parts.append('''
+# --- 1. IMPORTY ---
 import streamlit as st
+import pandas as pd
+import altair as alt
+''')
+        if show_config:
+            code_parts.append('''
+# --- 2. KONFIGURACE STRÁNKY ---
+st.set_page_config(layout="wide", page_title="Ceny PHM")
+''')
+        if show_title:
+            code_parts.append('''
+# --- 3. NADPIS ---
+st.title("⛽ Vývoj cen pohonných hmot")
+''')
+        if show_data:
+            code_parts.append('''
+# --- 4. NAČTENÍ DAT ---
+@st.cache_data
+def load_data():
+    df = pd.read_csv("data/CENPHMT.csv")
+    df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produkt'}, inplace=True)
+    df['Datum'] = pd.to_datetime(df['Tydentext'] + '-1', format='%Y-W%W-%w')
+    df = df[df['IndicatorType'] == '6621T']
+    return df
 
-st.set_page_config(layout="wide", page_title="Můj Dashboard")
-st.title("📊 Manažerský přehled")
-        """, language="python")
+df = load_data()
+''')
+        if show_kpi:
+            code_parts.append('''
+# --- 5. KLÍČOVÉ UKAZATELE (METRIKY) ---
+latest_price = df.loc[df['Datum'].idxmax()]['Cena']
+st.metric("Poslední cena", f"{latest_price:.2f} Kč")
+''')
+        if show_layout:
+            code_parts.append('''
+# --- 6. LAYOUT ---
+# col1, col2 = st.columns(2)
+# tab1, tab2 = st.tabs(["Grafy", "Data"])
+''')
+        if show_chart:
+            code_parts.append('''
+# --- 7. GRAF ---
+chart = alt.Chart(df).mark_line().encode(x='Datum:T', y='Cena:Q', color='Produkt:N')
+st.altair_chart(chart, use_container_width=True)
+''')
+        if show_table:
+            code_parts.append('''
+# --- 8. TABULKA ---
+st.dataframe(df, hide_index=True)
+''')
 
-    st.subheader("Krok 2: Rozložení (Metriky)")
-    st.info("Vytvořte 3 sloupce pro KPI metriky (zatím s fiktivními čísly).")
-    with st.expander("Zobrazit kód"):
-        st.code("""
-col1, col2, col3 = st.columns(3)
-col1.metric("Tržby", "0 Kč")
-col2.metric("Objednávky", "0")
-col3.metric("Průměr", "0 Kč")
-        """, language="python")
-
-    st.subheader("Krok 3: Rozložení (Grafy)")
-    st.info("Vytvořte dvě záložky: 'Trendy' a 'Data'.")
-    with st.expander("Zobrazit kód"):
-        st.code("""
-tab1, tab2 = st.tabs(["Trendy", "Data"])
-
-with tab1:
-    st.write("Tady budou grafy")
-
-with tab2:
-    st.write("Tady bude tabulka")
-        """, language="python")
+        st.code("".join(code_parts), language="python")

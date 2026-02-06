@@ -3,13 +3,12 @@
 ## Anotace
 Máte data a chcete je prezentovat světu? Zapomeňte na statické grafy v Excelu. Na tomto workshopu se naučíte, jak během jediného dne proměnit surová data v interaktivní webovou aplikaci pomocí jazyka Python a knihovny Streamlit.
 
-Workshop je koncipován jako "hands-on" projekt. Začneme analýzou dat, vytvoříme vizualizace a ty následně integrujeme do aplikace, kterou si každý účastník na konci dne zdarma nasadí na internet (Streamlit Cloud).
+## Jak pracovat s materiály
+Tento repozitář je navržen tak, abyste si postupně budovali vlastní aplikaci.
 
-## Co se naučíte
-*   Základy efektivní analýzy dat s knihovnou Pandas.
-*   Tvorbu profesionálních grafů (Altair).
-*   Vývoj interaktivního dashboardu pomocí Streamlit.
-*   Základy verzování kódu (Git) a nasazení aplikace online.
+1.  **Vytvořte si soubor `muj_dashboard.py`** ve složce `src/`. To bude vaše hlavní pracovní plocha.
+2.  Postupujte podle lekcí a skládejte si kód do tohoto souboru.
+3.  Pokud se ztratíte, finální řešení je v `src/dashboard_final.py`.
 
 ## Harmonogram (9:00 – 18:00)
 

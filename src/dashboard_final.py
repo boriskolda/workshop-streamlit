@@ -4,88 +4,56 @@ import altair as alt
 
 # --- 1. Konfigurace stránky ---
 st.set_page_config(
-    page_title="Manažerský Dashboard",
-    page_icon="📊",
+    page_title="Ceny PHM v ČR",
+    page_icon="⛽",
     layout="wide"
 )
 
-# --- 2. Načtení dat ---
+# --- 2. Načtení a příprava dat ---
 @st.cache_data
 def load_data():
-    try:
-        df = pd.read_csv('../data/prodeje.csv')
-        df['Datum'] = pd.to_datetime(df['Datum'])
-        if 'Celkem' not in df.columns:
-            df['Celkem'] = df['Cena'] * df['Mnozstvi']
-        return df
-    except FileNotFoundError:
-        return None
+    df = pd.read_csv('data/CENPHMT.csv')
+    df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produkt'}, inplace=True)
+    df['Datum'] = pd.to_datetime(df['Tydentext'] + '-1', format='%Y-W%W-%w')
+    return df
 
 df = load_data()
-
-if df is None:
-    st.error("Chyba: Soubor '../data/prodeje.csv' nebyl nalezen.")
-    st.stop()
 
 # --- 3. Sidebar (Filtry) ---
 st.sidebar.header("Filtry")
 
-all_branches = df['Pobocka'].unique()
-selected_branch = st.sidebar.multiselect("Vyber Pobočku", all_branches, default=all_branches)
+produkty = st.sidebar.multiselect(
+    "Vyberte druh paliva:",
+    options=df['Produkt'].unique(),
+    default=df['Produkt'].unique()
+)
 
-all_categories = df['Kategorie'].unique()
-selected_category = st.sidebar.multiselect("Vyber Kategorii", all_categories, default=all_categories)
-
-filtered_df = df[
-    (df['Pobocka'].isin(selected_branch)) &
-    (df['Kategorie'].isin(selected_category))
-]
+df_filtered = df[df['Produkt'].isin(produkty)]
 
 # --- 4. Hlavní obsah ---
-st.title("📊 Přehled prodejů (Altair)")
+st.title("⛽ Vývoj cen pohonných hmot v ČR")
 
-if filtered_df.empty:
-    st.warning("Žádná data pro zobrazení.")
+if df_filtered.empty:
+    st.warning("Vyberte alespoň jeden druh paliva.")
     st.stop()
 
 # KPI
-total_sales = filtered_df['Celkem'].sum()
-total_qty = filtered_df['Mnozstvi'].sum()
-avg_order = filtered_df['Celkem'].mean()
+latest_date = df_filtered['Datum'].max()
+latest_data = df_filtered[df_filtered['Datum'] == latest_date]
 
-c1, c2, c3 = st.columns(3)
-c1.metric("Celkové tržby", f"{total_sales:,.0f} Kč".replace(",", " "))
-c2.metric("Prodané kusy", f"{total_qty}")
-c3.metric("Průměrná objednávka", f"{avg_order:.0f} Kč")
+st.subheader(f"Ceny v posledním týdnu ({latest_date.strftime('%d. %m. %Y')})")
+cols = st.columns(len(latest_data))
+for i, row in enumerate(latest_data.itertuples()):
+    cols[i].metric(row.Produkt, f"{row.Cena:.2f} Kč")
 
 st.markdown("---")
 
-# Grafy
-tab1, tab2 = st.tabs(["📈 Trendy", "📋 Data"])
-
-with tab1:
-    col_chart1, col_chart2 = st.columns(2)
-    
-    with col_chart1:
-        st.subheader("Tržby dle kategorií")
-        # Altair Bar Chart
-        chart_bar = alt.Chart(filtered_df).mark_bar().encode(
-            x=alt.X('Kategorie', sort='-y'),
-            y=alt.Y('sum(Celkem)', title='Tržby'),
-            color='Pobocka',
-            tooltip=['Kategorie', 'sum(Celkem)', 'Pobocka']
-        ).interactive()
-        st.altair_chart(chart_bar, use_container_width=True)
-        
-    with col_chart2:
-        st.subheader("Vývoj v čase")
-        # Altair Line Chart
-        chart_line = alt.Chart(filtered_df).mark_line(point=True).encode(
-            x='Datum',
-            y=alt.Y('sum(Celkem)', title='Tržby'),
-            tooltip=['Datum', 'sum(Celkem)']
-        ).interactive()
-        st.altair_chart(chart_line, use_container_width=True)
-
-with tab2:
-    st.dataframe(filtered_df)
+# Graf vývoje v čase
+st.subheader("Vývoj cen v čase")
+chart_time = alt.Chart(df_filtered).mark_line().encode(
+    x=alt.X('Datum:T', title='Datum'),
+    y=alt.Y('Cena:Q', title='Cena (Kč/l)'),
+    color='Produkt:N',
+    tooltip=['Datum', 'Produkt', 'Cena']
+).interactive()
+st.altair_chart(chart_time, use_container_width=True)

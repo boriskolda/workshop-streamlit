@@ -1,0 +1,15 @@
+[theme]
+# Hlavní barva pro interaktivní prvky
+primaryColor="#38bdf8"
+
+# Barva pozadí hlavní plochy
+backgroundColor="#0f172a"
+
+# Barva pozadí postranního panelu a prvků
+secondaryBackgroundColor="#1e293b"
+
+# Barva textu
+textColor="#f1f5f9"
+
+# Typ písma
+font="sans serif"

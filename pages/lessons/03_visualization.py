@@ -8,16 +8,17 @@ st.set_page_config(layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('data/prodeje.csv')
-    df['Datum'] = pd.to_datetime(df['Datum'])
-    df['Celkem'] = df['Cena'] * df['Mnozstvi']
+    df = pd.read_csv('data/CENPHMT.csv')
+    df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produkt'}, inplace=True)
+    df['Datum'] = pd.to_datetime(df['Tydentext'] + '-1', format='%Y-W%W-%w')
+    df = df[df['IndicatorType'] == '6621T'] # Filtr na průměrné ceny
     return df
 
 df = load_data()
 
 # --- Hlavní nadpis ---
-st.title("📊 Altair Masterclass")
-st.caption("Gramatika grafiky: Jak skládat vizualizace jako lego.")
+st.title("📊 Altair Masterclass: Ceny pohonných hmot")
+st.caption("Vizualizujeme reálná data o cenách paliv z ČSÚ.")
 
 # --- Navigace ---
 tab_intro, tab_theory, tab_basic, tab_adv, tab_agg, tab_challenge = st.tabs([
@@ -26,7 +27,7 @@ tab_intro, tab_theory, tab_basic, tab_adv, tab_agg, tab_challenge = st.tabs([
     "2. Základní grafy", 
     "3. Vylepšování", 
     "4. Agregace v grafu", 
-    "🚀 PŘÍPRAVA PRO DASHBOARD"
+    "🚀 KUCHAŘKA GRAFŮ"
 ])
 
 # ==========================================
@@ -480,7 +481,7 @@ alt.Chart(DATA).mark_TYP_GRAFU().encode(
 )
     """, language="python")
     
-    st.caption("Příklad: `alt.Chart(df).mark_bar().encode(x='Kategorie', y='Cena')`")
+    st.caption("Příklad: `alt.Chart(df).mark_bar().encode(x='Produkt', y='Cena')`")
 
 # ==========================================
 # TAB 2: ZÁKLADNÍ GRAFY
@@ -496,12 +497,12 @@ with tab_basic:
     with col1:
         st.code("""
 alt.Chart(df).mark_bar().encode(
-    x='Kategorie',
+    x='Produkt',
     y='Cena'
 )
         """, language="python")
     with col2:
-        c = alt.Chart(df).mark_bar().encode(x='Kategorie', y='Cena')
+        c = alt.Chart(df).mark_bar().encode(x='Produkt', y='Cena')
         st.altair_chart(c, use_container_width=True)
 
     st.divider()
@@ -522,24 +523,6 @@ alt.Chart(df).mark_line().encode(
         c = alt.Chart(df).mark_line().encode(x='Datum', y='Cena')
         st.altair_chart(c, use_container_width=True)
 
-    st.divider()
-
-    # --- SCATTER PLOT ---
-    st.subheader("C) Scatter Plot (Bodový)")
-    st.markdown("Ideální pro hledání vztahů (korelace).")
-    
-    col1, col2 = st.columns([1, 1])
-    with col1:
-        st.code("""
-alt.Chart(df).mark_circle().encode(
-    x='Mnozstvi',
-    y='Cena'
-)
-        """, language="python")
-    with col2:
-        c = alt.Chart(df).mark_circle(size=60).encode(x='Mnozstvi', y='Cena')
-        st.altair_chart(c, use_container_width=True)
-
 # ==========================================
 # TAB 3: VYLEPŠOVÁNÍ
 # ==========================================
@@ -554,55 +537,16 @@ with tab_adv:
     col1, col2 = st.columns([1, 1])
     with col1:
         st.code("""
-alt.Chart(df).mark_circle().encode(
-    x='Mnozstvi',
+alt.Chart(df).mark_line().encode(
+    x='Datum',
     y='Cena',
-    color='Kategorie' # Automaticky vytvoří legendu
+    color='Produkt' # Automaticky vytvoří legendu
 )
         """, language="python")
     with col2:
-        c = alt.Chart(df).mark_circle(size=60).encode(
-            x='Mnozstvi', y='Cena', color='Kategorie'
+        c = alt.Chart(df).mark_line().encode(
+            x='Datum', y='Cena', color='Produkt'
         )
-        st.altair_chart(c, use_container_width=True)
-
-    st.divider()
-
-    # --- TOOLTIPY ---
-    st.subheader("2. Tooltipy (Bubliny)")
-    st.markdown("Co se stane, když najedete myší na bod?")
-    
-    col1, col2 = st.columns([1, 1])
-    with col1:
-        st.code("""
-alt.Chart(df).mark_bar().encode(
-    x='Kategorie',
-    y='Cena',
-    tooltip=['Produkt', 'Cena', 'Datum']
-)
-        """, language="python")
-    with col2:
-        c = alt.Chart(df).mark_bar().encode(
-            x='Kategorie', y='Cena', tooltip=['Produkt', 'Cena', 'Datum']
-        )
-        st.altair_chart(c, use_container_width=True)
-
-    st.divider()
-
-    # --- INTERAKTIVITA ---
-    st.subheader("3. Interaktivita")
-    st.markdown("Magické slůvko `.interactive()` povolí zoom a posun.")
-    
-    col1, col2 = st.columns([1, 1])
-    with col1:
-        st.code("""
-alt.Chart(df).mark_circle().encode(
-    x='Mnozstvi',
-    y='Cena'
-).interactive()
-        """, language="python")
-    with col2:
-        c = alt.Chart(df).mark_circle(size=60).encode(x='Mnozstvi', y='Cena').interactive()
         st.altair_chart(c, use_container_width=True)
 
 # ==========================================
@@ -616,106 +560,60 @@ with tab_agg:
     """)
 
     # --- SUMA ---
-    st.subheader("Suma (sum)")
-    st.markdown("Místo mnoha malých čárek chceme jeden velký sloupec za celou kategorii.")
-    
-    col1, col2 = st.columns([1, 1])
-    with col1:
-        st.code("""
-alt.Chart(df).mark_bar().encode(
-    x='Kategorie',
-    y='sum(Cena)' # Sečti Cenu pro každou Kategorii
-)
-        """, language="python")
-    with col2:
-        c = alt.Chart(df).mark_bar().encode(x='Kategorie', y='sum(Cena)')
-        st.altair_chart(c, use_container_width=True)
-
-    st.divider()
-
-    # --- PRŮMĚR ---
     st.subheader("Průměr (mean)")
     
     col1, col2 = st.columns([1, 1])
     with col1:
         st.code("""
 alt.Chart(df).mark_bar().encode(
-    x='Pobocka',
+    x='Produkt',
     y='mean(Cena)' # Průměrná cena
 )
         """, language="python")
     with col2:
-        c = alt.Chart(df).mark_bar().encode(x='Pobocka', y='mean(Cena)')
+        c = alt.Chart(df).mark_bar().encode(x='Produkt', y='mean(Cena)')
         st.altair_chart(c, use_container_width=True)
 
 # ==========================================
-# TAB 5: PŘÍPRAVA PRO DASHBOARD
+# TAB 5: KUCHAŘKA GRAFŮ
 # ==========================================
 with tab_challenge:
-    st.header("🚀 Příprava grafů pro Dashboard")
-    st.markdown("""
-    Teď si připravíme **3 klíčové grafy**, které budeme potřebovat v odpoledním bloku.
-    Otevřete si svůj editor a odlaďte si kód pro tyto vizualizace.
-    """)
+    st.header("🚀 Kuchařka grafů pro Dashboard")
 
-    # 1. KATEGORICKÝ GRAF
-    st.subheader("1. Kategorický graf (Bar Chart)")
-    st.info("Cíl: Ukázat, kdo je nejlepší (např. která Pobočka nebo Kategorie).")
-    st.markdown("""
-    *   **Mark:** `mark_bar()`
-    *   **X:** Kategorický sloupec (např. Pobočka)
-    *   **Y:** Suma číselného sloupce (např. `sum(Celkem)`)
-    *   **Color:** Stejný jako X (pro hezčí vzhled)
-    """)
-    with st.expander("Zobrazit vzorový kód"):
-        st.code("""
-graf_kategorie = alt.Chart(df).mark_bar().encode(
-    x='KATEGORIE',
-    y='sum(CISLO)',
-    color='KATEGORIE',
-    tooltip=['KATEGORIE', 'sum(CISLO)']
+    chart_type = st.radio(
+        "Vyberte typ grafu:",
+        ["Vývoj ceny v čase", "Srovnání paliv"]
+    )
+    
+    if "Vývoj ceny" in chart_type:
+        st.info("Ukazuje vývoj ceny vybraného druhu paliva v čase.")
+        produkt = st.selectbox("Vyberte druh paliva:", df['Produkt'].unique())
+        
+        code = f"""
+chart = alt.Chart(df[df['Produkt'] == '{produkt}']).mark_line(point=True).encode(
+    x='Datum:T',
+    y='Cena:Q',
+    tooltip=['Datum', 'Cena']
 ).interactive()
-        """, language="python")
+"""
+        st.code(code, language="python")
+        chart = alt.Chart(df[df['Produkt'] == produkt]).mark_line(point=True).encode(
+            x='Datum:T', y='Cena:Q', tooltip=['Datum', 'Cena']
+        ).interactive()
+        st.altair_chart(chart, use_container_width=True)
 
-    st.divider()
-
-    # 2. ČASOVÝ GRAF
-    st.subheader("2. Časový graf (Line Chart)")
-    st.info("Cíl: Ukázat vývoj v čase (Trendy).")
-    st.markdown("""
-    *   **Mark:** `mark_line(point=True)`
-    *   **X:** Časový sloupec (Datum)
-    *   **Y:** Suma číselného sloupce
-    *   **Tooltip:** Datum a Hodnota
-    """)
-    with st.expander("Zobrazit vzorový kód"):
-        st.code("""
-graf_cas = alt.Chart(df).mark_line(point=True).encode(
-    x='DATUM',
-    y='sum(CISLO)',
-    tooltip=['DATUM', 'sum(CISLO)']
+    elif "Srovnání paliv" in chart_type:
+        st.info("Porovnává průměrnou cenu různých druhů paliv za celé období.")
+        
+        code = """
+chart = alt.Chart(df).mark_bar().encode(
+    x=alt.X('Produkt', sort='-y'),
+    y='mean(Cena)',
+    color='Produkt'
 ).interactive()
-        """, language="python")
-
-    st.divider()
-
-    # 3. KORELAČNÍ GRAF
-    st.subheader("3. Korelační graf (Scatter Plot)")
-    st.info("Cíl: Ukázat detail a vztahy mezi metrikami.")
-    st.markdown("""
-    *   **Mark:** `mark_circle()`
-    *   **X:** Číselná metrika A (např. Množství)
-    *   **Y:** Číselná metrika B (např. Cena)
-    *   **Size:** Metrika C (např. Celkem)
-    *   **Color:** Kategorie
-    """)
-    with st.expander("Zobrazit vzorový kód"):
-        st.code("""
-graf_scatter = alt.Chart(df).mark_circle().encode(
-    x='METRIKA_A',
-    y='METRIKA_B',
-    size='METRIKA_C',
-    color='KATEGORIE',
-    tooltip=['NAZEV', 'METRIKA_A', 'METRIKA_B']
-).interactive()
-        """, language="python")
+"""
+        st.code(code, language="python")
+        chart = alt.Chart(df).mark_bar().encode(
+            x=alt.X('Produkt', sort='-y'), y='mean(Cena)', color='Produkt'
+        ).interactive()
+        st.altair_chart(chart, use_container_width=True)

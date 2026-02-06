@@ -7,8 +7,18 @@ import streamlit.components.v1 as components
 # --- Konfigurace ---
 st.set_page_config(layout="wide")
 
+@st.cache_data
+def load_data():
+    df = pd.read_csv('data/CENPHMT.csv')
+    df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produkt'}, inplace=True)
+    df['Datum'] = pd.to_datetime(df['Tydentext'] + '-1', format='%Y-W%W-%w')
+    df = df[df['IndicatorType'] == '6621T'] # Filtr na průměrné ceny
+    return df
+
+df = load_data()
+
 # --- Hlavní nadpis ---
-st.title("🎛️ Interaktivita Masterclass")
+st.title("🎛️ Interaktivita Masterclass: Ceny PHM")
 st.caption("Nechte uživatele, ať si s daty hrají.")
 
 # --- Navigace ---
@@ -18,7 +28,7 @@ tab_intro, tab_principle, tab_widgets, tab_filter, tab_state, tab_challenge = st
     "2. Katalog widgetů", 
     "3. Filtrování dat", 
     "4. Session State", 
-    "🚀 IMPLEMENTACE"
+    "🚀 KUCHAŘKA FILTRŮ"
 ])
 
 # ==========================================
@@ -539,37 +549,25 @@ with tab_filter:
     st.header("🔍 Propojení s daty (Filtrování)")
     st.markdown("Tohle je svatý grál dashboardů. Widget ovládá Pandas filtr.")
 
-    # Příprava dat
-    df = pd.DataFrame({
-        'Město': ['Praha', 'Brno', 'Ostrava', 'Praha', 'Brno'],
-        'Tržba': [100, 200, 150, 300, 250]
-    })
-
     st.subheader("Krok 1: Widget")
     st.code("""
-mesta = df['Město'].unique()
-vyber = st.multiselect("Vyber město:", mesta, default=mesta)
+produkty = df['Produkt'].unique()
+vyber = st.multiselect("Vyber produkt:", produkty, default=produkty[0:3])
     """, language="python")
     
-    mesta = df['Město'].unique()
-    vyber = st.multiselect("Vyber město:", mesta, default=mesta, key="filter_demo")
+    produkty = df['Produkt'].unique()
+    vyber = st.multiselect("Vyber produkt:", produkty, default=list(produkty[0:3]), key="filter_demo")
 
     st.subheader("Krok 2: Filtrace DataFrame")
     st.code("""
 # Magický řádek
-filtered_df = df[df['Město'].isin(vyber)]
+filtered_df = df[df['Produkt'].isin(vyber)]
     """, language="python")
     
-    filtered_df = df[df['Město'].isin(vyber)]
+    filtered_df = df[df['Produkt'].isin(vyber)]
 
     st.subheader("Krok 3: Výsledek")
-    c1, c2 = st.columns(2)
-    with c1:
-        st.write("Tabulka:")
-        st.dataframe(filtered_df, hide_index=True)
-    with c2:
-        st.write("Graf:")
-        st.bar_chart(filtered_df, x='Město', y='Tržba')
+    st.dataframe(filtered_df, hide_index=True)
 
 # ==========================================
 # TAB 4: SESSION STATE
@@ -603,43 +601,54 @@ st.write(f"Hodnota: {st.session_state.pocitadlo}")
         st.metric("Počítadlo", st.session_state.pocitadlo)
 
 # ==========================================
-# TAB 5: CHALLENGE
+# TAB 5: KUCHAŘKA FILTRŮ
 # ==========================================
 with tab_challenge:
-    st.header("🚀 Implementace filtrů")
-    st.markdown("Vraťte se do `src/dashboard.py` a přidejte interaktivitu.")
+    st.header("🚀 Kuchařka filtrů")
+    st.markdown("Vyberte si, jaký filtr chcete přidat do aplikace.")
 
-    st.subheader("Úkol 1: Sidebar Filtry")
-    st.info("Přidejte do sidebaru `multiselect` pro výběr Pobočky a Kategorie.")
-    with st.expander("Zobrazit kód"):
-        st.code("""
-st.sidebar.header("Filtry")
+    col1, col2 = st.columns([1, 2])
 
-# 1. Načíst unikátní hodnoty
-pobocky = df['Pobocka'].unique()
+    with col1:
+        filter_type = st.radio(
+            "Vyberte typ filtru:",
+            ["Výběr paliva (Multiselect)", "Výběr data (Date Input)"]
+        )
+
+    with col2:
+        st.subheader("Kód a výsledek")
+        
+        if "Výběr paliva" in filter_type:
+            st.info("Filtr pro výběr jednoho nebo více druhů paliva.")
+            code = """
+# 1. Získat unikátní hodnoty
+moznosti = df['Produkt'].unique()
 
 # 2. Vytvořit widget
-vybrana_pobocka = st.sidebar.multiselect(
-    "Vyber pobočku", 
-    pobocky, 
-    default=pobocky
+vyber = st.sidebar.multiselect(
+    "Vyber palivo:",
+    options=moznosti,
+    default=moznosti
 )
-        """, language="python")
 
-    st.subheader("Úkol 2: Propojení")
-    st.info("Použijte hodnotu z widgetu k filtrování hlavního DataFrame.")
-    with st.expander("Zobrazit kód"):
-        st.code("""
-filtered_df = df[df['Pobocka'].isin(vybrana_pobocka)]
+# 3. Aplikovat filtr
+df_filtered = df[df['Produkt'].isin(vyber)]
+"""
+            st.code(code, language="python")
+            
+        elif "Výběr data" in filter_type:
+            st.info("Filtr pro výběr časového rozsahu.")
+            code = """
+# 1. Vytvořit widget
+datum_od, datum_do = st.sidebar.date_input(
+    "Vyber rozsah:",
+    [df['Datum'].min(), df['Datum'].max()]
+)
 
-# DŮLEŽITÉ: Dále v kódu (grafy, metriky) už používejte 'filtered_df'!
-        """, language="python")
-
-    st.subheader("Úkol 3: Kontrola prázdných dat")
-    st.info("Co když uživatel odškrtne všechno? Aplikace by neměla spadnout.")
-    with st.expander("Zobrazit kód"):
-        st.code("""
-if filtered_df.empty:
-    st.warning("Žádná data pro zobrazení.")
-    st.stop()
-        """, language="python")
+# 2. Aplikovat filtr
+df_filtered = df[
+    (df['Datum'] >= pd.to_datetime(datum_od)) &
+    (df['Datum'] <= pd.to_datetime(datum_do))
+]
+"""
+            st.code(code, language="python")
