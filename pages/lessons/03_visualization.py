@@ -8,10 +8,10 @@ st.set_page_config(layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('data/CENPHMT.csv')
-    df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produkt'}, inplace=True)
-    df['Datum'] = pd.to_datetime(df['Tydentext'] + '-1', format='%Y-W%W-%w')
-    df = df[df['IndicatorType'] == '6621T'] # Filtr na průměrné ceny
+    df = pd.read_csv('data/CEN0101J.csv')
+    df.rename(columns={'Hodnota': 'Cena', 'CasM': 'RokMesic', 'Druh PHM': 'Produkt'}, inplace=True)
+    df['Datum'] = pd.to_datetime(df['RokMesic'], format='%Y-%m')
+    df = df[df['IndicatorType'] == 6621] # Filtr na průměrné ceny
     return df
 
 df = load_data()
@@ -496,14 +496,17 @@ with tab_basic:
     col1, col2 = st.columns([1, 1])
     with col1:
         st.code("""
-alt.Chart(df).mark_bar().encode(
+df_agg = df.groupby('Produkt')['Cena'].mean().reset_index()
+        
+alt.Chart(df_agg).mark_bar().encode(
     x='Produkt',
     y='Cena'
 )
         """, language="python")
     with col2:
-        c = alt.Chart(df).mark_bar().encode(x='Produkt', y='Cena')
-        st.altair_chart(c, use_container_width=True)
+        df_agg = df.groupby('Produkt')['Cena'].mean().reset_index()
+        c = alt.Chart(df_agg).mark_bar().encode(x='Produkt', y='Cena')
+        st.altair_chart(c, width='stretch')
 
     st.divider()
 
@@ -514,14 +517,16 @@ alt.Chart(df).mark_bar().encode(
     col1, col2 = st.columns([1, 1])
     with col1:
         st.code("""
-alt.Chart(df).mark_line().encode(
+df_natural = df[df['Produkt'] == 'Benzin automobilový bezolovnatý Natural 95 [Kč/l]']
+alt.Chart(df_natural).mark_line().encode(
     x='Datum',
     y='Cena'
 )
         """, language="python")
     with col2:
-        c = alt.Chart(df).mark_line().encode(x='Datum', y='Cena')
-        st.altair_chart(c, use_container_width=True)
+        df_natural = df[df['Produkt'] == 'Benzin automobilový bezolovnatý Natural 95 [Kč/l]']
+        c = alt.Chart(df_natural).mark_line().encode(x='Datum', y='Cena')
+        st.altair_chart(c, width='stretch')
 
 # ==========================================
 # TAB 3: VYLEPŠOVÁNÍ
@@ -547,7 +552,7 @@ alt.Chart(df).mark_line().encode(
         c = alt.Chart(df).mark_line().encode(
             x='Datum', y='Cena', color='Produkt'
         )
-        st.altair_chart(c, use_container_width=True)
+        st.altair_chart(c, width='stretch')
 
 # ==========================================
 # TAB 4: AGREGACE V GRAFU
@@ -572,7 +577,7 @@ alt.Chart(df).mark_bar().encode(
         """, language="python")
     with col2:
         c = alt.Chart(df).mark_bar().encode(x='Produkt', y='mean(Cena)')
-        st.altair_chart(c, use_container_width=True)
+        st.altair_chart(c, width='stretch')
 
 # ==========================================
 # TAB 5: KUCHAŘKA GRAFŮ
@@ -600,7 +605,7 @@ chart = alt.Chart(df[df['Produkt'] == '{produkt}']).mark_line(point=True).encode
         chart = alt.Chart(df[df['Produkt'] == produkt]).mark_line(point=True).encode(
             x='Datum:T', y='Cena:Q', tooltip=['Datum', 'Cena']
         ).interactive()
-        st.altair_chart(chart, use_container_width=True)
+        st.altair_chart(chart, width='stretch')
 
     elif "Srovnání paliv" in chart_type:
         st.info("Porovnává průměrnou cenu různých druhů paliv za celé období.")
@@ -616,4 +621,4 @@ chart = alt.Chart(df).mark_bar().encode(
         chart = alt.Chart(df).mark_bar().encode(
             x=alt.X('Produkt', sort='-y'), y='mean(Cena)', color='Produkt'
         ).interactive()
-        st.altair_chart(chart, use_container_width=True)
+        st.altair_chart(chart, width='stretch')

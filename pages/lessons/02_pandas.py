@@ -8,9 +8,9 @@ st.set_page_config(layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('data/CENPHMT.csv')
-    df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produkt'}, inplace=True)
-    df['Datum'] = pd.to_datetime(df['Tydentext'] + '-1', format='%Y-W%W-%w')
+    df = pd.read_csv('data/CEN0101J.csv')
+    df.rename(columns={'Hodnota': 'Cena', 'CasM': 'RokMesic', 'Druh PHM': 'Produkt'}, inplace=True)
+    df['Datum'] = pd.to_datetime(df['RokMesic'], format='%Y-%M')
     return df
 
 df = load_data()
@@ -468,7 +468,7 @@ with tab_intro:
 # ==========================================
 with tab_load:
     st.header("🔍 Průzkum dat: Ceny PHM")
-    st.code("df = pd.read_csv('data/CENPHMT.csv')", language="python")
+    st.code("df = pd.read_csv('data/CEN0101J.csv')", language="python")
     st.dataframe(df.head())
     st.text(f"Počet řádků: {df.shape[0]}, Počet sloupců: {df.shape[1]}")
 
@@ -481,7 +481,7 @@ with tab_clean:
     st.code("""
 df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produkt'}, inplace=True)
 # Převod textového týdne (např. '2016-W01') na skutečné datum
-df['Datum'] = pd.to_datetime(df['Tydentext'] + '-1', format='%Y-W%W-%w')
+df['Datum'] = pd.to_datetime(df['RokMesic'], format='%Y-%M')
     """, language="python")
     st.dataframe(df[['Datum', 'Produkt', 'Cena']].head())
 
@@ -547,9 +547,9 @@ import pandas as pd
 # --- 2. NAČTENÍ A ZÁKLADNÍ ČIŠTĚNÍ ---
 @st.cache_data
 def priprav_data():
-    df = pd.read_csv('data/CENPHMT.csv')
+    df = pd.read_csv('data/CEN0101J.csv')
     df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produkt'}, inplace=True)
-    df['Datum'] = pd.to_datetime(df['Tydentext'] + '-1', format='%Y-W%W-%w')
+    df['Datum'] = pd.to_datetime(df['RokMesic'], format='%Y-%M')
     return df
 
 df = priprav_data()
