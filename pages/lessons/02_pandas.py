@@ -472,6 +472,49 @@ with tab_load:
     st.dataframe(df.head())
     st.text(f"Počet řádků: {df.shape[0]}, Počet sloupců: {df.shape[1]}")
 
+    st.divider()
+    st.subheader("Další užitečné metody pro průzkum")
+
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("**1. Informace o datech**")
+        st.code("""
+# Zobrazí datové typy a počet neprázdných hodnot
+df.info()
+
+# Základní statistiky (průměr, min, max, kvartily)
+df.describe()
+        """, language="python")
+
+        st.markdown("**2. Výběr sloupců**")
+        st.code("""
+# Výběr jednoho sloupce
+df['Produkt']
+
+# Výběr více sloupců
+df[['Produkt', 'Cena']]
+        """, language="python")
+
+    with col2:
+        st.markdown("**3. Unikátní hodnoty**")
+        st.code("""
+# Zobrazí unikátní hodnoty ve sloupci
+df['Produkt'].unique()
+
+# Počet unikátních hodnot
+df['Produkt'].nunique()
+        """, language="python")
+        
+        st.markdown("**4. Třídění**")
+        st.code("""
+# Seřazení podle ceny (vzestupně)
+df.sort_values('Cena')
+
+# Seřazení sestupně
+df.sort_values('Cena', ascending=False)
+        """, language="python")
+
 # ==========================================
 # TAB 2: ČIŠTĚNÍ DAT
 # ==========================================
@@ -484,6 +527,46 @@ df.rename(columns={'Hodnota': 'Cena', 'CASTPHM': 'Tydentext', 'Druh PHM': 'Produ
 df['Datum'] = pd.to_datetime(df['RokMesic'], format='%Y-%M')
     """, language="python")
     st.dataframe(df[['Datum', 'Produkt', 'Cena']].head())
+
+    st.divider()
+    st.subheader("Další užitečné metody")
+
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("**1. Chybějící hodnoty**")
+        st.code("""
+# Odstranění řádků s chybějícími daty
+df_clean = df.dropna()
+
+# Nahrazení chybějících hodnot (např. nulou)
+df_filled = df.fillna(0)
+        """, language="python")
+
+        st.markdown("**2. Duplicity**")
+        st.code("""
+# Odstranění duplicitních řádků
+df_unique = df.drop_duplicates()
+        """, language="python")
+
+    with col2:
+        st.markdown("**3. Změna datových typů**")
+        st.code("""
+# Převod sloupce na text
+df['Produkt'] = df['Produkt'].astype(str)
+
+# Převod na číslo (pokud to jde)
+df['Cena'] = pd.to_numeric(df['Cena'], errors='coerce')
+        """, language="python")
+        
+        st.markdown("**4. Práce s textem**")
+        st.code("""
+# Oříznutí mezer
+df['Produkt'] = df['Produkt'].str.strip()
+
+# Převod na malá písmena
+df['Produkt'] = df['Produkt'].str.lower()
+        """, language="python")
 
 # ==========================================
 # TAB 3: TRANSFORMACE
@@ -499,6 +582,44 @@ df['Mesic'] = df['Datum'].dt.month
     """, language="python")
     st.dataframe(df[['Datum', 'Rok', 'Mesic']].head())
 
+    st.divider()
+    st.subheader("Další užitečné metody")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("**1. Matematické operace**")
+        st.code("""
+# Vytvoření nového sloupce výpočtem
+df['Cena_s_DPH'] = df['Cena'] * 1.21
+
+# Rozdíl dvou sloupců
+df['Zisk'] = df['Prodej'] - df['Naklady']
+        """, language="python")
+
+        st.markdown("**2. Podmínky (np.where)**")
+        st.code("""
+# Pokud je cena > 40, napiš 'Drahé', jinak 'Levné'
+import numpy as np
+df['Status'] = np.where(df['Cena'] > 40, 'Drahé', 'Levné')
+        """, language="python")
+
+    with col2:
+        st.markdown("**3. Vlastní funkce (apply)**")
+        st.code("""
+# Aplikace funkce na každý řádek
+def kategorizuj(x):
+    return "Super" if x > 100 else "Normál"
+
+df['Kategorie'] = df['Cena'].apply(kategorizuj)
+        """, language="python")
+
+        st.markdown("**4. Intervaly (cut)**")
+        st.code("""
+# Rozdělení do intervalů (binning)
+df['Cenova_skupina'] = pd.cut(df['Cena'], bins=3, labels=['Nízká', 'Střední', 'Vysoká'])
+        """, language="python")
+
 # ==========================================
 # TAB 4: AGREGACE
 # ==========================================
@@ -507,6 +628,43 @@ with tab_agg:
     st.markdown("Průměrná cena podle 'Produktu' (druhu paliva).")
     st.code("df.groupby('Produkt')['Cena'].mean()", language="python")
     st.dataframe(df.groupby('Produkt')['Cena'].mean())
+
+    st.divider()
+    st.subheader("Další užitečné metody")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("**1. Více funkcí najednou**")
+        st.code("""
+# Průměr a součet pro každou skupinu
+df.groupby('Produkt')['Cena'].agg(['mean', 'sum', 'count'])
+        """, language="python")
+
+        st.markdown("**2. Seskupení podle více sloupců**")
+        st.code("""
+# Průměrná cena podle Produktu a Roku
+df.groupby(['Produkt', 'Rok'])['Cena'].mean()
+        """, language="python")
+
+    with col2:
+        st.markdown("**3. Pojmenovaná agregace**")
+        st.code("""
+# Vlastní názvy výsledných sloupců
+df.groupby('Produkt').agg(
+    Prumerna_cena=('Cena', 'mean'),
+    Pocet_zaznamu=('Cena', 'count')
+)
+        """, language="python")
+
+        st.markdown("**4. Reshaping (Pivot)**")
+        st.code("""
+# Pivot Table (s agregací - když jsou duplicity)
+df.pivot_table(index='Rok', columns='Produkt', values='Cena', aggfunc='mean')
+
+# Pivot (prosté přeskládání - pro unikátní kombinace)
+# df.pivot(index='Datum', columns='Produkt', values='Cena')
+        """, language="python")
 
 # ==========================================
 # TAB 5: PŘÍPRAVA PRO GRAFY
@@ -564,7 +722,7 @@ df = priprav_data()
 
         if "Vývoj v čase" in pohled:
             code = "df_v_case = df.groupby(['Datum', 'Produkt'])['Cena'].mean().reset_index()"
-            final_code += f"\n# --- POHLED: VÝVOJ V ČASE ---\n{code}"
+            final_code += f"\\n# --- POHLED: VÝVOJ V ČASE ---\\n{code}"
             st.code(final_code, language="python")
             if not df_live.empty:
                 st.dataframe(df_live.groupby(['Datum', 'Produkt'])['Cena'].mean().reset_index().head(), hide_index=True)
@@ -573,7 +731,7 @@ df = priprav_data()
 
         elif "Žebříček" in pohled:
             code = "df_zebricek = df.groupby('Produkt')['Cena'].mean().sort_values(ascending=False).reset_index()"
-            final_code += f"\n# --- POHLED: ŽEBŘÍČEK ---\n{code}"
+            final_code += f"\\n# --- POHLED: ŽEBŘÍČEK ---\\n{code}"
             st.code(final_code, language="python")
             if not df_live.empty:
                 st.dataframe(df_live.groupby('Produkt')['Cena'].mean().sort_values(ascending=False).reset_index().head(), hide_index=True)
@@ -582,7 +740,7 @@ df = priprav_data()
 
         elif "Jedno číslo (KPI)" in pohled:
             code = "prumerna_cena = df['Cena'].mean()"
-            final_code += f"\n# --- POHLED: JEDNO ČÍSLO (KPI) ---\n{code}"
+            final_code += f"\\n# --- POHLED: JEDNO ČÍSLO (KPI) ---\\n{code}"
             st.code(final_code, language="python")
             if not df_live.empty:
                 st.metric("Průměrná cena za celé období", f"{df_live['Cena'].mean():.2f} Kč")
