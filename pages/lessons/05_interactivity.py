@@ -604,51 +604,163 @@ st.write(f"Hodnota: {st.session_state.pocitadlo}")
 # TAB 5: KUCHAŘKA FILTRŮ
 # ==========================================
 with tab_challenge:
-    st.header("🚀 Kuchařka filtrů")
-    st.markdown("Vyberte si, jaký filtr chcete přidat do aplikace.")
+    st.header("🚀 Kuchařka: Příprava filtrů")
+    st.markdown("Naklikejte si, jaké filtry potřebujete, a vygenerujte si kód.")
 
     col1, col2 = st.columns([1, 2])
 
     with col1:
+        st.subheader("Stavební bloky")
+        
+        show_imports = st.checkbox("1. Import knihovny", value=True, key="int_imp_final")
+        show_load = st.checkbox("2. Načtení dat", value=True, key="int_load_final")
+        
+        st.markdown("---")
+        
         filter_type = st.radio(
             "Vyberte typ filtru:",
-            ["Výběr paliva (Multiselect)", "Výběr data (Date Input)"]
+            ["Žádný", "Výběr paliva (Multiselect)", "Výběr data (Date Input)", "Cenový rozsah (Slider)"],
+            key="int_filter_type"
         )
 
     with col2:
-        st.subheader("Kód a výsledek")
+        st.subheader("Výsledný kód a náhled")
         
-        if "Výběr paliva" in filter_type:
-            st.info("Filtr pro výběr jednoho nebo více druhů paliva.")
-            code = """
-# 1. Získat unikátní hodnoty
-moznosti = df['Produkt'].unique()
+        code_parts = []
+        
+        if show_imports:
+            code_parts.append('''
+# --- 1. IMPORT ---
+import streamlit as st
+import pandas as pd
+''')
+        
+        if show_load:
+            code_parts.append('''
+# --- 2. NAČTENÍ DAT ---
+@st.cache_data
+def load_data():
+    df = pd.read_csv('data/CENPHMT.csv')
+    # ... (čištění dat) ...
+    return df
 
-# 2. Vytvořit widget
+df = load_data()
+''')
+        
+        final_code = "".join(code_parts)
+        
+        # Vytvoření df_live pro náhledy
+        df_live = pd.DataFrame()
+        if show_load:
+            df_live = load_data() # Použijeme již existující funkci load_data
+
+        if "Výběr paliva" in filter_type:
+            code = """
+# --- FILTR: VÝBĚR PALIVA ---
+moznosti = df['Produkt'].unique()
 vyber = st.sidebar.multiselect(
     "Vyber palivo:",
     options=moznosti,
     default=moznosti
 )
-
-# 3. Aplikovat filtr
 df_filtered = df[df['Produkt'].isin(vyber)]
+st.dataframe(df_filtered)
 """
-            st.code(code, language="python")
+            final_code += code
+            st.code(final_code, language="python")
             
+            # Živý náhled
+            if not df_live.empty:
+                st.markdown("### Náhled:")
+                moznosti_live = df_live['Produkt'].unique()
+                vyber_live = st.multiselect("Vyber palivo (demo):", options=moznosti_live, default=moznosti_live, key="demo_fuel")
+                st.dataframe(df_live[df_live['Produkt'].isin(vyber_live)].head(), hide_index=True)
+            else:
+                st.info("Načtěte data pro zobrazení náhledu.")
+
         elif "Výběr data" in filter_type:
-            st.info("Filtr pro výběr časového rozsahu.")
             code = """
-# 1. Vytvořit widget
+# --- FILTR: VÝBĚR DATA ---
+min_datum = df['Datum'].min()
+max_datum = df['Datum'].max()
+
 datum_od, datum_do = st.sidebar.date_input(
     "Vyber rozsah:",
-    [df['Datum'].min(), df['Datum'].max()]
+    [min_datum, max_datum],
+    min_value=min_datum,
+    max_value=max_datum
 )
 
-# 2. Aplikovat filtr
 df_filtered = df[
     (df['Datum'] >= pd.to_datetime(datum_od)) &
     (df['Datum'] <= pd.to_datetime(datum_do))
 ]
+st.dataframe(df_filtered)
 """
-            st.code(code, language="python")
+            final_code += code
+            st.code(final_code, language="python")
+            
+            # Živý náhled
+            if not df_live.empty:
+                st.markdown("### Náhled:")
+                min_d = df_live['Datum'].min().date()
+                max_d = df_live['Datum'].max().date()
+                
+                try:
+                    d_od, d_do = st.date_input(
+                        "Vyber rozsah (demo):",
+                        [min_d, max_d],
+                        min_value=min_d,
+                        max_value=max_d,
+                        key="demo_date"
+                    )
+                    mask = (df_live['Datum'].dt.date >= d_od) & (df_live['Datum'].dt.date <= d_do)
+                    st.dataframe(df_live[mask].head(), hide_index=True)
+                except ValueError:
+                    st.warning("Vyberte prosím platný rozsah (od - do).")
+            else:
+                st.info("Načtěte data pro zobrazení náhledu.")
+
+        elif "Cenový rozsah" in filter_type:
+            code = """
+# --- FILTR: CENOVÝ ROZSAH ---
+min_cena = int(df['Cena'].min())
+max_cena = int(df['Cena'].max())
+
+cena_od, cena_do = st.sidebar.slider(
+    "Cena (Kč):",
+    min_value=min_cena,
+    max_value=max_cena,
+    value=(min_cena, max_cena)
+)
+
+df_filtered = df[
+    (df['Cena'] >= cena_od) &
+    (df['Cena'] <= cena_do)
+]
+st.dataframe(df_filtered)
+"""
+            final_code += code
+            st.code(final_code, language="python")
+            
+            # Živý náhled
+            if not df_live.empty:
+                st.markdown("### Náhled:")
+                min_c = int(df_live['Cena'].min())
+                max_c = int(df_live['Cena'].max())
+                
+                c_od, c_do = st.slider(
+                    "Cena (Kč) demo:",
+                    min_value=min_c,
+                    max_value=max_c,
+                    value=(min_c, max_c),
+                    key="demo_price"
+                )
+                mask = (df_live['Cena'] >= c_od) & (df_live['Cena'] <= c_do)
+                st.dataframe(df_live[mask].head(), hide_index=True)
+            else:
+                st.info("Načtěte data pro zobrazení náhledu.")
+            
+        else: # "Žádný"
+            st.code(final_code, language="python")
+            st.info("Vyberte si typ filtru vlevo pro zobrazení kódu a náhledu.")
